@@ -1,0 +1,19 @@
+{
+  "provider": "qwen38max",
+  "mode": "live",
+  "model_id": "qwen3.8-max",
+  "prompt_version": "sop-compile-v3",
+  "input_digest": "e647ee6375869355",
+  "response_digest": "616a15c5261fca87",
+  "input_tokens": 14390,
+  "output_tokens": 1448,
+  "latency_ms": 30828,
+  "cost_usd": 0.0,
+  "error": null,
+  "extra": {
+    "total_tokens": 15838,
+    "compile_attempts": 1,
+    "pricing_status": "not_configured",
+    "request_id": ""
+  }
+}

@@ -1,0 +1,393 @@
+{
+  "status": "draft_ready",
+  "sop_id": "4c0f0df333b64100ad358c4888c45d83",
+  "asset_id": "5d690ca7053b45f195b295f1426af3fe",
+  "elapsed_seconds": 59.21,
+  "steps": [
+    {
+      "id": "step_01",
+      "index": 1,
+      "name": "穿入荧光黄鞋带",
+      "predecessors": [],
+      "optional": false,
+      "critical": false,
+      "tools": [],
+      "objects": [
+        "黑色帆布鞋",
+        "荧光黄鞋带"
+      ],
+      "actions": [
+        "穿鞋带",
+        "调整鞋带"
+      ],
+      "expected_duration_s": 60,
+      "completion_checks": [
+        "荧光黄鞋带已穿过可见的鞋眼",
+        "鞋带在鞋面上呈现横向平行的排列状态",
+        "鞋带两端自然垂落或延伸出鞋面"
+      ],
+      "observable_checks": [],
+      "unobservable_checks": [],
+      "weight": 40.0,
+      "evidence_refs": [
+        {
+          "kind": "video",
+          "ref": "video@5970ms",
+          "description": "双手配合将荧光黄色扁平鞋带依次穿过黑色帆布鞋的鞋眼",
+          "asset_id": "5d690ca7053b45f195b295f1426af3fe",
+          "timestamp_ms": 5970,
+          "page": null,
+          "section": null,
+          "chunk_id": null,
+          "chunk_index": null,
+          "content_hash": null
+        },
+        {
+          "kind": "video",
+          "ref": "video@11940ms",
+          "description": "调整鞋带位置使其在鞋面上形成整齐的横向排列",
+          "asset_id": "5d690ca7053b45f195b295f1426af3fe",
+          "timestamp_ms": 11940,
+          "page": null,
+          "section": null,
+          "chunk_id": null,
+          "chunk_index": null,
+          "content_hash": null
+        },
+        {
+          "kind": "video",
+          "ref": "video@23880ms",
+          "description": "鞋带持续穿引过程",
+          "asset_id": "5d690ca7053b45f195b295f1426af3fe",
+          "timestamp_ms": 23880,
+          "page": null,
+          "section": null,
+          "chunk_id": null,
+          "chunk_index": null,
+          "content_hash": null
+        },
+        {
+          "kind": "video",
+          "ref": "video@27000ms",
+          "description": "鞋带两端从最上方的鞋孔伸出",
+          "asset_id": "5d690ca7053b45f195b295f1426af3fe",
+          "timestamp_ms": 27000,
+          "page": null,
+          "section": null,
+          "chunk_id": null,
+          "chunk_index": null,
+          "content_hash": null
+        }
+      ],
+      "teaching": {
+        "source_asset_id": "5d690ca7053b45f195b295f1426af3fe",
+        "start_ms": 5970,
+        "end_ms": 27000,
+        "instruction": "双手配合将荧光黄色的扁平鞋带依次穿过黑色帆布鞋的鞋眼，调整鞋带位置使其在鞋面上形成整齐的横向排列。",
+        "reference_timestamps_ms": [
+          5970,
+          26850
+        ]
+      },
+      "verification": {
+        "checks": [
+          {
+            "id": "completion_checks_1",
+            "criterion": "荧光黄鞋带已穿过可见的鞋眼",
+            "category": "completion",
+            "required": true,
+            "mode": "visual",
+            "correction": ""
+          },
+          {
+            "id": "completion_checks_2",
+            "criterion": "鞋带在鞋面上呈现横向平行的排列状态",
+            "category": "completion",
+            "required": true,
+            "mode": "visual",
+            "correction": ""
+          },
+          {
+            "id": "completion_checks_3",
+            "criterion": "鞋带两端自然垂落或延伸出鞋面",
+            "category": "completion",
+            "required": true,
+            "mode": "visual",
+            "correction": ""
+          }
+        ],
+        "confirm_windows": 1,
+        "teacher_confirmed": false
+      }
+    },
+    {
+      "id": "step_02",
+      "index": 2,
+      "name": "交叉穿引并拉紧鞋带",
+      "predecessors": [
+        1
+      ],
+      "optional": false,
+      "critical": false,
+      "tools": [],
+      "objects": [
+        "黑色帆布鞋",
+        "荧光黄鞋带"
+      ],
+      "actions": [
+        "交叉系带",
+        "拉紧鞋带",
+        "调整鞋舌"
+      ],
+      "expected_duration_s": 60,
+      "completion_checks": [
+        "鞋带已穿过可见的鞋孔并形成交叉结构",
+        "鞋带各段张力均匀且排列整齐",
+        "鞋带两端处于可继续操作的状态"
+      ],
+      "observable_checks": [],
+      "unobservable_checks": [],
+      "weight": 35.0,
+      "evidence_refs": [
+        {
+          "kind": "video",
+          "ref": "video@32970ms",
+          "description": "将荧光黄鞋带在黑色鞋面的鞋孔间进行交叉穿引",
+          "asset_id": "5d690ca7053b45f195b295f1426af3fe",
+          "timestamp_ms": 32970,
+          "page": null,
+          "section": null,
+          "chunk_id": null,
+          "chunk_index": null,
+          "content_hash": null
+        },
+        {
+          "kind": "video",
+          "ref": "video@38940ms",
+          "description": "形成横向平行的纹理与交叉结构",
+          "asset_id": "5d690ca7053b45f195b295f1426af3fe",
+          "timestamp_ms": 38940,
+          "page": null,
+          "section": null,
+          "chunk_id": null,
+          "chunk_index": null,
+          "content_hash": null
+        },
+        {
+          "kind": "video",
+          "ref": "video@50880ms",
+          "description": "拉紧鞋带使各段平整",
+          "asset_id": "5d690ca7053b45f195b295f1426af3fe",
+          "timestamp_ms": 50880,
+          "page": null,
+          "section": null,
+          "chunk_id": null,
+          "chunk_index": null,
+          "content_hash": null
+        },
+        {
+          "kind": "video",
+          "ref": "video@54000ms",
+          "description": "双手拉住鞋带两端或调整鞋舌位置",
+          "asset_id": "5d690ca7053b45f195b295f1426af3fe",
+          "timestamp_ms": 54000,
+          "page": null,
+          "section": null,
+          "chunk_id": null,
+          "chunk_index": null,
+          "content_hash": null
+        }
+      ],
+      "teaching": {
+        "source_asset_id": "5d690ca7053b45f195b295f1426af3fe",
+        "start_ms": 27000,
+        "end_ms": 54000,
+        "instruction": "将荧光黄鞋带在黑色鞋面的鞋孔间进行交叉穿引，双手拉住鞋带两端或调整鞋舌位置，使已穿好的鞋带段平整并对齐。",
+        "reference_timestamps_ms": [
+          27000,
+          53850
+        ]
+      },
+      "verification": {
+        "checks": [
+          {
+            "id": "completion_checks_1",
+            "criterion": "鞋带已穿过可见的鞋孔并形成交叉结构",
+            "category": "completion",
+            "required": true,
+            "mode": "visual",
+            "correction": ""
+          },
+          {
+            "id": "completion_checks_2",
+            "criterion": "鞋带各段张力均匀且排列整齐",
+            "category": "completion",
+            "required": true,
+            "mode": "visual",
+            "correction": ""
+          },
+          {
+            "id": "completion_checks_3",
+            "criterion": "鞋带两端处于可继续操作的状态",
+            "category": "completion",
+            "required": true,
+            "mode": "visual",
+            "correction": ""
+          }
+        ],
+        "confirm_windows": 1,
+        "teacher_confirmed": false
+      }
+    },
+    {
+      "id": "step_03",
+      "index": 3,
+      "name": "调整顶部张力并展示",
+      "predecessors": [
+        2
+      ],
+      "optional": false,
+      "critical": false,
+      "tools": [],
+      "objects": [
+        "黑色帆布鞋",
+        "荧光黄扁平鞋带"
+      ],
+      "actions": [
+        "捏持并微调鞋带",
+        "向两侧拉伸鞋带",
+        "松手撤离"
+      ],
+      "expected_duration_s": 60,
+      "completion_checks": [
+        "左右两侧延伸出的鞋带长度大致对称",
+        "已穿好的下方鞋带段落保持整齐且无过度扭曲",
+        "荧光黄鞋带静止平铺于鞋面上",
+        "鞋带整体呈现均匀的之字形/交叉排列状态"
+      ],
+      "observable_checks": [],
+      "unobservable_checks": [
+        "鞋带在顶部鞋眼处的具体穿绕关系是否完全正确需人工确认"
+      ],
+      "weight": 25.0,
+      "evidence_refs": [
+        {
+          "kind": "video",
+          "ref": "video@56150ms",
+          "description": "双手捏住黑色帆布鞋最上方鞋带孔处的荧光黄鞋带进行微调",
+          "asset_id": "5d690ca7053b45f195b295f1426af3fe",
+          "timestamp_ms": 56150,
+          "page": null,
+          "section": null,
+          "chunk_id": null,
+          "chunk_index": null,
+          "content_hash": null
+        },
+        {
+          "kind": "video",
+          "ref": "video@56850ms",
+          "description": "调整顶部交叉结构",
+          "asset_id": "5d690ca7053b45f195b295f1426af3fe",
+          "timestamp_ms": 56850,
+          "page": null,
+          "section": null,
+          "chunk_id": null,
+          "chunk_index": null,
+          "content_hash": null
+        },
+        {
+          "kind": "video",
+          "ref": "video@60450ms",
+          "description": "向两侧拉伸鞋带以均衡张力",
+          "asset_id": "5d690ca7053b45f195b295f1426af3fe",
+          "timestamp_ms": 60450,
+          "page": null,
+          "section": null,
+          "chunk_id": null,
+          "chunk_index": null,
+          "content_hash": null
+        },
+        {
+          "kind": "video",
+          "ref": "video@62600ms",
+          "description": "拉紧两侧鞋带完成张力调整",
+          "asset_id": "5d690ca7053b45f195b295f1426af3fe",
+          "timestamp_ms": 62600,
+          "page": null,
+          "section": null,
+          "chunk_id": null,
+          "chunk_index": null,
+          "content_hash": null
+        },
+        {
+          "kind": "video",
+          "ref": "video@64750ms",
+          "description": "松开双手离开鞋面展示整体穿系效果",
+          "asset_id": "5d690ca7053b45f195b295f1426af3fe",
+          "timestamp_ms": 64750,
+          "page": null,
+          "section": null,
+          "chunk_id": null,
+          "chunk_index": null,
+          "content_hash": null
+        }
+      ],
+      "teaching": {
+        "source_asset_id": "5d690ca7053b45f195b295f1426af3fe",
+        "start_ms": 54000,
+        "end_ms": 64750,
+        "instruction": "双手捏住黑色帆布鞋最上方鞋带孔处的荧光黄鞋带，调整顶部交叉结构并向两侧拉紧以均衡张力，最后松开双手使鞋带自然平放，检查整体穿系效果。",
+        "reference_timestamps_ms": [
+          54000,
+          64600
+        ]
+      },
+      "verification": {
+        "checks": [
+          {
+            "id": "completion_checks_1",
+            "criterion": "左右两侧延伸出的鞋带长度大致对称",
+            "category": "completion",
+            "required": true,
+            "mode": "visual",
+            "correction": ""
+          },
+          {
+            "id": "completion_checks_2",
+            "criterion": "已穿好的下方鞋带段落保持整齐且无过度扭曲",
+            "category": "completion",
+            "required": true,
+            "mode": "visual",
+            "correction": ""
+          },
+          {
+            "id": "completion_checks_3",
+            "criterion": "荧光黄鞋带静止平铺于鞋面上",
+            "category": "completion",
+            "required": true,
+            "mode": "visual",
+            "correction": ""
+          },
+          {
+            "id": "completion_checks_4",
+            "criterion": "鞋带整体呈现均匀的之字形/交叉排列状态",
+            "category": "completion",
+            "required": true,
+            "mode": "visual",
+            "correction": ""
+          },
+          {
+            "id": "unobservable_checks_1",
+            "criterion": "鞋带在顶部鞋眼处的具体穿绕关系是否完全正确需人工确认",
+            "category": "completion",
+            "required": true,
+            "mode": "manual",
+            "correction": ""
+          }
+        ],
+        "confirm_windows": 1,
+        "teacher_confirmed": false
+      }
+    }
+  ]
+}

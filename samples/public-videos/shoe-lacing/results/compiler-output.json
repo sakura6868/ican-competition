@@ -1,0 +1,182 @@
+{
+  "source_grade": "video_reference",
+  "steps": [
+    {
+      "name": "穿入荧光黄鞋带",
+      "index": 1,
+      "predecessors": [],
+      "tools": [],
+      "objects": [
+        "黑色帆布鞋",
+        "荧光黄鞋带"
+      ],
+      "actions": [
+        "穿鞋带",
+        "调整鞋带"
+      ],
+      "completion_checks": [
+        "荧光黄鞋带已穿过可见的鞋眼",
+        "鞋带在鞋面上呈现横向平行的排列状态",
+        "鞋带两端自然垂落或延伸出鞋面"
+      ],
+      "observable_checks": [],
+      "unobservable_checks": [],
+      "weight": 40,
+      "evidence_refs": [
+        {
+          "kind": "video",
+          "ref": "video@5970ms",
+          "timestamp_ms": 5970,
+          "description": "双手配合将荧光黄色扁平鞋带依次穿过黑色帆布鞋的鞋眼"
+        },
+        {
+          "kind": "video",
+          "ref": "video@11940ms",
+          "timestamp_ms": 11940,
+          "description": "调整鞋带位置使其在鞋面上形成整齐的横向排列"
+        },
+        {
+          "kind": "video",
+          "ref": "video@23880ms",
+          "timestamp_ms": 23880,
+          "description": "鞋带持续穿引过程"
+        },
+        {
+          "kind": "video",
+          "ref": "video@27000ms",
+          "timestamp_ms": 27000,
+          "description": "鞋带两端从最上方的鞋孔伸出"
+        }
+      ],
+      "teaching": {
+        "source_asset_id": "5d690ca7053b45f195b295f1426af3fe",
+        "start_ms": 5970,
+        "end_ms": 27000,
+        "instruction": "双手配合将荧光黄色的扁平鞋带依次穿过黑色帆布鞋的鞋眼，调整鞋带位置使其在鞋面上形成整齐的横向排列。"
+      }
+    },
+    {
+      "name": "交叉穿引并拉紧鞋带",
+      "index": 2,
+      "predecessors": [
+        1
+      ],
+      "tools": [],
+      "objects": [
+        "黑色帆布鞋",
+        "荧光黄鞋带"
+      ],
+      "actions": [
+        "交叉系带",
+        "拉紧鞋带",
+        "调整鞋舌"
+      ],
+      "completion_checks": [
+        "鞋带已穿过可见的鞋孔并形成交叉结构",
+        "鞋带各段张力均匀且排列整齐",
+        "鞋带两端处于可继续操作的状态"
+      ],
+      "observable_checks": [],
+      "unobservable_checks": [],
+      "weight": 35,
+      "evidence_refs": [
+        {
+          "kind": "video",
+          "ref": "video@32970ms",
+          "timestamp_ms": 32970,
+          "description": "将荧光黄鞋带在黑色鞋面的鞋孔间进行交叉穿引"
+        },
+        {
+          "kind": "video",
+          "ref": "video@38940ms",
+          "timestamp_ms": 38940,
+          "description": "形成横向平行的纹理与交叉结构"
+        },
+        {
+          "kind": "video",
+          "ref": "video@50880ms",
+          "timestamp_ms": 50880,
+          "description": "拉紧鞋带使各段平整"
+        },
+        {
+          "kind": "video",
+          "ref": "video@54000ms",
+          "timestamp_ms": 54000,
+          "description": "双手拉住鞋带两端或调整鞋舌位置"
+        }
+      ],
+      "teaching": {
+        "source_asset_id": "5d690ca7053b45f195b295f1426af3fe",
+        "start_ms": 27000,
+        "end_ms": 54000,
+        "instruction": "将荧光黄鞋带在黑色鞋面的鞋孔间进行交叉穿引，双手拉住鞋带两端或调整鞋舌位置，使已穿好的鞋带段平整并对齐。"
+      }
+    },
+    {
+      "name": "调整顶部张力并展示",
+      "index": 3,
+      "predecessors": [
+        2
+      ],
+      "tools": [],
+      "objects": [
+        "黑色帆布鞋",
+        "荧光黄扁平鞋带"
+      ],
+      "actions": [
+        "捏持并微调鞋带",
+        "向两侧拉伸鞋带",
+        "松手撤离"
+      ],
+      "completion_checks": [
+        "左右两侧延伸出的鞋带长度大致对称",
+        "已穿好的下方鞋带段落保持整齐且无过度扭曲",
+        "荧光黄鞋带静止平铺于鞋面上",
+        "鞋带整体呈现均匀的之字形/交叉排列状态"
+      ],
+      "observable_checks": [],
+      "unobservable_checks": [
+        "鞋带在顶部鞋眼处的具体穿绕关系是否完全正确需人工确认"
+      ],
+      "weight": 25,
+      "evidence_refs": [
+        {
+          "kind": "video",
+          "ref": "video@56150ms",
+          "timestamp_ms": 56150,
+          "description": "双手捏住黑色帆布鞋最上方鞋带孔处的荧光黄鞋带进行微调"
+        },
+        {
+          "kind": "video",
+          "ref": "video@56850ms",
+          "timestamp_ms": 56850,
+          "description": "调整顶部交叉结构"
+        },
+        {
+          "kind": "video",
+          "ref": "video@60450ms",
+          "timestamp_ms": 60450,
+          "description": "向两侧拉伸鞋带以均衡张力"
+        },
+        {
+          "kind": "video",
+          "ref": "video@62600ms",
+          "timestamp_ms": 62600,
+          "description": "拉紧两侧鞋带完成张力调整"
+        },
+        {
+          "kind": "video",
+          "ref": "video@64750ms",
+          "timestamp_ms": 64750,
+          "description": "松开双手离开鞋面展示整体穿系效果"
+        }
+      ],
+      "teaching": {
+        "source_asset_id": "5d690ca7053b45f195b295f1426af3fe",
+        "start_ms": 54000,
+        "end_ms": 64750,
+        "instruction": "双手捏住黑色帆布鞋最上方鞋带孔处的荧光黄鞋带，调整顶部交叉结构并向两侧拉紧以均衡张力，最后松开双手使鞋带自然平放，检查整体穿系效果。"
+      }
+    }
+  ]
+}

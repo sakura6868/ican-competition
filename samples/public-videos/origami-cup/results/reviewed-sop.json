@@ -1,0 +1,383 @@
+{
+  "sop_id": "c071f75b0c8f41b09d29eb1cfd3f18c6",
+  "status": "published",
+  "reviewer": "Agent visual review using teacher role in isolated QA; not a professional teacher sign-off",
+  "scope": "Paper-cup visible folding states only; no water resistance or drinking suitability claim",
+  "edits": [
+    "Rebuilt six inaccurate/overlapping auto-draft steps into five visually reviewed folding stages",
+    "Restored the first diagonal fold and split the two bottom corners into separate stages",
+    "Corrected the alleged central fold into front/back top-flap folds; requires showing both sides",
+    "Removed color, exact orientation, standing on desk, and matching an absent mold requirements",
+    "Selected actual before/after reference timestamps and defined correction messages"
+  ],
+  "steps": [
+    {
+      "id": "cup_step_1",
+      "index": 1,
+      "name": "沿对角线折成三角形",
+      "predecessors": [],
+      "optional": false,
+      "critical": false,
+      "tools": [],
+      "objects": [
+        "折纸"
+      ],
+      "actions": [
+        "沿对角线折成三角形"
+      ],
+      "expected_duration_s": 30,
+      "completion_checks": [
+        "纸张已折成平整的三角形，外轮廓有三个角；尚未向内折起底角。"
+      ],
+      "observable_checks": [],
+      "unobservable_checks": [],
+      "weight": 20.0,
+      "evidence_refs": [
+        {
+          "kind": "video",
+          "ref": "video@24000ms",
+          "description": "沿对角线折成三角形",
+          "asset_id": "0c115b3d19794e36b2a192ffcefe07c9",
+          "timestamp_ms": 24000,
+          "page": null,
+          "section": null,
+          "chunk_id": null,
+          "chunk_index": null,
+          "content_hash": null
+        },
+        {
+          "kind": "video",
+          "ref": "video@27000ms",
+          "description": "沿对角线折成三角形",
+          "asset_id": "0c115b3d19794e36b2a192ffcefe07c9",
+          "timestamp_ms": 27000,
+          "page": null,
+          "section": null,
+          "chunk_id": null,
+          "chunk_index": null,
+          "content_hash": null
+        }
+      ],
+      "teaching": {
+        "source_asset_id": "0c115b3d19794e36b2a192ffcefe07c9",
+        "start_ms": 15000,
+        "end_ms": 28000,
+        "instruction": "把正方形纸的一角折向对角，压平折线，展示完成后的三角形。纸张颜色不限。",
+        "reference_timestamps_ms": [
+          24000,
+          27000
+        ]
+      },
+      "verification": {
+        "checks": [
+          {
+            "id": "visible_completion",
+            "criterion": "纸张已折成平整的三角形，外轮廓有三个角；尚未向内折起底角。",
+            "category": "completion",
+            "required": true,
+            "mode": "visual",
+            "correction": "把正方形纸沿对角线合拢，压平底边折线，再展示三角形。"
+          }
+        ],
+        "confirm_windows": 2,
+        "teacher_confirmed": true
+      }
+    },
+    {
+      "id": "cup_step_2",
+      "index": 2,
+      "name": "折入第一个底角",
+      "predecessors": [
+        1
+      ],
+      "optional": false,
+      "critical": false,
+      "tools": [],
+      "objects": [
+        "折纸"
+      ],
+      "actions": [
+        "折入第一个底角"
+      ],
+      "expected_duration_s": 30,
+      "completion_checks": [
+        "三角形恰有一个底角已向对面的斜边折入，折片上边缘大致横向；另一个底角仍展开。"
+      ],
+      "observable_checks": [],
+      "unobservable_checks": [],
+      "weight": 20.0,
+      "evidence_refs": [
+        {
+          "kind": "video",
+          "ref": "video@28000ms",
+          "description": "折入第一个底角",
+          "asset_id": "0c115b3d19794e36b2a192ffcefe07c9",
+          "timestamp_ms": 28000,
+          "page": null,
+          "section": null,
+          "chunk_id": null,
+          "chunk_index": null,
+          "content_hash": null
+        },
+        {
+          "kind": "video",
+          "ref": "video@40000ms",
+          "description": "折入第一个底角",
+          "asset_id": "0c115b3d19794e36b2a192ffcefe07c9",
+          "timestamp_ms": 40000,
+          "page": null,
+          "section": null,
+          "chunk_id": null,
+          "chunk_index": null,
+          "content_hash": null
+        }
+      ],
+      "teaching": {
+        "source_asset_id": "0c115b3d19794e36b2a192ffcefe07c9",
+        "start_ms": 28000,
+        "end_ms": 43000,
+        "instruction": "把三角形的一个底角向对面的斜边折入并压平。展示一个底角已内折、另一个底角仍展开的状态，左右镜像都可以。",
+        "reference_timestamps_ms": [
+          28000,
+          40000
+        ]
+      },
+      "verification": {
+        "checks": [
+          {
+            "id": "visible_completion",
+            "criterion": "三角形恰有一个底角已向对面的斜边折入，折片上边缘大致横向；另一个底角仍展开。",
+            "category": "completion",
+            "required": true,
+            "mode": "visual",
+            "correction": "先只折入一个底角，让折片上边缘大致横向，另一个底角保留展开。"
+          }
+        ],
+        "confirm_windows": 2,
+        "teacher_confirmed": true
+      }
+    },
+    {
+      "id": "cup_step_3",
+      "index": 3,
+      "name": "折入另一个底角",
+      "predecessors": [
+        2
+      ],
+      "optional": false,
+      "critical": false,
+      "tools": [],
+      "objects": [
+        "折纸"
+      ],
+      "actions": [
+        "折入另一个底角"
+      ],
+      "expected_duration_s": 30,
+      "completion_checks": [
+        "两个底角都已向内折入并相互交叠，杯身下部收拢，顶部尖角仍向上。"
+      ],
+      "observable_checks": [],
+      "unobservable_checks": [],
+      "weight": 20.0,
+      "evidence_refs": [
+        {
+          "kind": "video",
+          "ref": "video@43000ms",
+          "description": "折入另一个底角",
+          "asset_id": "0c115b3d19794e36b2a192ffcefe07c9",
+          "timestamp_ms": 43000,
+          "page": null,
+          "section": null,
+          "chunk_id": null,
+          "chunk_index": null,
+          "content_hash": null
+        },
+        {
+          "kind": "video",
+          "ref": "video@55000ms",
+          "description": "折入另一个底角",
+          "asset_id": "0c115b3d19794e36b2a192ffcefe07c9",
+          "timestamp_ms": 55000,
+          "page": null,
+          "section": null,
+          "chunk_id": null,
+          "chunk_index": null,
+          "content_hash": null
+        }
+      ],
+      "teaching": {
+        "source_asset_id": "0c115b3d19794e36b2a192ffcefe07c9",
+        "start_ms": 43000,
+        "end_ms": 56500,
+        "instruction": "把剩余底角也向对面的斜边折入，压平，让两片折角交叠，顶部尖角暂时保留。",
+        "reference_timestamps_ms": [
+          43000,
+          55000
+        ]
+      },
+      "verification": {
+        "checks": [
+          {
+            "id": "visible_completion",
+            "criterion": "两个底角都已向内折入并相互交叠，杯身下部收拢，顶部尖角仍向上。",
+            "category": "completion",
+            "required": true,
+            "mode": "visual",
+            "correction": "将剩余底角折入并压平，让两片折角交叠，顶部尖角先不要下折。"
+          }
+        ],
+        "confirm_windows": 2,
+        "teacher_confirmed": true
+      }
+    },
+    {
+      "id": "cup_step_4",
+      "index": 4,
+      "name": "正反两面折下杯口尖角",
+      "predecessors": [
+        3
+      ],
+      "optional": false,
+      "critical": false,
+      "tools": [],
+      "objects": [
+        "折纸"
+      ],
+      "actions": [
+        "正反两面折下杯口尖角"
+      ],
+      "expected_duration_s": 30,
+      "completion_checks": [
+        "本轮画面明确展示纸杯的正反两面，顶部两层尖角已分别向前后折下；两面的上沿均较平直，没有尚未折下的向上尖角，纸杯仍为扁平状态。"
+      ],
+      "observable_checks": [],
+      "unobservable_checks": [],
+      "weight": 20.0,
+      "evidence_refs": [
+        {
+          "kind": "video",
+          "ref": "video@63000ms",
+          "description": "正反两面折下杯口尖角",
+          "asset_id": "0c115b3d19794e36b2a192ffcefe07c9",
+          "timestamp_ms": 63000,
+          "page": null,
+          "section": null,
+          "chunk_id": null,
+          "chunk_index": null,
+          "content_hash": null
+        },
+        {
+          "kind": "video",
+          "ref": "video@66000ms",
+          "description": "正反两面折下杯口尖角",
+          "asset_id": "0c115b3d19794e36b2a192ffcefe07c9",
+          "timestamp_ms": 66000,
+          "page": null,
+          "section": null,
+          "chunk_id": null,
+          "chunk_index": null,
+          "content_hash": null
+        }
+      ],
+      "teaching": {
+        "source_asset_id": "0c115b3d19794e36b2a192ffcefe07c9",
+        "start_ms": 56500,
+        "end_ms": 70500,
+        "instruction": "将顶部前面一层尖角向下折，再翻面把另一层尖角向后折下。完成后在镜头前翻面展示正反两面；两面顶部都应没有竖起尖角。",
+        "reference_timestamps_ms": [
+          63000,
+          66000
+        ]
+      },
+      "verification": {
+        "checks": [
+          {
+            "id": "visible_completion",
+            "criterion": "本轮画面明确展示纸杯的正反两面，顶部两层尖角已分别向前后折下；两面的上沿均较平直，没有尚未折下的向上尖角，纸杯仍为扁平状态。",
+            "category": "completion",
+            "required": true,
+            "mode": "visual",
+            "correction": "分别折下前后两层顶部尖角，并翻面展示两面，让两面的平直杯口上沿都能看清。"
+          }
+        ],
+        "confirm_windows": 2,
+        "teacher_confirmed": true
+      }
+    },
+    {
+      "id": "cup_step_5",
+      "index": 5,
+      "name": "撑开杯口完成纸杯",
+      "predecessors": [
+        4
+      ],
+      "optional": false,
+      "critical": false,
+      "tools": [],
+      "objects": [
+        "折纸"
+      ],
+      "actions": [
+        "撑开杯口完成纸杯"
+      ],
+      "expected_duration_s": 30,
+      "completion_checks": [
+        "纸杯已从扁平形状撑开，杯口明显张开，内部空腔可见，形成有底的立体容器。"
+      ],
+      "observable_checks": [],
+      "unobservable_checks": [],
+      "weight": 20.0,
+      "evidence_refs": [
+        {
+          "kind": "video",
+          "ref": "video@72000ms",
+          "description": "撑开杯口完成纸杯",
+          "asset_id": "0c115b3d19794e36b2a192ffcefe07c9",
+          "timestamp_ms": 72000,
+          "page": null,
+          "section": null,
+          "chunk_id": null,
+          "chunk_index": null,
+          "content_hash": null
+        },
+        {
+          "kind": "video",
+          "ref": "video@78000ms",
+          "description": "撑开杯口完成纸杯",
+          "asset_id": "0c115b3d19794e36b2a192ffcefe07c9",
+          "timestamp_ms": 78000,
+          "page": null,
+          "section": null,
+          "chunk_id": null,
+          "chunk_index": null,
+          "content_hash": null
+        }
+      ],
+      "teaching": {
+        "source_asset_id": "0c115b3d19794e36b2a192ffcefe07c9",
+        "start_ms": 70500,
+        "end_ms": 81000,
+        "instruction": "从杯口分开纸层，轻轻向两侧撑开，展示杯口和里面的空腔。只核验成形，不要求纸杯自行站立，也不要求盛水。",
+        "reference_timestamps_ms": [
+          72000,
+          78000
+        ]
+      },
+      "verification": {
+        "checks": [
+          {
+            "id": "visible_completion",
+            "criterion": "纸杯已从扁平形状撑开，杯口明显张开，内部空腔可见，形成有底的立体容器。",
+            "category": "completion",
+            "required": true,
+            "mode": "visual",
+            "correction": "从上沿分开纸层，轻轻撑开杯口，并把开口朝向镜头展示内部空腔。"
+          }
+        ],
+        "confirm_windows": 2,
+        "teacher_confirmed": true
+      }
+    }
+  ]
+}

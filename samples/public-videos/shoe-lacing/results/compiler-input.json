@@ -1,0 +1,691 @@
+{
+  "analysis_format": "teaching_windows_v1",
+  "window_analyses": [
+    {
+      "start_ms": 0,
+      "end_ms": 30000,
+      "analysis": {
+        "step_candidates": [
+          {
+            "name": "穿入荧光黄鞋带",
+            "timestamp_ms": 5970,
+            "start_ms": 5970,
+            "end_ms": 27000,
+            "instruction": "双手配合将荧光黄色的扁平鞋带依次穿过黑色帆布鞋的鞋眼，调整鞋带位置使其在鞋面上形成整齐的横向排列。",
+            "completion_checks": [
+              "荧光黄鞋带已穿过可见的鞋眼",
+              "鞋带在鞋面上呈现横向平行的排列状态",
+              "鞋带两端自然垂落或延伸出鞋面"
+            ],
+            "evidence_refs": [
+              "video@5970ms",
+              "video@11940ms",
+              "video@23880ms",
+              "video@27000ms"
+            ],
+            "batch_index": 0,
+            "source_order": 0,
+            "source_frame_index": 0
+          },
+          {
+            "name": "调整鞋带细节",
+            "timestamp_ms": 29850,
+            "start_ms": 29850,
+            "end_ms": 30000,
+            "instruction": "手指捏住鞋带末端或特定区段进行微调，确保鞋带平整且张力适中。",
+            "completion_checks": [
+              "手指正在接触并调整鞋带",
+              "鞋带保持荧光黄色且未打结"
+            ],
+            "evidence_refs": [
+              "video@29850ms"
+            ],
+            "batch_index": 0,
+            "source_order": 1,
+            "source_frame_index": 5
+          }
+        ],
+        "tool_candidates": [],
+        "object_candidates": [
+          {
+            "name": "黑色帆布鞋",
+            "batch_index": 0,
+            "source_order": 0,
+            "source_frame_index": 0,
+            "timestamp_ms": 0
+          },
+          {
+            "name": "荧光黄鞋带",
+            "batch_index": 0,
+            "source_order": 1,
+            "source_frame_index": 5,
+            "timestamp_ms": 29850
+          }
+        ],
+        "action_candidates": [
+          {
+            "name": "穿鞋带",
+            "batch_index": 0,
+            "source_order": 0,
+            "source_frame_index": 0,
+            "timestamp_ms": 0
+          },
+          {
+            "name": "调整鞋带",
+            "batch_index": 0,
+            "source_order": 1,
+            "source_frame_index": 2,
+            "timestamp_ms": 11940
+          },
+          {
+            "name": "手持操作",
+            "batch_index": 0,
+            "source_order": 2,
+            "source_frame_index": 5,
+            "timestamp_ms": 29850
+          }
+        ],
+        "safety_requirements": [],
+        "segment_id": "5d690ca7053b45f195b295f1426af3fe:window:0",
+        "analysis_format": "timeline_batches_v1",
+        "batch_count": 1,
+        "batch_analyses": [
+          {
+            "batch_index": 0,
+            "batch_number": 1,
+            "frames": [
+              {
+                "image_order": 0,
+                "source_frame_index": 0,
+                "timestamp_ms": 0
+              },
+              {
+                "image_order": 1,
+                "source_frame_index": 1,
+                "timestamp_ms": 5970
+              },
+              {
+                "image_order": 2,
+                "source_frame_index": 2,
+                "timestamp_ms": 11940
+              },
+              {
+                "image_order": 3,
+                "source_frame_index": 3,
+                "timestamp_ms": 23880
+              },
+              {
+                "image_order": 4,
+                "source_frame_index": 4,
+                "timestamp_ms": 27000
+              },
+              {
+                "image_order": 5,
+                "source_frame_index": 5,
+                "timestamp_ms": 29850
+              }
+            ],
+            "latency_ms": 9855,
+            "analysis": {
+              "step_candidates": [
+                {
+                  "name": "穿入荧光黄鞋带",
+                  "timestamp_ms": 5970,
+                  "start_ms": 5970,
+                  "end_ms": 27000,
+                  "instruction": "双手配合将荧光黄色的扁平鞋带依次穿过黑色帆布鞋的鞋眼，调整鞋带位置使其在鞋面上形成整齐的横向排列。",
+                  "completion_checks": [
+                    "荧光黄鞋带已穿过可见的鞋眼",
+                    "鞋带在鞋面上呈现横向平行的排列状态",
+                    "鞋带两端自然垂落或延伸出鞋面"
+                  ],
+                  "evidence_refs": [
+                    "video@5970ms",
+                    "video@11940ms",
+                    "video@23880ms",
+                    "video@27000ms"
+                  ]
+                },
+                {
+                  "name": "调整鞋带细节",
+                  "timestamp_ms": 29850,
+                  "start_ms": 29850,
+                  "end_ms": 30000,
+                  "instruction": "手指捏住鞋带末端或特定区段进行微调，确保鞋带平整且张力适中。",
+                  "completion_checks": [
+                    "手指正在接触并调整鞋带",
+                    "鞋带保持荧光黄色且未打结"
+                  ],
+                  "evidence_refs": [
+                    "video@29850ms"
+                  ]
+                }
+              ],
+              "tool_candidates": [],
+              "object_candidates": [
+                "黑色帆布鞋",
+                "荧光黄鞋带"
+              ],
+              "action_candidates": [
+                "穿鞋带",
+                "调整鞋带",
+                "手持操作"
+              ],
+              "safety_requirements": []
+            }
+          }
+        ]
+      }
+    },
+    {
+      "start_ms": 27000,
+      "end_ms": 57000,
+      "analysis": {
+        "step_candidates": [
+          {
+            "name": "交叉穿引鞋带",
+            "timestamp_ms": 27000,
+            "start_ms": 27000,
+            "end_ms": 50880,
+            "instruction": "将荧光黄鞋带在黑色鞋面的鞋孔间进行交叉穿引，形成横向平行的纹理。",
+            "completion_checks": [
+              "鞋带已穿过可见的鞋孔并形成交叉结构",
+              "鞋带两端从最上方的鞋孔伸出"
+            ],
+            "evidence_refs": [
+              "video@27000ms",
+              "video@32970ms",
+              "video@38940ms",
+              "video@50880ms"
+            ],
+            "batch_index": 0,
+            "source_order": 0,
+            "source_frame_index": 0
+          },
+          {
+            "name": "调整鞋带松紧与对齐",
+            "timestamp_ms": 54000,
+            "start_ms": 54000,
+            "end_ms": 56850,
+            "instruction": "双手拉住鞋带两端或调整鞋舌位置，使已穿好的鞋带段平整并对齐。",
+            "completion_checks": [
+              "鞋带各段张力均匀且排列整齐",
+              "鞋带两端处于可继续操作的状态"
+            ],
+            "evidence_refs": [
+              "video@54000ms",
+              "video@56850ms"
+            ],
+            "batch_index": 0,
+            "source_order": 1,
+            "source_frame_index": 5
+          }
+        ],
+        "tool_candidates": [],
+        "object_candidates": [
+          {
+            "name": "黑色帆布鞋",
+            "batch_index": 0,
+            "source_order": 0,
+            "source_frame_index": 0,
+            "timestamp_ms": 27000
+          },
+          {
+            "name": "荧光黄鞋带",
+            "batch_index": 0,
+            "source_order": 1,
+            "source_frame_index": 5,
+            "timestamp_ms": 56850
+          }
+        ],
+        "action_candidates": [
+          {
+            "name": "穿鞋带",
+            "batch_index": 0,
+            "source_order": 0,
+            "source_frame_index": 0,
+            "timestamp_ms": 27000
+          },
+          {
+            "name": "交叉系带",
+            "batch_index": 0,
+            "source_order": 1,
+            "source_frame_index": 2,
+            "timestamp_ms": 38940
+          },
+          {
+            "name": "拉紧鞋带",
+            "batch_index": 0,
+            "source_order": 2,
+            "source_frame_index": 3,
+            "timestamp_ms": 50880
+          },
+          {
+            "name": "调整鞋舌",
+            "batch_index": 0,
+            "source_order": 3,
+            "source_frame_index": 5,
+            "timestamp_ms": 56850
+          }
+        ],
+        "safety_requirements": [],
+        "segment_id": "5d690ca7053b45f195b295f1426af3fe:window:1",
+        "analysis_format": "timeline_batches_v1",
+        "batch_count": 1,
+        "batch_analyses": [
+          {
+            "batch_index": 0,
+            "batch_number": 1,
+            "frames": [
+              {
+                "image_order": 0,
+                "source_frame_index": 0,
+                "timestamp_ms": 27000
+              },
+              {
+                "image_order": 1,
+                "source_frame_index": 1,
+                "timestamp_ms": 32970
+              },
+              {
+                "image_order": 2,
+                "source_frame_index": 2,
+                "timestamp_ms": 38940
+              },
+              {
+                "image_order": 3,
+                "source_frame_index": 3,
+                "timestamp_ms": 50880
+              },
+              {
+                "image_order": 4,
+                "source_frame_index": 4,
+                "timestamp_ms": 54000
+              },
+              {
+                "image_order": 5,
+                "source_frame_index": 5,
+                "timestamp_ms": 56850
+              }
+            ],
+            "latency_ms": 9970,
+            "analysis": {
+              "step_candidates": [
+                {
+                  "name": "交叉穿引鞋带",
+                  "timestamp_ms": 27000,
+                  "start_ms": 27000,
+                  "end_ms": 50880,
+                  "instruction": "将荧光黄鞋带在黑色鞋面的鞋孔间进行交叉穿引，形成横向平行的纹理。",
+                  "completion_checks": [
+                    "鞋带已穿过可见的鞋孔并形成交叉结构",
+                    "鞋带两端从最上方的鞋孔伸出"
+                  ],
+                  "evidence_refs": [
+                    "video@27000ms",
+                    "video@32970ms",
+                    "video@38940ms",
+                    "video@50880ms"
+                  ]
+                },
+                {
+                  "name": "调整鞋带松紧与对齐",
+                  "timestamp_ms": 54000,
+                  "start_ms": 54000,
+                  "end_ms": 56850,
+                  "instruction": "双手拉住鞋带两端或调整鞋舌位置，使已穿好的鞋带段平整并对齐。",
+                  "completion_checks": [
+                    "鞋带各段张力均匀且排列整齐",
+                    "鞋带两端处于可继续操作的状态"
+                  ],
+                  "evidence_refs": [
+                    "video@54000ms",
+                    "video@56850ms"
+                  ]
+                }
+              ],
+              "tool_candidates": [],
+              "object_candidates": [
+                "黑色帆布鞋",
+                "荧光黄鞋带"
+              ],
+              "action_candidates": [
+                "穿鞋带",
+                "交叉系带",
+                "拉紧鞋带",
+                "调整鞋舌"
+              ],
+              "safety_requirements": []
+            }
+          }
+        ]
+      }
+    },
+    {
+      "start_ms": 54000,
+      "end_ms": 64900,
+      "analysis": {
+        "step_candidates": [
+          {
+            "name": "调整鞋带顶部交叉与张力",
+            "timestamp_ms": 54000,
+            "start_ms": 54000,
+            "end_ms": 62600,
+            "instruction": "双手捏住黑色帆布鞋最上方鞋带孔处的荧光黄鞋带，调整顶部交叉结构并拉紧两侧鞋带以均衡张力。",
+            "completion_checks": [
+              "鞋带在顶部鞋眼处形成平整的横向或交叉段落",
+              "左右两侧延伸出的鞋带长度大致对称",
+              "已穿好的下方鞋带段落保持整齐且无过度扭曲"
+            ],
+            "evidence_refs": [
+              "video@54000ms",
+              "video@56150ms",
+              "video@56850ms",
+              "video@60450ms",
+              "video@62600ms"
+            ],
+            "batch_index": 0,
+            "source_order": 0,
+            "source_frame_index": 0
+          },
+          {
+            "name": "释放鞋带展示当前穿系状态",
+            "timestamp_ms": 64750,
+            "start_ms": 62600,
+            "end_ms": 64900,
+            "instruction": "松开双手离开鞋面，使鞋带自然平放，展示调整后的整体穿系效果。",
+            "completion_checks": [
+              "操作者双手完全离开鞋带与鞋面",
+              "荧光黄鞋带静止平铺于鞋面上",
+              "鞋带整体呈现均匀的之字形/交叉排列状态"
+            ],
+            "evidence_refs": [
+              "video@64750ms"
+            ],
+            "batch_index": 0,
+            "source_order": 1,
+            "source_frame_index": 5
+          }
+        ],
+        "tool_candidates": [],
+        "object_candidates": [
+          {
+            "name": "黑色帆布鞋",
+            "category": "被操作对象",
+            "evidence_refs": [
+              "video@54000ms",
+              "video@64750ms"
+            ],
+            "batch_index": 0,
+            "source_order": 0,
+            "source_frame_index": 0,
+            "timestamp_ms": 54000
+          },
+          {
+            "name": "荧光黄扁平鞋带",
+            "category": "被操作对象",
+            "evidence_refs": [
+              "video@54000ms",
+              "video@60450ms"
+            ],
+            "batch_index": 0,
+            "source_order": 1,
+            "source_frame_index": 5,
+            "timestamp_ms": 64750
+          }
+        ],
+        "action_candidates": [
+          {
+            "name": "捏持并微调鞋带",
+            "timestamp_ms": 56150,
+            "evidence_refs": [
+              "video@56150ms",
+              "video@56850ms"
+            ],
+            "batch_index": 0,
+            "source_order": 0,
+            "source_frame_index": 0
+          },
+          {
+            "name": "向两侧拉伸鞋带",
+            "timestamp_ms": 60450,
+            "evidence_refs": [
+              "video@60450ms",
+              "video@62600ms"
+            ],
+            "batch_index": 0,
+            "source_order": 1,
+            "source_frame_index": 2
+          },
+          {
+            "name": "松手撤离",
+            "timestamp_ms": 64750,
+            "evidence_refs": [
+              "video@64750ms"
+            ],
+            "batch_index": 0,
+            "source_order": 2,
+            "source_frame_index": 5
+          }
+        ],
+        "safety_requirements": [],
+        "segment_id": "5d690ca7053b45f195b295f1426af3fe:window:2",
+        "analysis_format": "timeline_batches_v1",
+        "batch_count": 1,
+        "batch_analyses": [
+          {
+            "batch_index": 0,
+            "batch_number": 1,
+            "frames": [
+              {
+                "image_order": 0,
+                "source_frame_index": 0,
+                "timestamp_ms": 54000
+              },
+              {
+                "image_order": 1,
+                "source_frame_index": 1,
+                "timestamp_ms": 56150
+              },
+              {
+                "image_order": 2,
+                "source_frame_index": 2,
+                "timestamp_ms": 56850
+              },
+              {
+                "image_order": 3,
+                "source_frame_index": 3,
+                "timestamp_ms": 60450
+              },
+              {
+                "image_order": 4,
+                "source_frame_index": 4,
+                "timestamp_ms": 62600
+              },
+              {
+                "image_order": 5,
+                "source_frame_index": 5,
+                "timestamp_ms": 64750
+              }
+            ],
+            "latency_ms": 14235,
+            "analysis": {
+              "step_candidates": [
+                {
+                  "name": "调整鞋带顶部交叉与张力",
+                  "timestamp_ms": 54000,
+                  "start_ms": 54000,
+                  "end_ms": 62600,
+                  "instruction": "双手捏住黑色帆布鞋最上方鞋带孔处的荧光黄鞋带，调整顶部交叉结构并拉紧两侧鞋带以均衡张力。",
+                  "completion_checks": [
+                    "鞋带在顶部鞋眼处形成平整的横向或交叉段落",
+                    "左右两侧延伸出的鞋带长度大致对称",
+                    "已穿好的下方鞋带段落保持整齐且无过度扭曲"
+                  ],
+                  "evidence_refs": [
+                    "video@54000ms",
+                    "video@56150ms",
+                    "video@56850ms",
+                    "video@60450ms",
+                    "video@62600ms"
+                  ]
+                },
+                {
+                  "name": "释放鞋带展示当前穿系状态",
+                  "timestamp_ms": 64750,
+                  "start_ms": 62600,
+                  "end_ms": 64900,
+                  "instruction": "松开双手离开鞋面，使鞋带自然平放，展示调整后的整体穿系效果。",
+                  "completion_checks": [
+                    "操作者双手完全离开鞋带与鞋面",
+                    "荧光黄鞋带静止平铺于鞋面上",
+                    "鞋带整体呈现均匀的之字形/交叉排列状态"
+                  ],
+                  "evidence_refs": [
+                    "video@64750ms"
+                  ]
+                }
+              ],
+              "tool_candidates": [],
+              "object_candidates": [
+                {
+                  "name": "黑色帆布鞋",
+                  "category": "被操作对象",
+                  "evidence_refs": [
+                    "video@54000ms",
+                    "video@64750ms"
+                  ]
+                },
+                {
+                  "name": "荧光黄扁平鞋带",
+                  "category": "被操作对象",
+                  "evidence_refs": [
+                    "video@54000ms",
+                    "video@60450ms"
+                  ]
+                }
+              ],
+              "action_candidates": [
+                {
+                  "name": "捏持并微调鞋带",
+                  "timestamp_ms": 56150,
+                  "evidence_refs": [
+                    "video@56150ms",
+                    "video@56850ms"
+                  ]
+                },
+                {
+                  "name": "向两侧拉伸鞋带",
+                  "timestamp_ms": 60450,
+                  "evidence_refs": [
+                    "video@60450ms",
+                    "video@62600ms"
+                  ]
+                },
+                {
+                  "name": "松手撤离",
+                  "timestamp_ms": 64750,
+                  "evidence_refs": [
+                    "video@64750ms"
+                  ]
+                }
+              ],
+              "safety_requirements": []
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "source_asset_id": "5d690ca7053b45f195b295f1426af3fe",
+  "duration_ms": 64900,
+  "transcript_status": "disabled_visual_only",
+  "coverage": [
+    {
+      "start_ms": 0,
+      "end_ms": 30000
+    },
+    {
+      "start_ms": 27000,
+      "end_ms": 57000
+    },
+    {
+      "start_ms": 54000,
+      "end_ms": 64900
+    }
+  ],
+  "reference_timeline": [
+    {
+      "frame_index": 0,
+      "timestamp_ms": 0
+    },
+    {
+      "frame_index": 1,
+      "timestamp_ms": 5970
+    },
+    {
+      "frame_index": 2,
+      "timestamp_ms": 11940
+    },
+    {
+      "frame_index": 3,
+      "timestamp_ms": 17910
+    },
+    {
+      "frame_index": 4,
+      "timestamp_ms": 23880
+    },
+    {
+      "frame_index": 5,
+      "timestamp_ms": 27000
+    },
+    {
+      "frame_index": 6,
+      "timestamp_ms": 29850
+    },
+    {
+      "frame_index": 7,
+      "timestamp_ms": 32970
+    },
+    {
+      "frame_index": 8,
+      "timestamp_ms": 38940
+    },
+    {
+      "frame_index": 9,
+      "timestamp_ms": 44910
+    },
+    {
+      "frame_index": 10,
+      "timestamp_ms": 50880
+    },
+    {
+      "frame_index": 11,
+      "timestamp_ms": 54000
+    },
+    {
+      "frame_index": 12,
+      "timestamp_ms": 56150
+    },
+    {
+      "frame_index": 13,
+      "timestamp_ms": 56850
+    },
+    {
+      "frame_index": 14,
+      "timestamp_ms": 58300
+    },
+    {
+      "frame_index": 15,
+      "timestamp_ms": 60450
+    },
+    {
+      "frame_index": 16,
+      "timestamp_ms": 62600
+    },
+    {
+      "frame_index": 17,
+      "timestamp_ms": 64750
+    }
+  ]
+}

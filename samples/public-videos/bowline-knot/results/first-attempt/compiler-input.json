@@ -1,0 +1,3717 @@
+{
+  "analysis_format": "teaching_windows_v1",
+  "window_analyses": [
+    {
+      "start_ms": 0,
+      "end_ms": 30000,
+      "analysis": {
+        "step_candidates": [
+          {
+            "name": "手持绳圈进行讲解示范",
+            "timestamp_ms": 0,
+            "evidence_refs": [
+              "video@0ms",
+              "video@5970ms",
+              "video@11940ms",
+              "video@23880ms",
+              "video@27000ms",
+              "video@29850ms"
+            ],
+            "start_ms": 0,
+            "end_ms": 29850,
+            "instruction": "演示者蹲在甲板上，双手持握一个已成型的绳圈，面向镜头进行讲解或展示。",
+            "completion_checks": [
+              "演示者保持蹲姿",
+              "双手稳定持握绳圈",
+              "绳圈形状在本窗口内保持完整可见"
+            ],
+            "notes": "本窗口内动作幅度较小，主要为静态持握与讲解姿态，未观察到明显的打结步骤变化或绳结完成动作。",
+            "batch_index": 0,
+            "source_order": 0,
+            "source_frame_index": 0
+          }
+        ],
+        "tool_candidates": [
+          {
+            "name": "绳索",
+            "evidence_refs": [
+              "video@0ms",
+              "video@29850ms"
+            ],
+            "batch_index": 0,
+            "source_order": 0,
+            "source_frame_index": 0,
+            "timestamp_ms": 0
+          }
+        ],
+        "object_candidates": [
+          {
+            "name": "船锚",
+            "evidence_refs": [
+              "video@0ms"
+            ],
+            "batch_index": 0,
+            "source_order": 0,
+            "source_frame_index": 0,
+            "timestamp_ms": 0
+          },
+          {
+            "name": "木质甲板/结构",
+            "evidence_refs": [
+              "video@0ms"
+            ],
+            "batch_index": 0,
+            "source_order": 1,
+            "source_frame_index": 2,
+            "timestamp_ms": 11940
+          },
+          {
+            "name": "白色栏杆",
+            "evidence_refs": [
+              "video@0ms"
+            ],
+            "batch_index": 0,
+            "source_order": 2,
+            "source_frame_index": 5,
+            "timestamp_ms": 29850
+          }
+        ],
+        "action_candidates": [
+          {
+            "name": "蹲姿持物",
+            "evidence_refs": [
+              "video@0ms",
+              "video@29850ms"
+            ],
+            "batch_index": 0,
+            "source_order": 0,
+            "source_frame_index": 0,
+            "timestamp_ms": 0
+          },
+          {
+            "name": "面向镜头讲解",
+            "evidence_refs": [
+              "video@5970ms",
+              "video@11940ms"
+            ],
+            "batch_index": 0,
+            "source_order": 1,
+            "source_frame_index": 5,
+            "timestamp_ms": 29850
+          }
+        ],
+        "safety_requirements": [],
+        "segment_id": "80e504c539c942348f17ec8677da417b:window:0",
+        "analysis_format": "timeline_batches_v1",
+        "batch_count": 1,
+        "batch_analyses": [
+          {
+            "batch_index": 0,
+            "batch_number": 1,
+            "frames": [
+              {
+                "image_order": 0,
+                "source_frame_index": 0,
+                "timestamp_ms": 0
+              },
+              {
+                "image_order": 1,
+                "source_frame_index": 1,
+                "timestamp_ms": 5970
+              },
+              {
+                "image_order": 2,
+                "source_frame_index": 2,
+                "timestamp_ms": 11940
+              },
+              {
+                "image_order": 3,
+                "source_frame_index": 3,
+                "timestamp_ms": 23880
+              },
+              {
+                "image_order": 4,
+                "source_frame_index": 4,
+                "timestamp_ms": 27000
+              },
+              {
+                "image_order": 5,
+                "source_frame_index": 5,
+                "timestamp_ms": 29850
+              }
+            ],
+            "latency_ms": 13619,
+            "analysis": {
+              "step_candidates": [
+                {
+                  "name": "手持绳圈进行讲解示范",
+                  "timestamp_ms": 0,
+                  "evidence_refs": [
+                    "video@0ms",
+                    "video@5970ms",
+                    "video@11940ms",
+                    "video@23880ms",
+                    "video@27000ms",
+                    "video@29850ms"
+                  ],
+                  "start_ms": 0,
+                  "end_ms": 29850,
+                  "instruction": "演示者蹲在甲板上，双手持握一个已成型的绳圈，面向镜头进行讲解或展示。",
+                  "completion_checks": [
+                    "演示者保持蹲姿",
+                    "双手稳定持握绳圈",
+                    "绳圈形状在本窗口内保持完整可见"
+                  ],
+                  "notes": "本窗口内动作幅度较小，主要为静态持握与讲解姿态，未观察到明显的打结步骤变化或绳结完成动作。"
+                }
+              ],
+              "tool_candidates": [
+                {
+                  "name": "绳索",
+                  "evidence_refs": [
+                    "video@0ms",
+                    "video@29850ms"
+                  ]
+                }
+              ],
+              "object_candidates": [
+                {
+                  "name": "船锚",
+                  "evidence_refs": [
+                    "video@0ms"
+                  ]
+                },
+                {
+                  "name": "木质甲板/结构",
+                  "evidence_refs": [
+                    "video@0ms"
+                  ]
+                },
+                {
+                  "name": "白色栏杆",
+                  "evidence_refs": [
+                    "video@0ms"
+                  ]
+                }
+              ],
+              "action_candidates": [
+                {
+                  "name": "蹲姿持物",
+                  "evidence_refs": [
+                    "video@0ms",
+                    "video@29850ms"
+                  ]
+                },
+                {
+                  "name": "面向镜头讲解",
+                  "evidence_refs": [
+                    "video@5970ms",
+                    "video@11940ms"
+                  ]
+                }
+              ],
+              "safety_requirements": []
+            }
+          }
+        ]
+      }
+    },
+    {
+      "start_ms": 27000,
+      "end_ms": 57000,
+      "analysis": {
+        "step_candidates": [
+          {
+            "name": "演示绳结打法",
+            "timestamp_ms": 27000,
+            "evidence_refs": [
+              "video@27000ms",
+              "video@29850ms",
+              "video@38940ms",
+              "video@44910ms",
+              "video@54000ms",
+              "video@56850ms"
+            ],
+            "start_ms": 27000,
+            "end_ms": 56850,
+            "instruction": "在船头甲板处，双手持绳索进行打结操作示范。",
+            "completion_checks": [
+              "绳索在手中形成特定的结扣结构",
+              "演示者保持蹲姿或坐姿稳定操作"
+            ],
+            "batch_index": 0,
+            "source_order": 0,
+            "source_frame_index": 0
+          }
+        ],
+        "tool_candidates": [
+          {
+            "name": "绳索",
+            "timestamp_ms": 27000,
+            "evidence_refs": [
+              "video@27000ms"
+            ],
+            "batch_index": 0,
+            "source_order": 0,
+            "source_frame_index": 0
+          }
+        ],
+        "object_candidates": [
+          {
+            "name": "船锚",
+            "timestamp_ms": 27000,
+            "evidence_refs": [
+              "video@27000ms"
+            ],
+            "batch_index": 0,
+            "source_order": 0,
+            "source_frame_index": 0
+          },
+          {
+            "name": "木质甲板/船头结构",
+            "timestamp_ms": 27000,
+            "evidence_refs": [
+              "video@27000ms"
+            ],
+            "batch_index": 0,
+            "source_order": 1,
+            "source_frame_index": 2
+          },
+          {
+            "name": "白色栏杆",
+            "timestamp_ms": 27000,
+            "evidence_refs": [
+              "video@27000ms"
+            ],
+            "batch_index": 0,
+            "source_order": 2,
+            "source_frame_index": 5
+          }
+        ],
+        "action_candidates": [
+          {
+            "name": "手持绳索打结",
+            "timestamp_ms": 27000,
+            "evidence_refs": [
+              "video@27000ms",
+              "video@38940ms",
+              "video@54000ms"
+            ],
+            "batch_index": 0,
+            "source_order": 0,
+            "source_frame_index": 0
+          },
+          {
+            "name": "调整绳圈形状",
+            "timestamp_ms": 44910,
+            "evidence_refs": [
+              "video@44910ms",
+              "video@56850ms"
+            ],
+            "batch_index": 0,
+            "source_order": 1,
+            "source_frame_index": 5
+          }
+        ],
+        "safety_requirements": [],
+        "segment_id": "80e504c539c942348f17ec8677da417b:window:1",
+        "analysis_format": "timeline_batches_v1",
+        "batch_count": 1,
+        "batch_analyses": [
+          {
+            "batch_index": 0,
+            "batch_number": 1,
+            "frames": [
+              {
+                "image_order": 0,
+                "source_frame_index": 0,
+                "timestamp_ms": 27000
+              },
+              {
+                "image_order": 1,
+                "source_frame_index": 1,
+                "timestamp_ms": 29850
+              },
+              {
+                "image_order": 2,
+                "source_frame_index": 2,
+                "timestamp_ms": 38940
+              },
+              {
+                "image_order": 3,
+                "source_frame_index": 3,
+                "timestamp_ms": 44910
+              },
+              {
+                "image_order": 4,
+                "source_frame_index": 4,
+                "timestamp_ms": 54000
+              },
+              {
+                "image_order": 5,
+                "source_frame_index": 5,
+                "timestamp_ms": 56850
+              }
+            ],
+            "latency_ms": 11376,
+            "analysis": {
+              "step_candidates": [
+                {
+                  "name": "演示绳结打法",
+                  "timestamp_ms": 27000,
+                  "evidence_refs": [
+                    "video@27000ms",
+                    "video@29850ms",
+                    "video@38940ms",
+                    "video@44910ms",
+                    "video@54000ms",
+                    "video@56850ms"
+                  ],
+                  "start_ms": 27000,
+                  "end_ms": 56850,
+                  "instruction": "在船头甲板处，双手持绳索进行打结操作示范。",
+                  "completion_checks": [
+                    "绳索在手中形成特定的结扣结构",
+                    "演示者保持蹲姿或坐姿稳定操作"
+                  ]
+                }
+              ],
+              "tool_candidates": [
+                {
+                  "name": "绳索",
+                  "timestamp_ms": 27000,
+                  "evidence_refs": [
+                    "video@27000ms"
+                  ]
+                }
+              ],
+              "object_candidates": [
+                {
+                  "name": "船锚",
+                  "timestamp_ms": 27000,
+                  "evidence_refs": [
+                    "video@27000ms"
+                  ]
+                },
+                {
+                  "name": "木质甲板/船头结构",
+                  "timestamp_ms": 27000,
+                  "evidence_refs": [
+                    "video@27000ms"
+                  ]
+                },
+                {
+                  "name": "白色栏杆",
+                  "timestamp_ms": 27000,
+                  "evidence_refs": [
+                    "video@27000ms"
+                  ]
+                }
+              ],
+              "action_candidates": [
+                {
+                  "name": "手持绳索打结",
+                  "timestamp_ms": 27000,
+                  "evidence_refs": [
+                    "video@27000ms",
+                    "video@38940ms",
+                    "video@54000ms"
+                  ]
+                },
+                {
+                  "name": "调整绳圈形状",
+                  "timestamp_ms": 44910,
+                  "evidence_refs": [
+                    "video@44910ms",
+                    "video@56850ms"
+                  ]
+                }
+              ],
+              "safety_requirements": []
+            }
+          }
+        ]
+      }
+    },
+    {
+      "start_ms": 54000,
+      "end_ms": 84000,
+      "analysis": {
+        "step_candidates": [
+          {
+            "name": "演示绳结打法",
+            "timestamp_ms": 54000,
+            "evidence_refs": [
+              "video@54000ms",
+              "video@56850ms"
+            ],
+            "start_ms": 54000,
+            "end_ms": 56850,
+            "instruction": "双手配合将绳索交叉缠绕，形成绳结的初始结构。",
+            "completion_checks": [
+              "绳索在手中形成明显的交叉或环状结构",
+              "双手紧握绳结部位"
+            ],
+            "batch_index": 0,
+            "source_order": 0,
+            "source_frame_index": 0
+          },
+          {
+            "name": "展示绳结形态",
+            "timestamp_ms": 65940,
+            "evidence_refs": [
+              "video@65940ms"
+            ],
+            "start_ms": 65940,
+            "end_ms": 71910,
+            "instruction": "单手提起已打好的绳结部分，向镜头展示其形状，另一只手自然下垂或辅助。",
+            "completion_checks": [
+              "绳结悬空展示",
+              "绳圈结构清晰可见"
+            ],
+            "batch_index": 0,
+            "source_order": 1,
+            "source_frame_index": 2
+          },
+          {
+            "name": "拉直绳索",
+            "timestamp_ms": 71910,
+            "evidence_refs": [
+              "video@71910ms",
+              "video@81000ms",
+              "video@83850ms"
+            ],
+            "start_ms": 71910,
+            "end_ms": 83850,
+            "instruction": "双手分别握住绳索两端，向两侧用力拉直绳索，使绳结解开或绳索呈直线状态。",
+            "completion_checks": [
+              "绳索在两手之间呈紧绷直线状态",
+              "之前的绳结结构消失或变平"
+            ],
+            "batch_index": 0,
+            "source_order": 2,
+            "source_frame_index": 5
+          }
+        ],
+        "tool_candidates": [
+          {
+            "name": "绳索",
+            "description": "一根粗麻绳或类似材质的绳子，用于演示打结。",
+            "batch_index": 0,
+            "source_order": 0,
+            "source_frame_index": 0,
+            "timestamp_ms": 54000
+          }
+        ],
+        "object_candidates": [
+          {
+            "name": "船锚",
+            "description": "位于画面右侧的大型黑色金属锚，作为背景固定物体。",
+            "batch_index": 0,
+            "source_order": 0,
+            "source_frame_index": 0,
+            "timestamp_ms": 54000
+          },
+          {
+            "name": "栏杆",
+            "description": "白色的金属护栏，横贯画面中部。",
+            "batch_index": 0,
+            "source_order": 1,
+            "source_frame_index": 2,
+            "timestamp_ms": 65940
+          },
+          {
+            "name": "木质甲板/结构",
+            "description": "人物坐着的棕色木质表面。",
+            "batch_index": 0,
+            "source_order": 2,
+            "source_frame_index": 5,
+            "timestamp_ms": 83850
+          }
+        ],
+        "action_candidates": [
+          {
+            "name": "打结",
+            "description": "双手操作绳索形成结扣的动作。",
+            "batch_index": 0,
+            "source_order": 0,
+            "source_frame_index": 0,
+            "timestamp_ms": 54000
+          },
+          {
+            "name": "展示",
+            "description": "将手中的物体面向镜头呈现的动作。",
+            "batch_index": 0,
+            "source_order": 1,
+            "source_frame_index": 2,
+            "timestamp_ms": 65940
+          },
+          {
+            "name": "拉紧",
+            "description": "双手向相反方向用力使绳索绷直的动作。",
+            "batch_index": 0,
+            "source_order": 2,
+            "source_frame_index": 5,
+            "timestamp_ms": 83850
+          }
+        ],
+        "safety_requirements": [
+          "注意绳索回弹风险，拉紧时保持控制",
+          "在船只甲板上操作需注意脚下防滑"
+        ],
+        "segment_id": "80e504c539c942348f17ec8677da417b:window:2",
+        "analysis_format": "timeline_batches_v1",
+        "batch_count": 1,
+        "batch_analyses": [
+          {
+            "batch_index": 0,
+            "batch_number": 1,
+            "frames": [
+              {
+                "image_order": 0,
+                "source_frame_index": 0,
+                "timestamp_ms": 54000
+              },
+              {
+                "image_order": 1,
+                "source_frame_index": 1,
+                "timestamp_ms": 56850
+              },
+              {
+                "image_order": 2,
+                "source_frame_index": 2,
+                "timestamp_ms": 65940
+              },
+              {
+                "image_order": 3,
+                "source_frame_index": 3,
+                "timestamp_ms": 71910
+              },
+              {
+                "image_order": 4,
+                "source_frame_index": 4,
+                "timestamp_ms": 81000
+              },
+              {
+                "image_order": 5,
+                "source_frame_index": 5,
+                "timestamp_ms": 83850
+              }
+            ],
+            "latency_ms": 16560,
+            "analysis": {
+              "step_candidates": [
+                {
+                  "name": "演示绳结打法",
+                  "timestamp_ms": 54000,
+                  "evidence_refs": [
+                    "video@54000ms",
+                    "video@56850ms"
+                  ],
+                  "start_ms": 54000,
+                  "end_ms": 56850,
+                  "instruction": "双手配合将绳索交叉缠绕，形成绳结的初始结构。",
+                  "completion_checks": [
+                    "绳索在手中形成明显的交叉或环状结构",
+                    "双手紧握绳结部位"
+                  ]
+                },
+                {
+                  "name": "展示绳结形态",
+                  "timestamp_ms": 65940,
+                  "evidence_refs": [
+                    "video@65940ms"
+                  ],
+                  "start_ms": 65940,
+                  "end_ms": 71910,
+                  "instruction": "单手提起已打好的绳结部分，向镜头展示其形状，另一只手自然下垂或辅助。",
+                  "completion_checks": [
+                    "绳结悬空展示",
+                    "绳圈结构清晰可见"
+                  ]
+                },
+                {
+                  "name": "拉直绳索",
+                  "timestamp_ms": 71910,
+                  "evidence_refs": [
+                    "video@71910ms",
+                    "video@81000ms",
+                    "video@83850ms"
+                  ],
+                  "start_ms": 71910,
+                  "end_ms": 83850,
+                  "instruction": "双手分别握住绳索两端，向两侧用力拉直绳索，使绳结解开或绳索呈直线状态。",
+                  "completion_checks": [
+                    "绳索在两手之间呈紧绷直线状态",
+                    "之前的绳结结构消失或变平"
+                  ]
+                }
+              ],
+              "tool_candidates": [
+                {
+                  "name": "绳索",
+                  "description": "一根粗麻绳或类似材质的绳子，用于演示打结。"
+                }
+              ],
+              "object_candidates": [
+                {
+                  "name": "船锚",
+                  "description": "位于画面右侧的大型黑色金属锚，作为背景固定物体。"
+                },
+                {
+                  "name": "栏杆",
+                  "description": "白色的金属护栏，横贯画面中部。"
+                },
+                {
+                  "name": "木质甲板/结构",
+                  "description": "人物坐着的棕色木质表面。"
+                }
+              ],
+              "action_candidates": [
+                {
+                  "name": "打结",
+                  "description": "双手操作绳索形成结扣的动作。"
+                },
+                {
+                  "name": "展示",
+                  "description": "将手中的物体面向镜头呈现的动作。"
+                },
+                {
+                  "name": "拉紧",
+                  "description": "双手向相反方向用力使绳索绷直的动作。"
+                }
+              ],
+              "safety_requirements": [
+                "注意绳索回弹风险，拉紧时保持控制",
+                "在船只甲板上操作需注意脚下防滑"
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "start_ms": 81000,
+      "end_ms": 111000,
+      "analysis": {
+        "step_candidates": [
+          {
+            "name": "演示绳索握持与拉紧动作",
+            "timestamp_ms": 81000,
+            "evidence_refs": [
+              "video@81000ms",
+              "video@83850ms",
+              "video@92940ms",
+              "video@98910ms",
+              "video@108000ms",
+              "video@110850ms"
+            ],
+            "start_ms": 81000,
+            "end_ms": 110850,
+            "instruction": "讲解员在船头甲板处，双手分别握住绳索两端，向两侧水平拉直绳索进行展示，随后略微放松绳索使其自然下垂，全程保持半蹲姿态面向镜头讲解。",
+            "completion_checks": [
+              "确认讲解员双手是否稳定握持绳索两端",
+              "确认绳索是否被拉直展示或呈现自然松弛状态",
+              "确认讲解员是否保持面向镜头的讲解姿态"
+            ],
+            "batch_index": 0,
+            "source_order": 0,
+            "source_frame_index": 0
+          }
+        ],
+        "tool_candidates": [
+          {
+            "name": "绳索",
+            "timestamp_ms": 81000,
+            "evidence_refs": [
+              "video@81000ms"
+            ],
+            "batch_index": 0,
+            "source_order": 0,
+            "source_frame_index": 0
+          }
+        ],
+        "object_candidates": [
+          {
+            "name": "船锚",
+            "timestamp_ms": 81000,
+            "evidence_refs": [
+              "video@81000ms"
+            ],
+            "batch_index": 0,
+            "source_order": 0,
+            "source_frame_index": 0
+          },
+          {
+            "name": "木质甲板/船头结构",
+            "timestamp_ms": 81000,
+            "evidence_refs": [
+              "video@81000ms"
+            ],
+            "batch_index": 0,
+            "source_order": 1,
+            "source_frame_index": 2
+          },
+          {
+            "name": "白色栏杆",
+            "timestamp_ms": 81000,
+            "evidence_refs": [
+              "video@81000ms"
+            ],
+            "batch_index": 0,
+            "source_order": 2,
+            "source_frame_index": 5
+          }
+        ],
+        "action_candidates": [
+          {
+            "name": "半蹲讲解",
+            "timestamp_ms": 81000,
+            "evidence_refs": [
+              "video@81000ms",
+              "video@108000ms"
+            ],
+            "batch_index": 0,
+            "source_order": 2,
+            "source_frame_index": 5
+          },
+          {
+            "name": "拉直绳索",
+            "timestamp_ms": 83850,
+            "evidence_refs": [
+              "video@83850ms",
+              "video@92940ms",
+              "video@98910ms"
+            ],
+            "batch_index": 0,
+            "source_order": 0,
+            "source_frame_index": 0
+          },
+          {
+            "name": "放松绳索",
+            "timestamp_ms": 110850,
+            "evidence_refs": [
+              "video@110850ms"
+            ],
+            "batch_index": 0,
+            "source_order": 1,
+            "source_frame_index": 2
+          }
+        ],
+        "safety_requirements": [
+          "在船只甲板边缘操作时需保持身体平衡，防止跌落水中",
+          "注意脚下甲板湿滑或障碍物，避免绊倒"
+        ],
+        "segment_id": "80e504c539c942348f17ec8677da417b:window:3",
+        "analysis_format": "timeline_batches_v1",
+        "batch_count": 1,
+        "batch_analyses": [
+          {
+            "batch_index": 0,
+            "batch_number": 1,
+            "frames": [
+              {
+                "image_order": 0,
+                "source_frame_index": 0,
+                "timestamp_ms": 81000
+              },
+              {
+                "image_order": 1,
+                "source_frame_index": 1,
+                "timestamp_ms": 83850
+              },
+              {
+                "image_order": 2,
+                "source_frame_index": 2,
+                "timestamp_ms": 92940
+              },
+              {
+                "image_order": 3,
+                "source_frame_index": 3,
+                "timestamp_ms": 98910
+              },
+              {
+                "image_order": 4,
+                "source_frame_index": 4,
+                "timestamp_ms": 108000
+              },
+              {
+                "image_order": 5,
+                "source_frame_index": 5,
+                "timestamp_ms": 110850
+              }
+            ],
+            "latency_ms": 16355,
+            "analysis": {
+              "step_candidates": [
+                {
+                  "name": "演示绳索握持与拉紧动作",
+                  "timestamp_ms": 81000,
+                  "evidence_refs": [
+                    "video@81000ms",
+                    "video@83850ms",
+                    "video@92940ms",
+                    "video@98910ms",
+                    "video@108000ms",
+                    "video@110850ms"
+                  ],
+                  "start_ms": 81000,
+                  "end_ms": 110850,
+                  "instruction": "讲解员在船头甲板处，双手分别握住绳索两端，向两侧水平拉直绳索进行展示，随后略微放松绳索使其自然下垂，全程保持半蹲姿态面向镜头讲解。",
+                  "completion_checks": [
+                    "确认讲解员双手是否稳定握持绳索两端",
+                    "确认绳索是否被拉直展示或呈现自然松弛状态",
+                    "确认讲解员是否保持面向镜头的讲解姿态"
+                  ]
+                }
+              ],
+              "tool_candidates": [
+                {
+                  "name": "绳索",
+                  "timestamp_ms": 81000,
+                  "evidence_refs": [
+                    "video@81000ms"
+                  ]
+                }
+              ],
+              "object_candidates": [
+                {
+                  "name": "船锚",
+                  "timestamp_ms": 81000,
+                  "evidence_refs": [
+                    "video@81000ms"
+                  ]
+                },
+                {
+                  "name": "木质甲板/船头结构",
+                  "timestamp_ms": 81000,
+                  "evidence_refs": [
+                    "video@81000ms"
+                  ]
+                },
+                {
+                  "name": "白色栏杆",
+                  "timestamp_ms": 81000,
+                  "evidence_refs": [
+                    "video@81000ms"
+                  ]
+                }
+              ],
+              "action_candidates": [
+                {
+                  "name": "拉直绳索",
+                  "timestamp_ms": 83850,
+                  "evidence_refs": [
+                    "video@83850ms",
+                    "video@92940ms",
+                    "video@98910ms"
+                  ]
+                },
+                {
+                  "name": "放松绳索",
+                  "timestamp_ms": 110850,
+                  "evidence_refs": [
+                    "video@110850ms"
+                  ]
+                },
+                {
+                  "name": "半蹲讲解",
+                  "timestamp_ms": 81000,
+                  "evidence_refs": [
+                    "video@81000ms",
+                    "video@108000ms"
+                  ]
+                }
+              ],
+              "safety_requirements": [
+                "在船只甲板边缘操作时需保持身体平衡，防止跌落水中",
+                "注意脚下甲板湿滑或障碍物，避免绊倒"
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "start_ms": 108000,
+      "end_ms": 138000,
+      "analysis": {
+        "step_candidates": [
+          {
+            "name": "演示绳索操作起始动作",
+            "timestamp_ms": 108000,
+            "evidence_refs": [
+              "video@108000ms",
+              "video@110850ms"
+            ],
+            "start_ms": 108000,
+            "end_ms": 119940,
+            "instruction": "讲解员双手持绳，左手固定绳端于木质结构旁，右手拉直绳身进行展示。",
+            "completion_checks": [
+              "绳索被拉直并展示给镜头",
+              "左手保持绳端位置稳定"
+            ],
+            "batch_index": 0,
+            "source_order": 0,
+            "source_frame_index": 0
+          },
+          {
+            "name": "调整绳索形态与手势讲解",
+            "timestamp_ms": 119940,
+            "evidence_refs": [
+              "video@119940ms",
+              "video@125910ms"
+            ],
+            "start_ms": 119940,
+            "end_ms": 135000,
+            "instruction": "讲解员保持左手位置，右手微调绳索张力，配合口型进行讲解，绳索呈现自然下垂弧度。",
+            "completion_checks": [
+              "绳索形态从拉直变为微弧",
+              "讲解员视线面向镜头"
+            ],
+            "batch_index": 0,
+            "source_order": 1,
+            "source_frame_index": 2
+          },
+          {
+            "name": "双手收拢绳索准备打结",
+            "timestamp_ms": 135000,
+            "evidence_refs": [
+              "video@135000ms",
+              "video@137850ms"
+            ],
+            "start_ms": 135000,
+            "end_ms": 138000,
+            "instruction": "讲解员将双手收拢至胸前，共同握住绳索中段，似乎准备进行下一步的打结或缠绕操作。",
+            "completion_checks": [
+              "双手在胸前汇合握住绳索",
+              "绳索下端形成环状或垂落"
+            ],
+            "batch_index": 0,
+            "source_order": 2,
+            "source_frame_index": 5
+          }
+        ],
+        "tool_candidates": [
+          {
+            "name": "绳索",
+            "description": "一根粗麻绳或合成纤维绳，用于演示航海结绳技术。",
+            "batch_index": 0,
+            "source_order": 0,
+            "source_frame_index": 0,
+            "timestamp_ms": 108000
+          },
+          {
+            "name": "木质船舷/系缆桩基座",
+            "description": "讲解员身旁的木质结构，用于辅助固定或作为操作背景。",
+            "batch_index": 0,
+            "source_order": 1,
+            "source_frame_index": 5,
+            "timestamp_ms": 137850
+          }
+        ],
+        "object_candidates": [
+          {
+            "name": "讲解员",
+            "description": "身穿深绿色制服、头戴宽檐帽的男性，正在进行现场教学演示。",
+            "batch_index": 0,
+            "source_order": 0,
+            "source_frame_index": 0,
+            "timestamp_ms": 108000
+          },
+          {
+            "name": "黑色锚状物",
+            "description": "位于画面右侧的大型黑色金属物体，可能是船锚的一部分或装饰性系缆桩。",
+            "batch_index": 0,
+            "source_order": 1,
+            "source_frame_index": 2,
+            "timestamp_ms": 119940
+          },
+          {
+            "name": "白色栏杆",
+            "description": "背景中的白色金属护栏，界定甲板边缘。",
+            "batch_index": 0,
+            "source_order": 2,
+            "source_frame_index": 3,
+            "timestamp_ms": 125910
+          },
+          {
+            "name": "城市天际线",
+            "description": "背景远处的建筑物群，表明船只停靠在港口或近岸水域。",
+            "batch_index": 0,
+            "source_order": 3,
+            "source_frame_index": 5,
+            "timestamp_ms": 137850
+          }
+        ],
+        "action_candidates": [
+          {
+            "name": "持绳展示",
+            "description": "双手分开握住绳索两端或特定部位，向观众展示绳索状态。",
+            "batch_index": 0,
+            "source_order": 0,
+            "source_frame_index": 0,
+            "timestamp_ms": 108000
+          },
+          {
+            "name": "口头讲解",
+            "description": "讲解员面部朝向镜头，嘴部动作明显，配合手势进行说明。",
+            "batch_index": 0,
+            "source_order": 1,
+            "source_frame_index": 2,
+            "timestamp_ms": 119940
+          },
+          {
+            "name": "收拢绳索",
+            "description": "将原本展开的绳索部分收回手中，集中操作区域。",
+            "batch_index": 0,
+            "source_order": 2,
+            "source_frame_index": 5,
+            "timestamp_ms": 137850
+          }
+        ],
+        "safety_requirements": [
+          {
+            "requirement": "甲板作业防滑",
+            "description": "在船只甲板上进行操作时，需注意脚下防滑，避免因船只晃动导致摔倒。"
+          },
+          {
+            "requirement": "绳索操作规范",
+            "description": "处理粗绳索时应注意手指安全，避免被绳索摩擦受伤或夹伤。"
+          }
+        ],
+        "segment_id": "80e504c539c942348f17ec8677da417b:window:4",
+        "analysis_format": "timeline_batches_v1",
+        "batch_count": 1,
+        "batch_analyses": [
+          {
+            "batch_index": 0,
+            "batch_number": 1,
+            "frames": [
+              {
+                "image_order": 0,
+                "source_frame_index": 0,
+                "timestamp_ms": 108000
+              },
+              {
+                "image_order": 1,
+                "source_frame_index": 1,
+                "timestamp_ms": 110850
+              },
+              {
+                "image_order": 2,
+                "source_frame_index": 2,
+                "timestamp_ms": 119940
+              },
+              {
+                "image_order": 3,
+                "source_frame_index": 3,
+                "timestamp_ms": 125910
+              },
+              {
+                "image_order": 4,
+                "source_frame_index": 4,
+                "timestamp_ms": 135000
+              },
+              {
+                "image_order": 5,
+                "source_frame_index": 5,
+                "timestamp_ms": 137850
+              }
+            ],
+            "latency_ms": 22199,
+            "analysis": {
+              "step_candidates": [
+                {
+                  "name": "演示绳索操作起始动作",
+                  "timestamp_ms": 108000,
+                  "evidence_refs": [
+                    "video@108000ms",
+                    "video@110850ms"
+                  ],
+                  "start_ms": 108000,
+                  "end_ms": 119940,
+                  "instruction": "讲解员双手持绳，左手固定绳端于木质结构旁，右手拉直绳身进行展示。",
+                  "completion_checks": [
+                    "绳索被拉直并展示给镜头",
+                    "左手保持绳端位置稳定"
+                  ]
+                },
+                {
+                  "name": "调整绳索形态与手势讲解",
+                  "timestamp_ms": 119940,
+                  "evidence_refs": [
+                    "video@119940ms",
+                    "video@125910ms"
+                  ],
+                  "start_ms": 119940,
+                  "end_ms": 135000,
+                  "instruction": "讲解员保持左手位置，右手微调绳索张力，配合口型进行讲解，绳索呈现自然下垂弧度。",
+                  "completion_checks": [
+                    "绳索形态从拉直变为微弧",
+                    "讲解员视线面向镜头"
+                  ]
+                },
+                {
+                  "name": "双手收拢绳索准备打结",
+                  "timestamp_ms": 135000,
+                  "evidence_refs": [
+                    "video@135000ms",
+                    "video@137850ms"
+                  ],
+                  "start_ms": 135000,
+                  "end_ms": 138000,
+                  "instruction": "讲解员将双手收拢至胸前，共同握住绳索中段，似乎准备进行下一步的打结或缠绕操作。",
+                  "completion_checks": [
+                    "双手在胸前汇合握住绳索",
+                    "绳索下端形成环状或垂落"
+                  ]
+                }
+              ],
+              "tool_candidates": [
+                {
+                  "name": "绳索",
+                  "description": "一根粗麻绳或合成纤维绳，用于演示航海结绳技术。"
+                },
+                {
+                  "name": "木质船舷/系缆桩基座",
+                  "description": "讲解员身旁的木质结构，用于辅助固定或作为操作背景。"
+                }
+              ],
+              "object_candidates": [
+                {
+                  "name": "讲解员",
+                  "description": "身穿深绿色制服、头戴宽檐帽的男性，正在进行现场教学演示。"
+                },
+                {
+                  "name": "黑色锚状物",
+                  "description": "位于画面右侧的大型黑色金属物体，可能是船锚的一部分或装饰性系缆桩。"
+                },
+                {
+                  "name": "白色栏杆",
+                  "description": "背景中的白色金属护栏，界定甲板边缘。"
+                },
+                {
+                  "name": "城市天际线",
+                  "description": "背景远处的建筑物群，表明船只停靠在港口或近岸水域。"
+                }
+              ],
+              "action_candidates": [
+                {
+                  "name": "持绳展示",
+                  "description": "双手分开握住绳索两端或特定部位，向观众展示绳索状态。"
+                },
+                {
+                  "name": "口头讲解",
+                  "description": "讲解员面部朝向镜头，嘴部动作明显，配合手势进行说明。"
+                },
+                {
+                  "name": "收拢绳索",
+                  "description": "将原本展开的绳索部分收回手中，集中操作区域。"
+                }
+              ],
+              "safety_requirements": [
+                {
+                  "requirement": "甲板作业防滑",
+                  "description": "在船只甲板上进行操作时，需注意脚下防滑，避免因船只晃动导致摔倒。"
+                },
+                {
+                  "requirement": "绳索操作规范",
+                  "description": "处理粗绳索时应注意手指安全，避免被绳索摩擦受伤或夹伤。"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "start_ms": 135000,
+      "end_ms": 165000,
+      "analysis": {
+        "step_candidates": [
+          {
+            "name": "准备绳索并展示起始状态",
+            "timestamp_ms": 135000,
+            "evidence_refs": [
+              "video@135000ms",
+              "video@137850ms"
+            ],
+            "start_ms": 135000,
+            "end_ms": 140000,
+            "instruction": "演示者双手持绳，向镜头展示绳索的初始形态，准备开始打结教学。",
+            "completion_checks": [
+              "绳索已拿在手中",
+              "绳头清晰可见"
+            ],
+            "batch_index": 0,
+            "source_order": 0,
+            "source_frame_index": 0
+          },
+          {
+            "name": "形成绳圈并交叉",
+            "timestamp_ms": 146940,
+            "evidence_refs": [
+              "video@146940ms",
+              "video@152910ms"
+            ],
+            "start_ms": 145000,
+            "end_ms": 155000,
+            "instruction": "将绳索弯曲形成一个大绳圈，并将绳头部分与主绳进行交叉或重叠，构建结的基础结构。",
+            "completion_checks": [
+              "绳圈已形成",
+              "绳索出现交叉点"
+            ],
+            "batch_index": 0,
+            "source_order": 1,
+            "source_frame_index": 2
+          },
+          {
+            "name": "收紧并整理绳结",
+            "timestamp_ms": 162000,
+            "evidence_refs": [
+              "video@162000ms",
+              "video@164850ms"
+            ],
+            "start_ms": 160000,
+            "end_ms": 165000,
+            "instruction": "双手配合拉紧绳索两端，使绳圈收缩并固定形状，完成绳结的初步成型。",
+            "completion_checks": [
+              "绳结结构紧凑",
+              "绳索被拉紧"
+            ],
+            "batch_index": 0,
+            "source_order": 2,
+            "source_frame_index": 5
+          }
+        ],
+        "tool_candidates": [
+          {
+            "name": "绳索",
+            "description": "用于打结演示的粗麻绳或合成纤维绳，呈米黄色。",
+            "batch_index": 0,
+            "source_order": 0,
+            "source_frame_index": 0,
+            "timestamp_ms": 135000
+          }
+        ],
+        "object_candidates": [
+          {
+            "name": "演示者",
+            "description": "身穿深绿色制服、头戴宽檐帽的男性，正在进行绳结操作示范。",
+            "batch_index": 0,
+            "source_order": 0,
+            "source_frame_index": 0,
+            "timestamp_ms": 135000
+          },
+          {
+            "name": "船体甲板设施",
+            "description": "包括黑色的系缆桩、白色的栏杆以及橙色的甲板边缘结构。",
+            "batch_index": 0,
+            "source_order": 1,
+            "source_frame_index": 2,
+            "timestamp_ms": 146940
+          },
+          {
+            "name": "背景城市景观",
+            "description": "远处的 waterfront 城市建筑群、绿地及水面。",
+            "batch_index": 0,
+            "source_order": 2,
+            "source_frame_index": 5,
+            "timestamp_ms": 164850
+          }
+        ],
+        "action_candidates": [
+          {
+            "name": "手持绳索",
+            "description": "演示者双手握住绳索不同部位以控制张力。",
+            "batch_index": 0,
+            "source_order": 0,
+            "source_frame_index": 0,
+            "timestamp_ms": 135000
+          },
+          {
+            "name": "绕绳成圈",
+            "description": "通过手腕动作将直线状的绳索弯曲成环状。",
+            "batch_index": 0,
+            "source_order": 1,
+            "source_frame_index": 2,
+            "timestamp_ms": 146940
+          },
+          {
+            "name": "拉紧绳结",
+            "description": "向相反方向用力拉扯绳索两端以固定结形。",
+            "batch_index": 0,
+            "source_order": 2,
+            "source_frame_index": 3,
+            "timestamp_ms": 152910
+          },
+          {
+            "name": "面向镜头讲解",
+            "description": "演示者头部朝向镜头，嘴部有动作，推测正在同步解说步骤（基于视觉推断）。",
+            "batch_index": 0,
+            "source_order": 3,
+            "source_frame_index": 5,
+            "timestamp_ms": 164850
+          }
+        ],
+        "safety_requirements": [
+          "确保绳索操作时手指远离可能的夹挤点（如旁边的金属系缆桩）。",
+          "在船只甲板边缘操作时需注意保持身体平衡，防止因专注于手部动作而失去重心。"
+        ],
+        "segment_id": "80e504c539c942348f17ec8677da417b:window:5",
+        "analysis_format": "timeline_batches_v1",
+        "batch_count": 1,
+        "batch_analyses": [
+          {
+            "batch_index": 0,
+            "batch_number": 1,
+            "frames": [
+              {
+                "image_order": 0,
+                "source_frame_index": 0,
+                "timestamp_ms": 135000
+              },
+              {
+                "image_order": 1,
+                "source_frame_index": 1,
+                "timestamp_ms": 137850
+              },
+              {
+                "image_order": 2,
+                "source_frame_index": 2,
+                "timestamp_ms": 146940
+              },
+              {
+                "image_order": 3,
+                "source_frame_index": 3,
+                "timestamp_ms": 152910
+              },
+              {
+                "image_order": 4,
+                "source_frame_index": 4,
+                "timestamp_ms": 162000
+              },
+              {
+                "image_order": 5,
+                "source_frame_index": 5,
+                "timestamp_ms": 164850
+              }
+            ],
+            "latency_ms": 17119,
+            "analysis": {
+              "step_candidates": [
+                {
+                  "name": "准备绳索并展示起始状态",
+                  "timestamp_ms": 135000,
+                  "evidence_refs": [
+                    "video@135000ms",
+                    "video@137850ms"
+                  ],
+                  "start_ms": 135000,
+                  "end_ms": 140000,
+                  "instruction": "演示者双手持绳，向镜头展示绳索的初始形态，准备开始打结教学。",
+                  "completion_checks": [
+                    "绳索已拿在手中",
+                    "绳头清晰可见"
+                  ]
+                },
+                {
+                  "name": "形成绳圈并交叉",
+                  "timestamp_ms": 146940,
+                  "evidence_refs": [
+                    "video@146940ms",
+                    "video@152910ms"
+                  ],
+                  "start_ms": 145000,
+                  "end_ms": 155000,
+                  "instruction": "将绳索弯曲形成一个大绳圈，并将绳头部分与主绳进行交叉或重叠，构建结的基础结构。",
+                  "completion_checks": [
+                    "绳圈已形成",
+                    "绳索出现交叉点"
+                  ]
+                },
+                {
+                  "name": "收紧并整理绳结",
+                  "timestamp_ms": 162000,
+                  "evidence_refs": [
+                    "video@162000ms",
+                    "video@164850ms"
+                  ],
+                  "start_ms": 160000,
+                  "end_ms": 165000,
+                  "instruction": "双手配合拉紧绳索两端，使绳圈收缩并固定形状，完成绳结的初步成型。",
+                  "completion_checks": [
+                    "绳结结构紧凑",
+                    "绳索被拉紧"
+                  ]
+                }
+              ],
+              "tool_candidates": [
+                {
+                  "name": "绳索",
+                  "description": "用于打结演示的粗麻绳或合成纤维绳，呈米黄色。"
+                }
+              ],
+              "object_candidates": [
+                {
+                  "name": "演示者",
+                  "description": "身穿深绿色制服、头戴宽檐帽的男性，正在进行绳结操作示范。"
+                },
+                {
+                  "name": "船体甲板设施",
+                  "description": "包括黑色的系缆桩、白色的栏杆以及橙色的甲板边缘结构。"
+                },
+                {
+                  "name": "背景城市景观",
+                  "description": "远处的 waterfront 城市建筑群、绿地及水面。"
+                }
+              ],
+              "action_candidates": [
+                {
+                  "name": "手持绳索",
+                  "description": "演示者双手握住绳索不同部位以控制张力。"
+                },
+                {
+                  "name": "绕绳成圈",
+                  "description": "通过手腕动作将直线状的绳索弯曲成环状。"
+                },
+                {
+                  "name": "拉紧绳结",
+                  "description": "向相反方向用力拉扯绳索两端以固定结形。"
+                },
+                {
+                  "name": "面向镜头讲解",
+                  "description": "演示者头部朝向镜头，嘴部有动作，推测正在同步解说步骤（基于视觉推断）。"
+                }
+              ],
+              "safety_requirements": [
+                "确保绳索操作时手指远离可能的夹挤点（如旁边的金属系缆桩）。",
+                "在船只甲板边缘操作时需注意保持身体平衡，防止因专注于手部动作而失去重心。"
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "start_ms": 162000,
+      "end_ms": 192000,
+      "analysis": {
+        "step_candidates": [
+          {
+            "name": "演示绳结打法",
+            "timestamp_ms": 162000,
+            "evidence_refs": [
+              "video@162000ms",
+              "video@164850ms",
+              "video@173940ms",
+              "video@179910ms",
+              "video@189000ms",
+              "video@191850ms"
+            ],
+            "start_ms": 162000,
+            "end_ms": 191850,
+            "instruction": "护林员坐在船甲板上，双手持粗绳进行打结演示。在162000ms至173940ms期间，他双手配合将绳子绕成环状；在179910ms时，他调整手势，左手拉住绳圈上部，右手整理下方绳段；随后在189000ms至191850ms继续收紧和调整绳结形态。全程伴随口头讲解（无ASR文本）。",
+            "completion_checks": [
+              "手中持有绳索并形成明显的绳圈结构",
+              "双手持续进行穿插、拉紧等打结动作",
+              "绳结形态在窗口结束时仍未完全固定或展示最终完成态，处于演示过程中"
+            ],
+            "batch_index": 0,
+            "source_order": 0,
+            "source_frame_index": 0
+          }
+        ],
+        "tool_candidates": [
+          {
+            "name": "绳索",
+            "evidence_refs": [
+              "video@162000ms",
+              "video@191850ms"
+            ],
+            "batch_index": 0,
+            "source_order": 0,
+            "source_frame_index": 0,
+            "timestamp_ms": 162000
+          }
+        ],
+        "object_candidates": [
+          {
+            "name": "护林员/演示者",
+            "evidence_refs": [
+              "video@162000ms"
+            ],
+            "batch_index": 0,
+            "source_order": 0,
+            "source_frame_index": 0,
+            "timestamp_ms": 162000
+          },
+          {
+            "name": "船甲板/栏杆",
+            "evidence_refs": [
+              "video@162000ms"
+            ],
+            "batch_index": 0,
+            "source_order": 1,
+            "source_frame_index": 2,
+            "timestamp_ms": 173940
+          },
+          {
+            "name": "城市背景/水面",
+            "evidence_refs": [
+              "video@162000ms"
+            ],
+            "batch_index": 0,
+            "source_order": 2,
+            "source_frame_index": 5,
+            "timestamp_ms": 191850
+          }
+        ],
+        "action_candidates": [
+          {
+            "name": "手持绳索绕环",
+            "timestamp_ms": 162000,
+            "evidence_refs": [
+              "video@162000ms",
+              "video@164850ms"
+            ],
+            "batch_index": 0,
+            "source_order": 0,
+            "source_frame_index": 0
+          },
+          {
+            "name": "调整绳圈位置",
+            "timestamp_ms": 179910,
+            "evidence_refs": [
+              "video@179910ms"
+            ],
+            "batch_index": 0,
+            "source_order": 1,
+            "source_frame_index": 2
+          },
+          {
+            "name": "收紧绳结",
+            "timestamp_ms": 189000,
+            "evidence_refs": [
+              "video@189000ms",
+              "video@191850ms"
+            ],
+            "batch_index": 0,
+            "source_order": 2,
+            "source_frame_index": 5
+          }
+        ],
+        "safety_requirements": [],
+        "segment_id": "80e504c539c942348f17ec8677da417b:window:6",
+        "analysis_format": "timeline_batches_v1",
+        "batch_count": 1,
+        "batch_analyses": [
+          {
+            "batch_index": 0,
+            "batch_number": 1,
+            "frames": [
+              {
+                "image_order": 0,
+                "source_frame_index": 0,
+                "timestamp_ms": 162000
+              },
+              {
+                "image_order": 1,
+                "source_frame_index": 1,
+                "timestamp_ms": 164850
+              },
+              {
+                "image_order": 2,
+                "source_frame_index": 2,
+                "timestamp_ms": 173940
+              },
+              {
+                "image_order": 3,
+                "source_frame_index": 3,
+                "timestamp_ms": 179910
+              },
+              {
+                "image_order": 4,
+                "source_frame_index": 4,
+                "timestamp_ms": 189000
+              },
+              {
+                "image_order": 5,
+                "source_frame_index": 5,
+                "timestamp_ms": 191850
+              }
+            ],
+            "latency_ms": 13717,
+            "analysis": {
+              "step_candidates": [
+                {
+                  "name": "演示绳结打法",
+                  "timestamp_ms": 162000,
+                  "evidence_refs": [
+                    "video@162000ms",
+                    "video@164850ms",
+                    "video@173940ms",
+                    "video@179910ms",
+                    "video@189000ms",
+                    "video@191850ms"
+                  ],
+                  "start_ms": 162000,
+                  "end_ms": 191850,
+                  "instruction": "护林员坐在船甲板上，双手持粗绳进行打结演示。在162000ms至173940ms期间，他双手配合将绳子绕成环状；在179910ms时，他调整手势，左手拉住绳圈上部，右手整理下方绳段；随后在189000ms至191850ms继续收紧和调整绳结形态。全程伴随口头讲解（无ASR文本）。",
+                  "completion_checks": [
+                    "手中持有绳索并形成明显的绳圈结构",
+                    "双手持续进行穿插、拉紧等打结动作",
+                    "绳结形态在窗口结束时仍未完全固定或展示最终完成态，处于演示过程中"
+                  ]
+                }
+              ],
+              "tool_candidates": [
+                {
+                  "name": "绳索",
+                  "evidence_refs": [
+                    "video@162000ms",
+                    "video@191850ms"
+                  ]
+                }
+              ],
+              "object_candidates": [
+                {
+                  "name": "护林员/演示者",
+                  "evidence_refs": [
+                    "video@162000ms"
+                  ]
+                },
+                {
+                  "name": "船甲板/栏杆",
+                  "evidence_refs": [
+                    "video@162000ms"
+                  ]
+                },
+                {
+                  "name": "城市背景/水面",
+                  "evidence_refs": [
+                    "video@162000ms"
+                  ]
+                }
+              ],
+              "action_candidates": [
+                {
+                  "name": "手持绳索绕环",
+                  "timestamp_ms": 162000,
+                  "evidence_refs": [
+                    "video@162000ms",
+                    "video@164850ms"
+                  ]
+                },
+                {
+                  "name": "调整绳圈位置",
+                  "timestamp_ms": 179910,
+                  "evidence_refs": [
+                    "video@179910ms"
+                  ]
+                },
+                {
+                  "name": "收紧绳结",
+                  "timestamp_ms": 189000,
+                  "evidence_refs": [
+                    "video@189000ms",
+                    "video@191850ms"
+                  ]
+                }
+              ],
+              "safety_requirements": []
+            }
+          }
+        ]
+      }
+    },
+    {
+      "start_ms": 189000,
+      "end_ms": 219000,
+      "analysis": {
+        "step_candidates": [
+          {
+            "name": "演示绳结打法",
+            "timestamp_ms": 189000,
+            "evidence_refs": [
+              "video@189000ms",
+              "video@191850ms",
+              "video@200940ms",
+              "video@206910ms",
+              "video@216000ms",
+              "video@218850ms"
+            ],
+            "start_ms": 189000,
+            "end_ms": 218850,
+            "instruction": "讲解员手持绳索，通过手指穿插和拉扯动作演示绳结的编织过程。",
+            "completion_checks": [
+              "绳索在手中形成特定的环状或结状结构",
+              "讲解员持续进行手部操作以展示步骤"
+            ],
+            "batch_index": 0,
+            "source_order": 0,
+            "source_frame_index": 0
+          }
+        ],
+        "tool_candidates": [
+          {
+            "name": "绳索",
+            "timestamp_ms": 189000,
+            "evidence_refs": [
+              "video@189000ms"
+            ],
+            "batch_index": 0,
+            "source_order": 0,
+            "source_frame_index": 0
+          }
+        ],
+        "object_candidates": [
+          {
+            "name": "讲解员",
+            "timestamp_ms": 189000,
+            "evidence_refs": [
+              "video@189000ms"
+            ],
+            "batch_index": 0,
+            "source_order": 0,
+            "source_frame_index": 0
+          },
+          {
+            "name": "船只甲板",
+            "timestamp_ms": 189000,
+            "evidence_refs": [
+              "video@189000ms"
+            ],
+            "batch_index": 0,
+            "source_order": 1,
+            "source_frame_index": 2
+          },
+          {
+            "name": "城市背景",
+            "timestamp_ms": 189000,
+            "evidence_refs": [
+              "video@189000ms"
+            ],
+            "batch_index": 0,
+            "source_order": 2,
+            "source_frame_index": 5
+          }
+        ],
+        "action_candidates": [
+          {
+            "name": "手持绳索",
+            "timestamp_ms": 189000,
+            "evidence_refs": [
+              "video@189000ms"
+            ],
+            "batch_index": 0,
+            "source_order": 0,
+            "source_frame_index": 0
+          },
+          {
+            "name": "编织绳结",
+            "timestamp_ms": 200940,
+            "evidence_refs": [
+              "video@200940ms",
+              "video@206910ms"
+            ],
+            "batch_index": 0,
+            "source_order": 1,
+            "source_frame_index": 2
+          },
+          {
+            "name": "调整绳圈",
+            "timestamp_ms": 216000,
+            "evidence_refs": [
+              "video@216000ms",
+              "video@218850ms"
+            ],
+            "batch_index": 0,
+            "source_order": 2,
+            "source_frame_index": 5
+          }
+        ],
+        "safety_requirements": [],
+        "segment_id": "80e504c539c942348f17ec8677da417b:window:7",
+        "analysis_format": "timeline_batches_v1",
+        "batch_count": 1,
+        "batch_analyses": [
+          {
+            "batch_index": 0,
+            "batch_number": 1,
+            "frames": [
+              {
+                "image_order": 0,
+                "source_frame_index": 0,
+                "timestamp_ms": 189000
+              },
+              {
+                "image_order": 1,
+                "source_frame_index": 1,
+                "timestamp_ms": 191850
+              },
+              {
+                "image_order": 2,
+                "source_frame_index": 2,
+                "timestamp_ms": 200940
+              },
+              {
+                "image_order": 3,
+                "source_frame_index": 3,
+                "timestamp_ms": 206910
+              },
+              {
+                "image_order": 4,
+                "source_frame_index": 4,
+                "timestamp_ms": 216000
+              },
+              {
+                "image_order": 5,
+                "source_frame_index": 5,
+                "timestamp_ms": 218850
+              }
+            ],
+            "latency_ms": 14163,
+            "analysis": {
+              "step_candidates": [
+                {
+                  "name": "演示绳结打法",
+                  "timestamp_ms": 189000,
+                  "evidence_refs": [
+                    "video@189000ms",
+                    "video@191850ms",
+                    "video@200940ms",
+                    "video@206910ms",
+                    "video@216000ms",
+                    "video@218850ms"
+                  ],
+                  "start_ms": 189000,
+                  "end_ms": 218850,
+                  "instruction": "讲解员手持绳索，通过手指穿插和拉扯动作演示绳结的编织过程。",
+                  "completion_checks": [
+                    "绳索在手中形成特定的环状或结状结构",
+                    "讲解员持续进行手部操作以展示步骤"
+                  ]
+                }
+              ],
+              "tool_candidates": [
+                {
+                  "name": "绳索",
+                  "timestamp_ms": 189000,
+                  "evidence_refs": [
+                    "video@189000ms"
+                  ]
+                }
+              ],
+              "object_candidates": [
+                {
+                  "name": "讲解员",
+                  "timestamp_ms": 189000,
+                  "evidence_refs": [
+                    "video@189000ms"
+                  ]
+                },
+                {
+                  "name": "船只甲板",
+                  "timestamp_ms": 189000,
+                  "evidence_refs": [
+                    "video@189000ms"
+                  ]
+                },
+                {
+                  "name": "城市背景",
+                  "timestamp_ms": 189000,
+                  "evidence_refs": [
+                    "video@189000ms"
+                  ]
+                }
+              ],
+              "action_candidates": [
+                {
+                  "name": "手持绳索",
+                  "timestamp_ms": 189000,
+                  "evidence_refs": [
+                    "video@189000ms"
+                  ]
+                },
+                {
+                  "name": "编织绳结",
+                  "timestamp_ms": 200940,
+                  "evidence_refs": [
+                    "video@200940ms",
+                    "video@206910ms"
+                  ]
+                },
+                {
+                  "name": "调整绳圈",
+                  "timestamp_ms": 216000,
+                  "evidence_refs": [
+                    "video@216000ms",
+                    "video@218850ms"
+                  ]
+                }
+              ],
+              "safety_requirements": []
+            }
+          }
+        ]
+      }
+    },
+    {
+      "start_ms": 216000,
+      "end_ms": 246000,
+      "analysis": {
+        "step_candidates": [
+          {
+            "name": "展示绳结形态",
+            "timestamp_ms": 216000,
+            "start_ms": 216000,
+            "end_ms": 227940,
+            "instruction": "双手持绳，向镜头展示已打好的绳结结构，保持绳圈张开以便观察。",
+            "completion_checks": [
+              "绳结完整呈现于画面中央",
+              "双手稳定持握绳索两端"
+            ],
+            "evidence_refs": [
+              "video@216000ms",
+              "video@218850ms",
+              "video@227940ms"
+            ],
+            "batch_index": 0,
+            "source_order": 0,
+            "source_frame_index": 0
+          },
+          {
+            "name": "调整与收紧绳结",
+            "timestamp_ms": 233910,
+            "start_ms": 233910,
+            "end_ms": 233910,
+            "instruction": "手指捏住绳结部位进行微调，拉动绳端使结体收紧定型。",
+            "completion_checks": [
+              "绳结体积明显缩小并紧实",
+              "手部动作集中于结扣处"
+            ],
+            "evidence_refs": [
+              "video@233910ms"
+            ],
+            "batch_index": 0,
+            "source_order": 1,
+            "source_frame_index": 2
+          },
+          {
+            "name": "套入系缆桩演示",
+            "timestamp_ms": 243000,
+            "start_ms": 243000,
+            "end_ms": 245850,
+            "instruction": "将整理好的绳圈移向船舷系缆桩，模拟套桩或固定操作。",
+            "completion_checks": [
+              "绳索靠近黑色金属系缆桩",
+              "身体转向侧方配合操作"
+            ],
+            "evidence_refs": [
+              "video@243000ms",
+              "video@245850ms"
+            ],
+            "batch_index": 0,
+            "source_order": 2,
+            "source_frame_index": 5
+          }
+        ],
+        "tool_candidates": [
+          {
+            "name": "粗麻绳",
+            "description": "用于打结演示的天然纤维绳索，呈米黄色，表面有编织纹理。",
+            "batch_index": 0,
+            "source_order": 0,
+            "source_frame_index": 0,
+            "timestamp_ms": 216000
+          },
+          {
+            "name": "系缆桩",
+            "description": "安装在木质甲板边缘的黑色金属双柱式系缆装置。",
+            "batch_index": 0,
+            "source_order": 1,
+            "source_frame_index": 5,
+            "timestamp_ms": 245850
+          }
+        ],
+        "object_candidates": [
+          {
+            "name": "绳结",
+            "description": "由绳索折叠缠绕形成的环状结构，初期松散，后期收紧。",
+            "batch_index": 0,
+            "source_order": 0,
+            "source_frame_index": 0,
+            "timestamp_ms": 216000
+          },
+          {
+            "name": "护林员制服",
+            "description": "深绿色夹克，佩戴徽章，搭配宽檐草帽，表明演示者身份。",
+            "batch_index": 0,
+            "source_order": 1,
+            "source_frame_index": 2,
+            "timestamp_ms": 227940
+          },
+          {
+            "name": "白色栏杆",
+            "description": "位于人物身后的水平防护栏，界定甲板边界。",
+            "batch_index": 0,
+            "source_order": 2,
+            "source_frame_index": 5,
+            "timestamp_ms": 245850
+          }
+        ],
+        "action_candidates": [
+          {
+            "name": "持绳展示",
+            "description": "双手分别握住绳索不同位置，将绳结面向镜头悬空展示。",
+            "batch_index": 0,
+            "source_order": 0,
+            "source_frame_index": 0,
+            "timestamp_ms": 216000
+          },
+          {
+            "name": "拉紧绳结",
+            "description": "通过手指捏合与手臂微动，消除绳结内部空隙使其紧固。",
+            "batch_index": 0,
+            "source_order": 1,
+            "source_frame_index": 2,
+            "timestamp_ms": 227940
+          },
+          {
+            "name": "侧身套桩",
+            "description": "上半身转向左侧，将手中的绳圈对准下方的系缆桩准备操作。",
+            "batch_index": 0,
+            "source_order": 2,
+            "source_frame_index": 5,
+            "timestamp_ms": 245850
+          }
+        ],
+        "safety_requirements": [
+          "演示过程中需确保绳索不会意外滑落至水中或缠绕肢体。",
+          "在甲板边缘操作时需注意重心稳定，防止因专注手部动作而失去平衡。"
+        ],
+        "segment_id": "80e504c539c942348f17ec8677da417b:window:8",
+        "analysis_format": "timeline_batches_v1",
+        "batch_count": 1,
+        "batch_analyses": [
+          {
+            "batch_index": 0,
+            "batch_number": 1,
+            "frames": [
+              {
+                "image_order": 0,
+                "source_frame_index": 0,
+                "timestamp_ms": 216000
+              },
+              {
+                "image_order": 1,
+                "source_frame_index": 1,
+                "timestamp_ms": 218850
+              },
+              {
+                "image_order": 2,
+                "source_frame_index": 2,
+                "timestamp_ms": 227940
+              },
+              {
+                "image_order": 3,
+                "source_frame_index": 3,
+                "timestamp_ms": 233910
+              },
+              {
+                "image_order": 4,
+                "source_frame_index": 4,
+                "timestamp_ms": 243000
+              },
+              {
+                "image_order": 5,
+                "source_frame_index": 5,
+                "timestamp_ms": 245850
+              }
+            ],
+            "latency_ms": 19078,
+            "analysis": {
+              "step_candidates": [
+                {
+                  "name": "展示绳结形态",
+                  "timestamp_ms": 216000,
+                  "start_ms": 216000,
+                  "end_ms": 227940,
+                  "instruction": "双手持绳，向镜头展示已打好的绳结结构，保持绳圈张开以便观察。",
+                  "completion_checks": [
+                    "绳结完整呈现于画面中央",
+                    "双手稳定持握绳索两端"
+                  ],
+                  "evidence_refs": [
+                    "video@216000ms",
+                    "video@218850ms",
+                    "video@227940ms"
+                  ]
+                },
+                {
+                  "name": "调整与收紧绳结",
+                  "timestamp_ms": 233910,
+                  "start_ms": 233910,
+                  "end_ms": 233910,
+                  "instruction": "手指捏住绳结部位进行微调，拉动绳端使结体收紧定型。",
+                  "completion_checks": [
+                    "绳结体积明显缩小并紧实",
+                    "手部动作集中于结扣处"
+                  ],
+                  "evidence_refs": [
+                    "video@233910ms"
+                  ]
+                },
+                {
+                  "name": "套入系缆桩演示",
+                  "timestamp_ms": 243000,
+                  "start_ms": 243000,
+                  "end_ms": 245850,
+                  "instruction": "将整理好的绳圈移向船舷系缆桩，模拟套桩或固定操作。",
+                  "completion_checks": [
+                    "绳索靠近黑色金属系缆桩",
+                    "身体转向侧方配合操作"
+                  ],
+                  "evidence_refs": [
+                    "video@243000ms",
+                    "video@245850ms"
+                  ]
+                }
+              ],
+              "tool_candidates": [
+                {
+                  "name": "粗麻绳",
+                  "description": "用于打结演示的天然纤维绳索，呈米黄色，表面有编织纹理。"
+                },
+                {
+                  "name": "系缆桩",
+                  "description": "安装在木质甲板边缘的黑色金属双柱式系缆装置。"
+                }
+              ],
+              "object_candidates": [
+                {
+                  "name": "绳结",
+                  "description": "由绳索折叠缠绕形成的环状结构，初期松散，后期收紧。"
+                },
+                {
+                  "name": "护林员制服",
+                  "description": "深绿色夹克，佩戴徽章，搭配宽檐草帽，表明演示者身份。"
+                },
+                {
+                  "name": "白色栏杆",
+                  "description": "位于人物身后的水平防护栏，界定甲板边界。"
+                }
+              ],
+              "action_candidates": [
+                {
+                  "name": "持绳展示",
+                  "description": "双手分别握住绳索不同位置，将绳结面向镜头悬空展示。"
+                },
+                {
+                  "name": "拉紧绳结",
+                  "description": "通过手指捏合与手臂微动，消除绳结内部空隙使其紧固。"
+                },
+                {
+                  "name": "侧身套桩",
+                  "description": "上半身转向左侧，将手中的绳圈对准下方的系缆桩准备操作。"
+                }
+              ],
+              "safety_requirements": [
+                "演示过程中需确保绳索不会意外滑落至水中或缠绕肢体。",
+                "在甲板边缘操作时需注意重心稳定，防止因专注手部动作而失去平衡。"
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "start_ms": 243000,
+      "end_ms": 273000,
+      "analysis": {
+        "step_candidates": [
+          {
+            "name": "制作绳圈",
+            "timestamp_ms": 243000,
+            "evidence_refs": [
+              "video@243000ms",
+              "video@245850ms",
+              "video@254940ms"
+            ],
+            "start_ms": 243000,
+            "end_ms": 254940,
+            "instruction": "双手配合将绳索弯曲并交叉，形成一个基础的绳圈结构。",
+            "completion_checks": [
+              "绳索是否已形成闭合或半闭合的环状",
+              "双手是否稳固持握绳圈交叉点"
+            ],
+            "batch_index": 0,
+            "source_order": 0,
+            "source_frame_index": 0
+          },
+          {
+            "name": "调整与收紧绳结",
+            "timestamp_ms": 260910,
+            "evidence_refs": [
+              "video@260910ms"
+            ],
+            "start_ms": 260910,
+            "end_ms": 260910,
+            "instruction": "手指捏住绳结部位进行微调，确保绳圈形状规整。",
+            "completion_checks": [
+              "绳结部位是否已初步成型",
+              "绳索张力是否适中"
+            ],
+            "batch_index": 0,
+            "source_order": 1,
+            "source_frame_index": 2
+          },
+          {
+            "name": "拉直展示绳索",
+            "timestamp_ms": 270000,
+            "evidence_refs": [
+              "video@270000ms"
+            ],
+            "start_ms": 270000,
+            "end_ms": 270000,
+            "instruction": "双手向两侧拉开绳索，展示绳结完成后的直线状态或特定形态。",
+            "completion_checks": [
+              "绳索是否被拉直展示",
+              "绳结结构是否清晰可见"
+            ],
+            "batch_index": 0,
+            "source_order": 2,
+            "source_frame_index": 3
+          },
+          {
+            "name": "固定绳索至系缆桩",
+            "timestamp_ms": 272850,
+            "evidence_refs": [
+              "video@272850ms"
+            ],
+            "start_ms": 272850,
+            "end_ms": 272850,
+            "instruction": "将处理好的绳索套入或缠绕在旁边的黑色系缆桩/固定装置上。",
+            "completion_checks": [
+              "绳索是否已接触或套入固定装置",
+              "手部动作是否指向固定点"
+            ],
+            "batch_index": 0,
+            "source_order": 3,
+            "source_frame_index": 5
+          }
+        ],
+        "tool_candidates": [
+          {
+            "name": "绳索",
+            "category": "material",
+            "evidence_refs": [
+              "video@243000ms",
+              "video@270000ms"
+            ],
+            "batch_index": 0,
+            "source_order": 0,
+            "source_frame_index": 0,
+            "timestamp_ms": 243000
+          },
+          {
+            "name": "系缆桩/固定座",
+            "category": "equipment",
+            "evidence_refs": [
+              "video@243000ms",
+              "video@272850ms"
+            ],
+            "batch_index": 0,
+            "source_order": 1,
+            "source_frame_index": 5,
+            "timestamp_ms": 272850
+          }
+        ],
+        "object_candidates": [
+          {
+            "name": "穿制服的人员",
+            "category": "person",
+            "evidence_refs": [
+              "video@243000ms",
+              "video@260910ms"
+            ],
+            "batch_index": 0,
+            "source_order": 0,
+            "source_frame_index": 0,
+            "timestamp_ms": 243000
+          },
+          {
+            "name": "船舷栏杆",
+            "category": "structure",
+            "evidence_refs": [
+              "video@243000ms",
+              "video@272850ms"
+            ],
+            "batch_index": 0,
+            "source_order": 1,
+            "source_frame_index": 2,
+            "timestamp_ms": 254940
+          },
+          {
+            "name": "城市背景建筑",
+            "category": "background",
+            "evidence_refs": [
+              "video@243000ms",
+              "video@270000ms"
+            ],
+            "batch_index": 0,
+            "source_order": 2,
+            "source_frame_index": 5,
+            "timestamp_ms": 272850
+          }
+        ],
+        "action_candidates": [
+          {
+            "name": "打绳结",
+            "timestamp_ms": 254940,
+            "evidence_refs": [
+              "video@254940ms",
+              "video@260910ms"
+            ],
+            "batch_index": 0,
+            "source_order": 0,
+            "source_frame_index": 0
+          },
+          {
+            "name": "拉紧绳索",
+            "timestamp_ms": 270000,
+            "evidence_refs": [
+              "video@270000ms"
+            ],
+            "batch_index": 0,
+            "source_order": 1,
+            "source_frame_index": 2
+          },
+          {
+            "name": "系泊操作",
+            "timestamp_ms": 272850,
+            "evidence_refs": [
+              "video@272850ms"
+            ],
+            "batch_index": 0,
+            "source_order": 2,
+            "source_frame_index": 5
+          }
+        ],
+        "safety_requirements": [
+          "在水上甲板操作时需注意防滑防跌落",
+          "操作绳索时注意避免手指被夹或缠绕受伤"
+        ],
+        "segment_id": "80e504c539c942348f17ec8677da417b:window:9",
+        "analysis_format": "timeline_batches_v1",
+        "batch_count": 1,
+        "batch_analyses": [
+          {
+            "batch_index": 0,
+            "batch_number": 1,
+            "frames": [
+              {
+                "image_order": 0,
+                "source_frame_index": 0,
+                "timestamp_ms": 243000
+              },
+              {
+                "image_order": 1,
+                "source_frame_index": 1,
+                "timestamp_ms": 245850
+              },
+              {
+                "image_order": 2,
+                "source_frame_index": 2,
+                "timestamp_ms": 254940
+              },
+              {
+                "image_order": 3,
+                "source_frame_index": 3,
+                "timestamp_ms": 260910
+              },
+              {
+                "image_order": 4,
+                "source_frame_index": 4,
+                "timestamp_ms": 270000
+              },
+              {
+                "image_order": 5,
+                "source_frame_index": 5,
+                "timestamp_ms": 272850
+              }
+            ],
+            "latency_ms": 22042,
+            "analysis": {
+              "step_candidates": [
+                {
+                  "name": "制作绳圈",
+                  "timestamp_ms": 243000,
+                  "evidence_refs": [
+                    "video@243000ms",
+                    "video@245850ms",
+                    "video@254940ms"
+                  ],
+                  "start_ms": 243000,
+                  "end_ms": 254940,
+                  "instruction": "双手配合将绳索弯曲并交叉，形成一个基础的绳圈结构。",
+                  "completion_checks": [
+                    "绳索是否已形成闭合或半闭合的环状",
+                    "双手是否稳固持握绳圈交叉点"
+                  ]
+                },
+                {
+                  "name": "调整与收紧绳结",
+                  "timestamp_ms": 260910,
+                  "evidence_refs": [
+                    "video@260910ms"
+                  ],
+                  "start_ms": 260910,
+                  "end_ms": 260910,
+                  "instruction": "手指捏住绳结部位进行微调，确保绳圈形状规整。",
+                  "completion_checks": [
+                    "绳结部位是否已初步成型",
+                    "绳索张力是否适中"
+                  ]
+                },
+                {
+                  "name": "拉直展示绳索",
+                  "timestamp_ms": 270000,
+                  "evidence_refs": [
+                    "video@270000ms"
+                  ],
+                  "start_ms": 270000,
+                  "end_ms": 270000,
+                  "instruction": "双手向两侧拉开绳索，展示绳结完成后的直线状态或特定形态。",
+                  "completion_checks": [
+                    "绳索是否被拉直展示",
+                    "绳结结构是否清晰可见"
+                  ]
+                },
+                {
+                  "name": "固定绳索至系缆桩",
+                  "timestamp_ms": 272850,
+                  "evidence_refs": [
+                    "video@272850ms"
+                  ],
+                  "start_ms": 272850,
+                  "end_ms": 272850,
+                  "instruction": "将处理好的绳索套入或缠绕在旁边的黑色系缆桩/固定装置上。",
+                  "completion_checks": [
+                    "绳索是否已接触或套入固定装置",
+                    "手部动作是否指向固定点"
+                  ]
+                }
+              ],
+              "tool_candidates": [
+                {
+                  "name": "绳索",
+                  "category": "material",
+                  "evidence_refs": [
+                    "video@243000ms",
+                    "video@270000ms"
+                  ]
+                },
+                {
+                  "name": "系缆桩/固定座",
+                  "category": "equipment",
+                  "evidence_refs": [
+                    "video@243000ms",
+                    "video@272850ms"
+                  ]
+                }
+              ],
+              "object_candidates": [
+                {
+                  "name": "穿制服的人员",
+                  "category": "person",
+                  "evidence_refs": [
+                    "video@243000ms",
+                    "video@260910ms"
+                  ]
+                },
+                {
+                  "name": "船舷栏杆",
+                  "category": "structure",
+                  "evidence_refs": [
+                    "video@243000ms",
+                    "video@272850ms"
+                  ]
+                },
+                {
+                  "name": "城市背景建筑",
+                  "category": "background",
+                  "evidence_refs": [
+                    "video@243000ms",
+                    "video@270000ms"
+                  ]
+                }
+              ],
+              "action_candidates": [
+                {
+                  "name": "打绳结",
+                  "timestamp_ms": 254940,
+                  "evidence_refs": [
+                    "video@254940ms",
+                    "video@260910ms"
+                  ]
+                },
+                {
+                  "name": "拉紧绳索",
+                  "timestamp_ms": 270000,
+                  "evidence_refs": [
+                    "video@270000ms"
+                  ]
+                },
+                {
+                  "name": "系泊操作",
+                  "timestamp_ms": 272850,
+                  "evidence_refs": [
+                    "video@272850ms"
+                  ]
+                }
+              ],
+              "safety_requirements": [
+                "在水上甲板操作时需注意防滑防跌落",
+                "操作绳索时注意避免手指被夹或缠绕受伤"
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "start_ms": 270000,
+      "end_ms": 300000,
+      "analysis": {
+        "step_candidates": [
+          {
+            "name": "展示绳索初始状态",
+            "timestamp_ms": 270000,
+            "evidence_refs": [
+              "video@270000ms"
+            ],
+            "start_ms": 270000,
+            "end_ms": 272850,
+            "instruction": "双手持绳，向镜头展示绳索的直线状态，准备开始打结演示。",
+            "completion_checks": [
+              "绳索被双手拉直展示",
+              "操作者面向镜头讲解"
+            ],
+            "batch_index": 0,
+            "source_order": 0,
+            "source_frame_index": 0
+          },
+          {
+            "name": "制作绳圈",
+            "timestamp_ms": 281940,
+            "evidence_refs": [
+              "video@281940ms",
+              "video@287910ms"
+            ],
+            "start_ms": 272850,
+            "end_ms": 287910,
+            "instruction": "将绳索交叉并扭转，形成一个明显的绳圈（Loop），为穿绳做准备。",
+            "completion_checks": [
+              "绳索形成闭合或半闭合的圈",
+              "绳头与绳身发生交叉"
+            ],
+            "batch_index": 0,
+            "source_order": 1,
+            "source_frame_index": 2
+          },
+          {
+            "name": "固定绳结至系缆桩",
+            "timestamp_ms": 297000,
+            "evidence_refs": [
+              "video@297000ms",
+              "video@299850ms"
+            ],
+            "start_ms": 287910,
+            "end_ms": 299850,
+            "instruction": "将制作好的绳圈套在木质系缆桩（Cleat）上，并整理绳索位置。",
+            "completion_checks": [
+              "绳圈已套在系缆桩上",
+              "双手正在调整绳索在桩上的位置"
+            ],
+            "batch_index": 0,
+            "source_order": 2,
+            "source_frame_index": 5
+          }
+        ],
+        "tool_candidates": [
+          {
+            "name": "绳索",
+            "category": "material",
+            "evidence_refs": [
+              "video@270000ms"
+            ],
+            "batch_index": 0,
+            "source_order": 0,
+            "source_frame_index": 0,
+            "timestamp_ms": 270000
+          },
+          {
+            "name": "系缆桩",
+            "category": "fixture",
+            "evidence_refs": [
+              "video@297000ms"
+            ],
+            "batch_index": 0,
+            "source_order": 1,
+            "source_frame_index": 5,
+            "timestamp_ms": 299850
+          }
+        ],
+        "object_candidates": [
+          {
+            "name": "船舷栏杆",
+            "evidence_refs": [
+              "video@270000ms"
+            ],
+            "batch_index": 0,
+            "source_order": 0,
+            "source_frame_index": 0,
+            "timestamp_ms": 270000
+          },
+          {
+            "name": "城市背景",
+            "evidence_refs": [
+              "video@270000ms"
+            ],
+            "batch_index": 0,
+            "source_order": 1,
+            "source_frame_index": 5,
+            "timestamp_ms": 299850
+          }
+        ],
+        "action_candidates": [
+          {
+            "name": "持绳展示",
+            "timestamp_ms": 270000,
+            "evidence_refs": [
+              "video@270000ms"
+            ],
+            "batch_index": 0,
+            "source_order": 0,
+            "source_frame_index": 0
+          },
+          {
+            "name": "扭转绳索",
+            "timestamp_ms": 281940,
+            "evidence_refs": [
+              "video@281940ms"
+            ],
+            "batch_index": 0,
+            "source_order": 1,
+            "source_frame_index": 2
+          },
+          {
+            "name": "套桩操作",
+            "timestamp_ms": 297000,
+            "evidence_refs": [
+              "video@297000ms"
+            ],
+            "batch_index": 0,
+            "source_order": 2,
+            "source_frame_index": 5
+          }
+        ],
+        "safety_requirements": [
+          "注意手指不要被绳索缠绕或夹在系缆桩与绳索之间",
+          "在船只甲板操作时注意保持身体平衡，防止滑倒"
+        ],
+        "segment_id": "80e504c539c942348f17ec8677da417b:window:10",
+        "analysis_format": "timeline_batches_v1",
+        "batch_count": 1,
+        "batch_analyses": [
+          {
+            "batch_index": 0,
+            "batch_number": 1,
+            "frames": [
+              {
+                "image_order": 0,
+                "source_frame_index": 0,
+                "timestamp_ms": 270000
+              },
+              {
+                "image_order": 1,
+                "source_frame_index": 1,
+                "timestamp_ms": 272850
+              },
+              {
+                "image_order": 2,
+                "source_frame_index": 2,
+                "timestamp_ms": 281940
+              },
+              {
+                "image_order": 3,
+                "source_frame_index": 3,
+                "timestamp_ms": 287910
+              },
+              {
+                "image_order": 4,
+                "source_frame_index": 4,
+                "timestamp_ms": 297000
+              },
+              {
+                "image_order": 5,
+                "source_frame_index": 5,
+                "timestamp_ms": 299850
+              }
+            ],
+            "latency_ms": 18759,
+            "analysis": {
+              "step_candidates": [
+                {
+                  "name": "展示绳索初始状态",
+                  "timestamp_ms": 270000,
+                  "evidence_refs": [
+                    "video@270000ms"
+                  ],
+                  "start_ms": 270000,
+                  "end_ms": 272850,
+                  "instruction": "双手持绳，向镜头展示绳索的直线状态，准备开始打结演示。",
+                  "completion_checks": [
+                    "绳索被双手拉直展示",
+                    "操作者面向镜头讲解"
+                  ]
+                },
+                {
+                  "name": "制作绳圈",
+                  "timestamp_ms": 281940,
+                  "evidence_refs": [
+                    "video@281940ms",
+                    "video@287910ms"
+                  ],
+                  "start_ms": 272850,
+                  "end_ms": 287910,
+                  "instruction": "将绳索交叉并扭转，形成一个明显的绳圈（Loop），为穿绳做准备。",
+                  "completion_checks": [
+                    "绳索形成闭合或半闭合的圈",
+                    "绳头与绳身发生交叉"
+                  ]
+                },
+                {
+                  "name": "固定绳结至系缆桩",
+                  "timestamp_ms": 297000,
+                  "evidence_refs": [
+                    "video@297000ms",
+                    "video@299850ms"
+                  ],
+                  "start_ms": 287910,
+                  "end_ms": 299850,
+                  "instruction": "将制作好的绳圈套在木质系缆桩（Cleat）上，并整理绳索位置。",
+                  "completion_checks": [
+                    "绳圈已套在系缆桩上",
+                    "双手正在调整绳索在桩上的位置"
+                  ]
+                }
+              ],
+              "tool_candidates": [
+                {
+                  "name": "绳索",
+                  "category": "material",
+                  "evidence_refs": [
+                    "video@270000ms"
+                  ]
+                },
+                {
+                  "name": "系缆桩",
+                  "category": "fixture",
+                  "evidence_refs": [
+                    "video@297000ms"
+                  ]
+                }
+              ],
+              "object_candidates": [
+                {
+                  "name": "船舷栏杆",
+                  "evidence_refs": [
+                    "video@270000ms"
+                  ]
+                },
+                {
+                  "name": "城市背景",
+                  "evidence_refs": [
+                    "video@270000ms"
+                  ]
+                }
+              ],
+              "action_candidates": [
+                {
+                  "name": "持绳展示",
+                  "timestamp_ms": 270000,
+                  "evidence_refs": [
+                    "video@270000ms"
+                  ]
+                },
+                {
+                  "name": "扭转绳索",
+                  "timestamp_ms": 281940,
+                  "evidence_refs": [
+                    "video@281940ms"
+                  ]
+                },
+                {
+                  "name": "套桩操作",
+                  "timestamp_ms": 297000,
+                  "evidence_refs": [
+                    "video@297000ms"
+                  ]
+                }
+              ],
+              "safety_requirements": [
+                "注意手指不要被绳索缠绕或夹在系缆桩与绳索之间",
+                "在船只甲板操作时注意保持身体平衡，防止滑倒"
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "start_ms": 297000,
+      "end_ms": 327000,
+      "analysis": {
+        "step_candidates": [
+          {
+            "name": "在系缆桩上缠绕并打结绳索",
+            "timestamp_ms": 297000,
+            "evidence_refs": [
+              "video@297000ms",
+              "video@299850ms",
+              "video@308940ms",
+              "video@314910ms"
+            ],
+            "start_ms": 297000,
+            "end_ms": 314910,
+            "instruction": "双手配合将绳索在木质系缆桩上进行缠绕和穿插，逐步构建绳结结构。",
+            "completion_checks": [
+              "绳索已绕过系缆桩",
+              "绳圈已初步成型并穿入"
+            ],
+            "batch_index": 0,
+            "source_order": 0,
+            "source_frame_index": 0
+          },
+          {
+            "name": "拉紧绳索并讲解手势示意",
+            "timestamp_ms": 324000,
+            "evidence_refs": [
+              "video@324000ms",
+              "video@326850ms"
+            ],
+            "start_ms": 324000,
+            "end_ms": 326850,
+            "instruction": "双手向两侧拉紧绳索以固定绳结，同时抬起右手进行手势示意或口头讲解。",
+            "completion_checks": [
+              "绳结已受力拉紧",
+              "绳索在系缆桩上保持稳固",
+              "出现明显的讲解手势"
+            ],
+            "batch_index": 0,
+            "source_order": 1,
+            "source_frame_index": 5
+          }
+        ],
+        "tool_candidates": [
+          {
+            "name": "绳索",
+            "batch_index": 0,
+            "source_order": 0,
+            "source_frame_index": 0,
+            "timestamp_ms": 297000
+          },
+          {
+            "name": "系缆桩",
+            "batch_index": 0,
+            "source_order": 1,
+            "source_frame_index": 5,
+            "timestamp_ms": 326850
+          }
+        ],
+        "object_candidates": [
+          {
+            "name": "船只甲板",
+            "batch_index": 0,
+            "source_order": 0,
+            "source_frame_index": 0,
+            "timestamp_ms": 297000
+          },
+          {
+            "name": "水面",
+            "batch_index": 0,
+            "source_order": 1,
+            "source_frame_index": 2,
+            "timestamp_ms": 308940
+          },
+          {
+            "name": "城市建筑背景",
+            "batch_index": 0,
+            "source_order": 2,
+            "source_frame_index": 3,
+            "timestamp_ms": 314910
+          },
+          {
+            "name": "栏杆",
+            "batch_index": 0,
+            "source_order": 3,
+            "source_frame_index": 5,
+            "timestamp_ms": 326850
+          }
+        ],
+        "action_candidates": [
+          {
+            "name": "缠绕绳索",
+            "batch_index": 0,
+            "source_order": 0,
+            "source_frame_index": 0,
+            "timestamp_ms": 297000
+          },
+          {
+            "name": "打结",
+            "batch_index": 0,
+            "source_order": 1,
+            "source_frame_index": 2,
+            "timestamp_ms": 308940
+          },
+          {
+            "name": "拉紧绳索",
+            "batch_index": 0,
+            "source_order": 2,
+            "source_frame_index": 3,
+            "timestamp_ms": 314910
+          },
+          {
+            "name": "手势讲解",
+            "batch_index": 0,
+            "source_order": 3,
+            "source_frame_index": 5,
+            "timestamp_ms": 326850
+          }
+        ],
+        "safety_requirements": [
+          "操作时注意手指避免被绳索勒伤",
+          "在船只甲板边缘操作需保持身体平衡，防止落水"
+        ],
+        "segment_id": "80e504c539c942348f17ec8677da417b:window:11",
+        "analysis_format": "timeline_batches_v1",
+        "batch_count": 1,
+        "batch_analyses": [
+          {
+            "batch_index": 0,
+            "batch_number": 1,
+            "frames": [
+              {
+                "image_order": 0,
+                "source_frame_index": 0,
+                "timestamp_ms": 297000
+              },
+              {
+                "image_order": 1,
+                "source_frame_index": 1,
+                "timestamp_ms": 299850
+              },
+              {
+                "image_order": 2,
+                "source_frame_index": 2,
+                "timestamp_ms": 308940
+              },
+              {
+                "image_order": 3,
+                "source_frame_index": 3,
+                "timestamp_ms": 314910
+              },
+              {
+                "image_order": 4,
+                "source_frame_index": 4,
+                "timestamp_ms": 324000
+              },
+              {
+                "image_order": 5,
+                "source_frame_index": 5,
+                "timestamp_ms": 326850
+              }
+            ],
+            "latency_ms": 12941,
+            "analysis": {
+              "step_candidates": [
+                {
+                  "name": "在系缆桩上缠绕并打结绳索",
+                  "timestamp_ms": 297000,
+                  "evidence_refs": [
+                    "video@297000ms",
+                    "video@299850ms",
+                    "video@308940ms",
+                    "video@314910ms"
+                  ],
+                  "start_ms": 297000,
+                  "end_ms": 314910,
+                  "instruction": "双手配合将绳索在木质系缆桩上进行缠绕和穿插，逐步构建绳结结构。",
+                  "completion_checks": [
+                    "绳索已绕过系缆桩",
+                    "绳圈已初步成型并穿入"
+                  ]
+                },
+                {
+                  "name": "拉紧绳索并讲解手势示意",
+                  "timestamp_ms": 324000,
+                  "evidence_refs": [
+                    "video@324000ms",
+                    "video@326850ms"
+                  ],
+                  "start_ms": 324000,
+                  "end_ms": 326850,
+                  "instruction": "双手向两侧拉紧绳索以固定绳结，同时抬起右手进行手势示意或口头讲解。",
+                  "completion_checks": [
+                    "绳结已受力拉紧",
+                    "绳索在系缆桩上保持稳固",
+                    "出现明显的讲解手势"
+                  ]
+                }
+              ],
+              "tool_candidates": [
+                "绳索",
+                "系缆桩"
+              ],
+              "object_candidates": [
+                "船只甲板",
+                "水面",
+                "城市建筑背景",
+                "栏杆"
+              ],
+              "action_candidates": [
+                "缠绕绳索",
+                "打结",
+                "拉紧绳索",
+                "手势讲解"
+              ],
+              "safety_requirements": [
+                "操作时注意手指避免被绳索勒伤",
+                "在船只甲板边缘操作需保持身体平衡，防止落水"
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "start_ms": 324000,
+      "end_ms": 341130,
+      "analysis": {
+        "step_candidates": [
+          {
+            "name": "演示系缆绳动作",
+            "timestamp_ms": 324000,
+            "evidence_refs": [
+              "video@324000ms",
+              "video@326850ms",
+              "video@327396ms",
+              "video@334188ms",
+              "video@337584ms",
+              "video@340980ms"
+            ],
+            "start_ms": 324000,
+            "end_ms": 340980,
+            "instruction": "身穿制服的人员在船舷边手持绳索进行打结或系泊演示，期间配合手势讲解。",
+            "completion_checks": [
+              "绳索已穿过或绕过系缆桩",
+              "手部保持对绳索的控制",
+              "演示者面向镜头进行讲解"
+            ],
+            "batch_index": 0,
+            "source_order": 0,
+            "source_frame_index": 0
+          }
+        ],
+        "tool_candidates": [
+          {
+            "name": "绳索",
+            "category": "工具",
+            "evidence_refs": [
+              "video@324000ms"
+            ],
+            "batch_index": 0,
+            "source_order": 0,
+            "source_frame_index": 0,
+            "timestamp_ms": 324000
+          },
+          {
+            "name": "系缆桩",
+            "category": "设施",
+            "evidence_refs": [
+              "video@324000ms"
+            ],
+            "batch_index": 0,
+            "source_order": 1,
+            "source_frame_index": 5,
+            "timestamp_ms": 340980
+          }
+        ],
+        "object_candidates": [
+          {
+            "name": "穿制服的演示者",
+            "category": "人物",
+            "evidence_refs": [
+              "video@324000ms"
+            ],
+            "batch_index": 0,
+            "source_order": 0,
+            "source_frame_index": 0,
+            "timestamp_ms": 324000
+          },
+          {
+            "name": "船舷栏杆",
+            "category": "环境",
+            "evidence_refs": [
+              "video@324000ms"
+            ],
+            "batch_index": 0,
+            "source_order": 1,
+            "source_frame_index": 5,
+            "timestamp_ms": 340980
+          }
+        ],
+        "action_candidates": [
+          {
+            "name": "手持绳索",
+            "timestamp_ms": 324000,
+            "evidence_refs": [
+              "video@324000ms"
+            ],
+            "batch_index": 0,
+            "source_order": 0,
+            "source_frame_index": 0
+          },
+          {
+            "name": "抬手示意/讲解",
+            "timestamp_ms": 326850,
+            "evidence_refs": [
+              "video@326850ms",
+              "video@327396ms"
+            ],
+            "batch_index": 0,
+            "source_order": 1,
+            "source_frame_index": 2
+          },
+          {
+            "name": "调整绳结",
+            "timestamp_ms": 334188,
+            "evidence_refs": [
+              "video@334188ms",
+              "video@337584ms"
+            ],
+            "batch_index": 0,
+            "source_order": 2,
+            "source_frame_index": 5
+          }
+        ],
+        "safety_requirements": [
+          "在船只甲板或边缘操作时需注意防滑防跌落",
+          "操作绳索时注意防止缠绕或夹手"
+        ],
+        "segment_id": "80e504c539c942348f17ec8677da417b:window:12",
+        "analysis_format": "timeline_batches_v1",
+        "batch_count": 1,
+        "batch_analyses": [
+          {
+            "batch_index": 0,
+            "batch_number": 1,
+            "frames": [
+              {
+                "image_order": 0,
+                "source_frame_index": 0,
+                "timestamp_ms": 324000
+              },
+              {
+                "image_order": 1,
+                "source_frame_index": 1,
+                "timestamp_ms": 326850
+              },
+              {
+                "image_order": 2,
+                "source_frame_index": 2,
+                "timestamp_ms": 327396
+              },
+              {
+                "image_order": 3,
+                "source_frame_index": 3,
+                "timestamp_ms": 334188
+              },
+              {
+                "image_order": 4,
+                "source_frame_index": 4,
+                "timestamp_ms": 337584
+              },
+              {
+                "image_order": 5,
+                "source_frame_index": 5,
+                "timestamp_ms": 340980
+              }
+            ],
+            "latency_ms": 13117,
+            "analysis": {
+              "step_candidates": [
+                {
+                  "name": "演示系缆绳动作",
+                  "timestamp_ms": 324000,
+                  "evidence_refs": [
+                    "video@324000ms",
+                    "video@326850ms",
+                    "video@327396ms",
+                    "video@334188ms",
+                    "video@337584ms",
+                    "video@340980ms"
+                  ],
+                  "start_ms": 324000,
+                  "end_ms": 340980,
+                  "instruction": "身穿制服的人员在船舷边手持绳索进行打结或系泊演示，期间配合手势讲解。",
+                  "completion_checks": [
+                    "绳索已穿过或绕过系缆桩",
+                    "手部保持对绳索的控制",
+                    "演示者面向镜头进行讲解"
+                  ]
+                }
+              ],
+              "tool_candidates": [
+                {
+                  "name": "绳索",
+                  "category": "工具",
+                  "evidence_refs": [
+                    "video@324000ms"
+                  ]
+                },
+                {
+                  "name": "系缆桩",
+                  "category": "设施",
+                  "evidence_refs": [
+                    "video@324000ms"
+                  ]
+                }
+              ],
+              "object_candidates": [
+                {
+                  "name": "穿制服的演示者",
+                  "category": "人物",
+                  "evidence_refs": [
+                    "video@324000ms"
+                  ]
+                },
+                {
+                  "name": "船舷栏杆",
+                  "category": "环境",
+                  "evidence_refs": [
+                    "video@324000ms"
+                  ]
+                }
+              ],
+              "action_candidates": [
+                {
+                  "name": "手持绳索",
+                  "timestamp_ms": 324000,
+                  "evidence_refs": [
+                    "video@324000ms"
+                  ]
+                },
+                {
+                  "name": "抬手示意/讲解",
+                  "timestamp_ms": 326850,
+                  "evidence_refs": [
+                    "video@326850ms",
+                    "video@327396ms"
+                  ]
+                },
+                {
+                  "name": "调整绳结",
+                  "timestamp_ms": 334188,
+                  "evidence_refs": [
+                    "video@334188ms",
+                    "video@337584ms"
+                  ]
+                }
+              ],
+              "safety_requirements": [
+                "在船只甲板或边缘操作时需注意防滑防跌落",
+                "操作绳索时注意防止缠绕或夹手"
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "source_asset_id": "80e504c539c942348f17ec8677da417b",
+  "duration_ms": 341130,
+  "transcript_status": "disabled_visual_only",
+  "coverage": [
+    {
+      "start_ms": 0,
+      "end_ms": 30000
+    },
+    {
+      "start_ms": 27000,
+      "end_ms": 57000
+    },
+    {
+      "start_ms": 54000,
+      "end_ms": 84000
+    },
+    {
+      "start_ms": 81000,
+      "end_ms": 111000
+    },
+    {
+      "start_ms": 108000,
+      "end_ms": 138000
+    },
+    {
+      "start_ms": 135000,
+      "end_ms": 165000
+    },
+    {
+      "start_ms": 162000,
+      "end_ms": 192000
+    },
+    {
+      "start_ms": 189000,
+      "end_ms": 219000
+    },
+    {
+      "start_ms": 216000,
+      "end_ms": 246000
+    },
+    {
+      "start_ms": 243000,
+      "end_ms": 273000
+    },
+    {
+      "start_ms": 270000,
+      "end_ms": 300000
+    },
+    {
+      "start_ms": 297000,
+      "end_ms": 327000
+    },
+    {
+      "start_ms": 324000,
+      "end_ms": 341130
+    }
+  ],
+  "reference_timeline": [
+    {
+      "frame_index": 0,
+      "timestamp_ms": 0
+    },
+    {
+      "frame_index": 1,
+      "timestamp_ms": 5970
+    },
+    {
+      "frame_index": 2,
+      "timestamp_ms": 11940
+    },
+    {
+      "frame_index": 3,
+      "timestamp_ms": 17910
+    },
+    {
+      "frame_index": 4,
+      "timestamp_ms": 23880
+    },
+    {
+      "frame_index": 5,
+      "timestamp_ms": 27000
+    },
+    {
+      "frame_index": 6,
+      "timestamp_ms": 29850
+    },
+    {
+      "frame_index": 7,
+      "timestamp_ms": 32970
+    },
+    {
+      "frame_index": 8,
+      "timestamp_ms": 38940
+    },
+    {
+      "frame_index": 9,
+      "timestamp_ms": 44910
+    },
+    {
+      "frame_index": 10,
+      "timestamp_ms": 50880
+    },
+    {
+      "frame_index": 11,
+      "timestamp_ms": 54000
+    },
+    {
+      "frame_index": 12,
+      "timestamp_ms": 56850
+    },
+    {
+      "frame_index": 13,
+      "timestamp_ms": 59970
+    },
+    {
+      "frame_index": 14,
+      "timestamp_ms": 65940
+    },
+    {
+      "frame_index": 15,
+      "timestamp_ms": 71910
+    },
+    {
+      "frame_index": 16,
+      "timestamp_ms": 77880
+    },
+    {
+      "frame_index": 17,
+      "timestamp_ms": 81000
+    },
+    {
+      "frame_index": 18,
+      "timestamp_ms": 83850
+    },
+    {
+      "frame_index": 19,
+      "timestamp_ms": 86970
+    },
+    {
+      "frame_index": 20,
+      "timestamp_ms": 92940
+    },
+    {
+      "frame_index": 21,
+      "timestamp_ms": 98910
+    },
+    {
+      "frame_index": 22,
+      "timestamp_ms": 104880
+    },
+    {
+      "frame_index": 23,
+      "timestamp_ms": 108000
+    },
+    {
+      "frame_index": 24,
+      "timestamp_ms": 110850
+    },
+    {
+      "frame_index": 25,
+      "timestamp_ms": 113970
+    },
+    {
+      "frame_index": 26,
+      "timestamp_ms": 119940
+    },
+    {
+      "frame_index": 27,
+      "timestamp_ms": 125910
+    },
+    {
+      "frame_index": 28,
+      "timestamp_ms": 131880
+    },
+    {
+      "frame_index": 29,
+      "timestamp_ms": 135000
+    },
+    {
+      "frame_index": 30,
+      "timestamp_ms": 137850
+    },
+    {
+      "frame_index": 31,
+      "timestamp_ms": 140970
+    },
+    {
+      "frame_index": 32,
+      "timestamp_ms": 146940
+    },
+    {
+      "frame_index": 33,
+      "timestamp_ms": 152910
+    },
+    {
+      "frame_index": 34,
+      "timestamp_ms": 158880
+    },
+    {
+      "frame_index": 35,
+      "timestamp_ms": 162000
+    },
+    {
+      "frame_index": 36,
+      "timestamp_ms": 164850
+    },
+    {
+      "frame_index": 37,
+      "timestamp_ms": 167970
+    },
+    {
+      "frame_index": 38,
+      "timestamp_ms": 173940
+    },
+    {
+      "frame_index": 39,
+      "timestamp_ms": 179910
+    },
+    {
+      "frame_index": 40,
+      "timestamp_ms": 185880
+    },
+    {
+      "frame_index": 41,
+      "timestamp_ms": 189000
+    },
+    {
+      "frame_index": 42,
+      "timestamp_ms": 191850
+    },
+    {
+      "frame_index": 43,
+      "timestamp_ms": 194970
+    },
+    {
+      "frame_index": 44,
+      "timestamp_ms": 200940
+    },
+    {
+      "frame_index": 45,
+      "timestamp_ms": 206910
+    },
+    {
+      "frame_index": 46,
+      "timestamp_ms": 212880
+    },
+    {
+      "frame_index": 47,
+      "timestamp_ms": 216000
+    },
+    {
+      "frame_index": 48,
+      "timestamp_ms": 218850
+    },
+    {
+      "frame_index": 49,
+      "timestamp_ms": 221970
+    },
+    {
+      "frame_index": 50,
+      "timestamp_ms": 227940
+    },
+    {
+      "frame_index": 51,
+      "timestamp_ms": 233910
+    },
+    {
+      "frame_index": 52,
+      "timestamp_ms": 239880
+    },
+    {
+      "frame_index": 53,
+      "timestamp_ms": 243000
+    },
+    {
+      "frame_index": 54,
+      "timestamp_ms": 245850
+    },
+    {
+      "frame_index": 55,
+      "timestamp_ms": 248970
+    },
+    {
+      "frame_index": 56,
+      "timestamp_ms": 254940
+    },
+    {
+      "frame_index": 57,
+      "timestamp_ms": 260910
+    },
+    {
+      "frame_index": 58,
+      "timestamp_ms": 266880
+    },
+    {
+      "frame_index": 59,
+      "timestamp_ms": 270000
+    },
+    {
+      "frame_index": 60,
+      "timestamp_ms": 272850
+    },
+    {
+      "frame_index": 61,
+      "timestamp_ms": 275970
+    },
+    {
+      "frame_index": 62,
+      "timestamp_ms": 281940
+    },
+    {
+      "frame_index": 63,
+      "timestamp_ms": 287910
+    },
+    {
+      "frame_index": 64,
+      "timestamp_ms": 293880
+    },
+    {
+      "frame_index": 65,
+      "timestamp_ms": 297000
+    },
+    {
+      "frame_index": 66,
+      "timestamp_ms": 299850
+    },
+    {
+      "frame_index": 67,
+      "timestamp_ms": 302970
+    },
+    {
+      "frame_index": 68,
+      "timestamp_ms": 308940
+    },
+    {
+      "frame_index": 69,
+      "timestamp_ms": 314910
+    },
+    {
+      "frame_index": 70,
+      "timestamp_ms": 320880
+    },
+    {
+      "frame_index": 71,
+      "timestamp_ms": 324000
+    },
+    {
+      "frame_index": 72,
+      "timestamp_ms": 326850
+    },
+    {
+      "frame_index": 73,
+      "timestamp_ms": 327396
+    },
+    {
+      "frame_index": 74,
+      "timestamp_ms": 330792
+    },
+    {
+      "frame_index": 75,
+      "timestamp_ms": 334188
+    },
+    {
+      "frame_index": 76,
+      "timestamp_ms": 337584
+    },
+    {
+      "frame_index": 77,
+      "timestamp_ms": 340980
+    }
+  ]
+}

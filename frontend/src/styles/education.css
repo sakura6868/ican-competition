@@ -1,0 +1,70 @@
+:root {
+  color-scheme: light;
+  --gx-bg: #f6f7fb;
+  --gx-panel: #ffffff;
+  --gx-panel-hi: #ffffff;
+  --gx-panel-lo: #f4f6fa;
+  --gx-panel-edge: #e5e8f0;
+  --gx-surface: #ffffff;
+  --gx-border: #e5e8f0;
+  --gx-text: #20263b;
+  --gx-text-muted: #6c7489;
+  --gx-accent: #6055d8;
+  --gx-accent-press: #4f43be;
+  --gx-accent-soft: #efedff;
+  --gx-danger: #c5394d;
+  --gx-success: #158466;
+  --gx-warning: #a46411;
+  --gx-led-green: #158466;
+  --gx-led-red: #c5394d;
+  --gx-led-amber: #a46411;
+  --gx-led-grey: #8a92a5;
+  --gx-font-display: "Microsoft YaHei", "PingFang SC", "Segoe UI", sans-serif;
+  --gx-font-body: "Microsoft YaHei", "PingFang SC", -apple-system, "Segoe UI", sans-serif;
+  --gx-font-mono: "Cascadia Code", "SF Mono", Consolas, monospace;
+  --gx-shadow: 0 4px 20px rgb(38 46 87 / 4%);
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+body { min-width: 320px; background: var(--gx-bg); color: var(--gx-text); font-family: var(--gx-font-body); font-size: 14px; -webkit-font-smoothing: antialiased; line-height: 1.6; }
+button, input, select, textarea { font: inherit; }
+button, a, input, select, textarea { -webkit-tap-highlight-color: transparent; }
+button { cursor: pointer; }
+button:disabled { cursor: not-allowed; }
+a { color: var(--gx-accent); text-decoration: none; }
+input, select, textarea { min-width: 0; min-height: 44px; padding: 10px 12px; color: var(--gx-text); background: white; border: 1px solid #dce0eb; border-radius: 9px; box-shadow: none; }
+input::placeholder, textarea::placeholder { color: #8991a5; }
+input:focus, select:focus, textarea:focus { outline: none; border-color: var(--gx-accent); box-shadow: 0 0 0 3px rgb(96 85 216 / 12%); }
+input[type="checkbox"], input[type="radio"] { width: 16px; height: 16px; min-height: 16px; flex: 0 0 auto; padding: 0; accent-color: var(--gx-accent); }
+select { padding-right: 30px; }
+code { padding: 2px 6px; color: var(--gx-accent); background: var(--gx-accent-soft); border-radius: 5px; font-family: var(--gx-font-mono); font-size: .9em; overflow-wrap: anywhere; }
+:focus-visible { outline: 3px solid rgb(96 85 216 / 60%); outline-offset: 3px; }
+::selection { background: #ddd9ff; }
+::-webkit-scrollbar { width: 8px; height: 8px; }
+::-webkit-scrollbar-thumb { border: 2px solid var(--gx-bg); border-radius: 8px; background: #c8cedc; }
+::-webkit-scrollbar-track { background: transparent; }
+/* Adapt existing teaching and evaluation views to the shared education surfaces. */
+.layout-main .panel, .layout-main .gx-panel { background: white; border: 1px solid var(--gx-border); border-radius: 14px; box-shadow: var(--gx-shadow); }
+.layout-main .gx-btn, .layout-main .primary-btn, .layout-main .action-btn { box-shadow: none; border-radius: 9px; transition: background .15s, border-color .15s; }
+.layout-main .gx-btn--primary, .layout-main .gx-btn-primary, .layout-main .primary-btn { color: white; background: var(--gx-accent); border-color: var(--gx-accent); }
+.layout-main .gx-btn--primary:hover:not(:disabled), .layout-main .gx-btn-primary:hover:not(:disabled) { background: var(--gx-accent-press); }
+.layout-main .head-led, .layout-main .alert-led { box-shadow: none; background-image: none; }
+.layout-main .head-led { display: none; }
+.layout-main .page { max-width: none; margin: 0; }
+.layout-main .page-head h1 { font-size: 26px; font-weight: 700; letter-spacing: -.6px; }
+.layout-main .page-head p { margin: 5px 0 0; }
+.layout-main .panel-label { font: 600 11px var(--gx-font-body); letter-spacing: .5px; }
+.layout-main th { font-weight: 600; color: var(--gx-text-muted); background: #f8f9fc; }
+.layout-main td { border-color: var(--gx-border); }
+.layout-main .field input, .layout-main .field select, .layout-main .field textarea { background-color: white; box-shadow: none; }
+.layout-main .status-led .dot, .layout-main .sop-led { box-shadow: none; }
+.layout-wrapper .layout-main .gx-btn--primary, .layout-wrapper .layout-main .gx-btn-primary, .layout-wrapper .layout-main .primary-action, .layout-wrapper .layout-main .primary, .layout-wrapper .layout-main .segmented button.active { color: white; background: var(--gx-accent); box-shadow: none; border-color: var(--gx-accent); }
+.layout-wrapper .layout-main .panel, .layout-wrapper .layout-main .card { background: white; border-radius: 14px; box-shadow: var(--gx-shadow); }
+.layout-wrapper .layout-main .gx-input, .layout-wrapper .layout-main .gx-select, .layout-wrapper .layout-main .gx-file { background-color: white; border-radius: 9px; box-shadow: none; }
+.layout-wrapper .layout-main .gx-input:focus, .layout-wrapper .layout-main .gx-select:focus, .layout-wrapper .layout-main .gx-file:focus { box-shadow: 0 0 0 3px rgb(96 85 216 / 12%); }
+.layout-wrapper .layout-main .sop-row.active, .layout-wrapper .layout-main .teaching-editor { background-color: #f6f4ff; }
+.layout-wrapper .layout-main .drawer { box-shadow: none; border-radius: 11px; }
+.layout-wrapper .layout-main .gx-btn { box-shadow: none; }
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
+}

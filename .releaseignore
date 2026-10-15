@@ -1,0 +1,39 @@
+# Repository metadata and machine-local configuration
+.git/
+.claude/
+.DS_Store
+.coverage
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.cache/
+.playwright-cli/
+
+# Dependency caches and runtime state
+.runtime/
+tmp/
+deploy/runtime-data/
+backend/.venv/
+frontend/node_modules/
+**/__pycache__/
+**/.pytest_cache/
+**/.mypy_cache/
+**/.ruff_cache/
+
+# Local/private data and generated deliverables
+/data/
+backend/data/
+models/
+reports/
+output/
+工序智传_演示录制素材包/
+*.db
+*.db-wal
+*.db-shm
+*.sqlite3
+*.mp4
+*.mov
+*.avi
+*.mkv
+*.webm
+*.zip

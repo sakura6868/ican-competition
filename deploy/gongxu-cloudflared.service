@@ -1,0 +1,14 @@
+[Unit]
+Description=Gongxu Zhichuan temporary HTTPS tunnel
+After=network-online.target docker.service
+Wants=network-online.target
+
+[Service]
+Type=simple
+ExecStart=/usr/local/bin/cloudflared tunnel --url http://127.0.0.1:8080 --protocol http2 --no-autoupdate
+Restart=always
+RestartSec=5
+User=root
+
+[Install]
+WantedBy=multi-user.target

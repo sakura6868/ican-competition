@@ -1,0 +1,6 @@
+{
+  "asset_id": "80e504c539c942348f17ec8677da417b",
+  "test_database": ".cache/public-video-qa/gongxu.db",
+  "input": "complete real NPS video",
+  "model": "qwen3.8-max"
+}

@@ -1,0 +1,261 @@
+{
+  "source_grade": "video_reference",
+  "steps": [
+    {
+      "name": "准备三角形纸张",
+      "index": 1,
+      "predecessors": [],
+      "tools": [],
+      "objects": [
+        "正方形纸或三角形纸"
+      ],
+      "actions": [
+        "折叠",
+        "指示位置"
+      ],
+      "completion_checks": [
+        "纸张呈现为平整的等腰直角三角形，底边水平放置"
+      ],
+      "observable_checks": [],
+      "unobservable_checks": [],
+      "weight": 10,
+      "evidence_refs": [
+        {
+          "kind": "video",
+          "ref": "video@23880ms",
+          "timestamp_ms": 23880,
+          "description": "演示者展示三角形纸张并用手指指出底边两个角"
+        }
+      ],
+      "teaching": {
+        "source_asset_id": "0c115b3d19794e36b2a192ffcefe07c9",
+        "start_ms": 23880,
+        "end_ms": 29850,
+        "instruction": "将一张正方形纸沿对角线折叠成三角形，或者直接取用三角形纸张。将红色面朝上，底边水平放置在桌面上，用手指确认底边的两个底角位置。"
+      }
+    },
+    {
+      "name": "向上折叠底角",
+      "index": 2,
+      "predecessors": [
+        1
+      ],
+      "tools": [],
+      "objects": [
+        "红色三角形纸"
+      ],
+      "actions": [
+        "折叠",
+        "按压",
+        "抚平"
+      ],
+      "completion_checks": [
+        "三角形底部的两个角已分别向上折叠，折痕清晰平整且纸张表面无翘起，整体呈对称的多边形结构"
+      ],
+      "observable_checks": [],
+      "unobservable_checks": [],
+      "weight": 30,
+      "evidence_refs": [
+        {
+          "kind": "video",
+          "ref": "video@29850ms",
+          "timestamp_ms": 29850,
+          "description": "右手捏住三角形右侧部分开始向上折叠"
+        },
+        {
+          "kind": "video",
+          "ref": "video@38940ms",
+          "timestamp_ms": 38940,
+          "description": "进行折叠动作并调整折角"
+        },
+        {
+          "kind": "video",
+          "ref": "video@44910ms",
+          "timestamp_ms": 44910,
+          "description": "用手抚平折叠产生的折痕确保贴合紧密"
+        },
+        {
+          "kind": "video",
+          "ref": "video@54000ms",
+          "timestamp_ms": 54000,
+          "description": "整理纸张使其呈现带有内部折痕的多边形结构"
+        }
+      ],
+      "teaching": {
+        "source_asset_id": "0c115b3d19794e36b2a192ffcefe07c9",
+        "start_ms": 29850,
+        "end_ms": 54000,
+        "instruction": "将红色三角形纸张底部的两个角分别向上折叠，使底边与斜边对齐或形成新的折痕。折叠后用手仔细抚平所有折痕，确保纸张贴合紧密、表面平整，最终整理为对称的多边形结构。"
+      }
+    },
+    {
+      "name": "压平折痕并翻转纸张",
+      "index": 3,
+      "predecessors": [
+        2
+      ],
+      "tools": [],
+      "objects": [
+        "红色折纸"
+      ],
+      "actions": [
+        "按压折痕",
+        "翻转纸张"
+      ],
+      "completion_checks": [
+        "折纸表面折痕清晰平整，纸张已翻转至另一面，呈现无折痕的红色平面"
+      ],
+      "observable_checks": [],
+      "unobservable_checks": [],
+      "weight": 15,
+      "evidence_refs": [
+        {
+          "kind": "video",
+          "ref": "video@54000ms",
+          "timestamp_ms": 54000,
+          "description": "按压平整红色折纸的折痕"
+        },
+        {
+          "kind": "video",
+          "ref": "video@56850ms",
+          "timestamp_ms": 56850,
+          "description": "继续整理折痕"
+        },
+        {
+          "kind": "video",
+          "ref": "video@65940ms",
+          "timestamp_ms": 65940,
+          "description": "将纸张翻转至另一面呈现无折痕的红色平面"
+        }
+      ],
+      "teaching": {
+        "source_asset_id": "0c115b3d19794e36b2a192ffcefe07c9",
+        "start_ms": 54000,
+        "end_ms": 65940,
+        "instruction": "再次按压平整刚才折叠产生的所有折痕，然后将整张纸翻转过来，使没有折痕的红色平面朝上。"
+      }
+    },
+    {
+      "name": "对折纸张",
+      "index": 4,
+      "predecessors": [
+        3
+      ],
+      "tools": [],
+      "objects": [
+        "红色折纸"
+      ],
+      "actions": [
+        "对折"
+      ],
+      "completion_checks": [
+        "纸张呈对折状态，可见白色内层与红色外层边缘对齐"
+      ],
+      "observable_checks": [],
+      "unobservable_checks": [],
+      "weight": 20,
+      "evidence_refs": [
+        {
+          "kind": "video",
+          "ref": "video@71910ms",
+          "timestamp_ms": 71910,
+          "description": "将纸张沿中心线对折使边缘对齐，可见白色内层与红色外层"
+        }
+      ],
+      "teaching": {
+        "source_asset_id": "0c115b3d19794e36b2a192ffcefe07c9",
+        "start_ms": 65940,
+        "end_ms": 71910,
+        "instruction": "将翻转后的纸张沿中心线进行对折，确保两侧边缘完全对齐，此时应能看到白色的内层与红色的外层。"
+      }
+    },
+    {
+      "name": "撑开形成立体纸杯",
+      "index": 5,
+      "predecessors": [
+        4
+      ],
+      "tools": [],
+      "objects": [
+        "红白双色折纸"
+      ],
+      "actions": [
+        "撑开立体化"
+      ],
+      "completion_checks": [
+        "折纸已从扁平状态变为立体中空容器形状，内部呈现白色，外部为红色，容器开口张开可容纳物体"
+      ],
+      "observable_checks": [],
+      "unobservable_checks": [],
+      "weight": 20,
+      "evidence_refs": [
+        {
+          "kind": "video",
+          "ref": "video@81000ms",
+          "timestamp_ms": 81000,
+          "description": "从开口处将折叠好的纸张撑开形成中空的立体容器形状"
+        },
+        {
+          "kind": "video",
+          "ref": "video@83850ms",
+          "timestamp_ms": 83850,
+          "description": "立体纸杯成型，内部白色外部红色"
+        }
+      ],
+      "teaching": {
+        "source_asset_id": "0c115b3d19794e36b2a192ffcefe07c9",
+        "start_ms": 71910,
+        "end_ms": 83850,
+        "instruction": "从对折纸张的开口处轻轻将纸张向两侧撑开，使其从扁平状态展开为中空的立体容器形状，形成一个外红内白的折纸杯。"
+      }
+    },
+    {
+      "name": "检查成品形态",
+      "index": 6,
+      "predecessors": [
+        5
+      ],
+      "tools": [],
+      "objects": [
+        "红白双色折纸船/杯",
+        "透明塑料模具"
+      ],
+      "actions": [
+        "对比展示",
+        "翻转展示内部"
+      ],
+      "completion_checks": [
+        "纸杯平稳放置于桌面，内部空腔结构完整朝向镜头可见，形态与参照模具一致"
+      ],
+      "observable_checks": [],
+      "unobservable_checks": [],
+      "weight": 5,
+      "evidence_refs": [
+        {
+          "kind": "video",
+          "ref": "video@81000ms",
+          "timestamp_ms": 81000,
+          "description": "将折好的红白双色纸杯平放在桌面上，右手持透明塑料模具置于右侧进行对比展示"
+        },
+        {
+          "kind": "video",
+          "ref": "video@86970ms",
+          "timestamp_ms": 86970,
+          "description": "左手拿起纸杯翻转并倾斜以展示其白色的内部空腔结构"
+        },
+        {
+          "kind": "video",
+          "ref": "video@98910ms",
+          "timestamp_ms": 98910,
+          "description": "持续手持展示内部结构"
+        }
+      ],
+      "teaching": {
+        "source_asset_id": "0c115b3d19794e36b2a192ffcefe07c9",
+        "start_ms": 83850,
+        "end_ms": 98910,
+        "instruction": "将折好的纸杯平稳放置在桌面上，检查其立体形态是否饱满。可以将其拿起并倾斜，观察内部的白色空腔结构是否完整张开，确认折纸杯制作成功。"
+      }
+    }
+  ]
+}

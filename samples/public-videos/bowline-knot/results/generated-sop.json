@@ -1,0 +1,455 @@
+{
+  "status": "draft_ready",
+  "sop_id": "5038fb9968ab4228b18f1f318acbebc1",
+  "asset_id": "80e504c539c942348f17ec8677da417b",
+  "elapsed_seconds": 45.42,
+  "steps": [
+    {
+      "id": "step_01",
+      "index": 1,
+      "name": "展示绳索初始状态",
+      "predecessors": [],
+      "optional": false,
+      "critical": false,
+      "tools": [
+        "绳索"
+      ],
+      "objects": [],
+      "actions": [
+        "持绳展示"
+      ],
+      "expected_duration_s": 60,
+      "completion_checks": [
+        "绳索在两手之间呈紧绷直线状态"
+      ],
+      "observable_checks": [],
+      "unobservable_checks": [],
+      "weight": 5.0,
+      "evidence_refs": [
+        {
+          "kind": "video",
+          "ref": "video@270000ms",
+          "description": "双手向两侧拉开绳索，展示绳索的直线状态",
+          "asset_id": "80e504c539c942348f17ec8677da417b",
+          "timestamp_ms": 270000,
+          "page": null,
+          "section": null,
+          "chunk_id": null,
+          "chunk_index": null,
+          "content_hash": null
+        }
+      ],
+      "teaching": {
+        "source_asset_id": "80e504c539c942348f17ec8677da417b",
+        "start_ms": 270000,
+        "end_ms": 272850,
+        "instruction": "双手分别握住绳索两端，向两侧水平拉直绳索，展示绳索的初始直线状态。",
+        "reference_timestamps_ms": [
+          270000,
+          272700
+        ]
+      },
+      "verification": {
+        "checks": [
+          {
+            "id": "completion_checks_1",
+            "criterion": "绳索在两手之间呈紧绷直线状态",
+            "category": "completion",
+            "required": true,
+            "mode": "visual",
+            "correction": ""
+          }
+        ],
+        "confirm_windows": 2,
+        "teacher_confirmed": false
+      }
+    },
+    {
+      "id": "step_02",
+      "index": 2,
+      "name": "制作基础绳圈并交叉",
+      "predecessors": [
+        1
+      ],
+      "optional": false,
+      "critical": false,
+      "tools": [
+        "绳索"
+      ],
+      "objects": [],
+      "actions": [
+        "绕绳成圈",
+        "扭转绳索"
+      ],
+      "expected_duration_s": 60,
+      "completion_checks": [],
+      "observable_checks": [],
+      "unobservable_checks": [
+        "绳头与主绳的具体穿绕关系及上下叠放顺序需人工确认"
+      ],
+      "weight": 25.0,
+      "evidence_refs": [
+        {
+          "kind": "video",
+          "ref": "video@146940ms",
+          "description": "将绳索弯曲形成一个大绳圈，并将绳头部分与主绳进行交叉或重叠",
+          "asset_id": "80e504c539c942348f17ec8677da417b",
+          "timestamp_ms": 146940,
+          "page": null,
+          "section": null,
+          "chunk_id": null,
+          "chunk_index": null,
+          "content_hash": null
+        },
+        {
+          "kind": "video",
+          "ref": "video@281940ms",
+          "description": "将绳索交叉并扭转，形成一个明显的绳圈",
+          "asset_id": "80e504c539c942348f17ec8677da417b",
+          "timestamp_ms": 281940,
+          "page": null,
+          "section": null,
+          "chunk_id": null,
+          "chunk_index": null,
+          "content_hash": null
+        }
+      ],
+      "teaching": {
+        "source_asset_id": "80e504c539c942348f17ec8677da417b",
+        "start_ms": 135000,
+        "end_ms": 155000,
+        "instruction": "将绳索弯曲形成一个大绳圈，并将绳头部分与主绳进行交叉或重叠，构建结的基础结构。",
+        "reference_timestamps_ms": [
+          135000,
+          154850
+        ]
+      },
+      "verification": {
+        "checks": [
+          {
+            "id": "unobservable_checks_1",
+            "criterion": "绳头与主绳的具体穿绕关系及上下叠放顺序需人工确认",
+            "category": "completion",
+            "required": true,
+            "mode": "manual",
+            "correction": ""
+          }
+        ],
+        "confirm_windows": 2,
+        "teacher_confirmed": false
+      }
+    },
+    {
+      "id": "step_03",
+      "index": 3,
+      "name": "穿插编织绳结",
+      "predecessors": [
+        2
+      ],
+      "optional": false,
+      "critical": false,
+      "tools": [
+        "绳索"
+      ],
+      "objects": [],
+      "actions": [
+        "编织绳结",
+        "手持绳索绕环"
+      ],
+      "expected_duration_s": 60,
+      "completion_checks": [],
+      "observable_checks": [],
+      "unobservable_checks": [
+        "手指具体的穿插路径和绳段绕行方向需人工确认"
+      ],
+      "weight": 30.0,
+      "evidence_refs": [
+        {
+          "kind": "video",
+          "ref": "video@162000ms",
+          "description": "双手配合将绳子绕成环状进行打结演示",
+          "asset_id": "80e504c539c942348f17ec8677da417b",
+          "timestamp_ms": 162000,
+          "page": null,
+          "section": null,
+          "chunk_id": null,
+          "chunk_index": null,
+          "content_hash": null
+        },
+        {
+          "kind": "video",
+          "ref": "video@200940ms",
+          "description": "通过手指穿插和拉扯动作演示绳结的编织过程",
+          "asset_id": "80e504c539c942348f17ec8677da417b",
+          "timestamp_ms": 200940,
+          "page": null,
+          "section": null,
+          "chunk_id": null,
+          "chunk_index": null,
+          "content_hash": null
+        }
+      ],
+      "teaching": {
+        "source_asset_id": "80e504c539c942348f17ec8677da417b",
+        "start_ms": 162000,
+        "end_ms": 218850,
+        "instruction": "双手配合，通过手指穿插和拉扯动作，将绳头绕过或穿过基础绳圈，逐步编织出绳结的主体结构。",
+        "reference_timestamps_ms": [
+          162000,
+          218700
+        ]
+      },
+      "verification": {
+        "checks": [
+          {
+            "id": "unobservable_checks_1",
+            "criterion": "手指具体的穿插路径和绳段绕行方向需人工确认",
+            "category": "completion",
+            "required": true,
+            "mode": "manual",
+            "correction": ""
+          }
+        ],
+        "confirm_windows": 2,
+        "teacher_confirmed": false
+      }
+    },
+    {
+      "id": "step_04",
+      "index": 4,
+      "name": "收紧并整理绳结",
+      "predecessors": [
+        3
+      ],
+      "optional": false,
+      "critical": false,
+      "tools": [
+        "绳索"
+      ],
+      "objects": [],
+      "actions": [
+        "拉紧绳结",
+        "调整绳圈"
+      ],
+      "expected_duration_s": 60,
+      "completion_checks": [
+        "绳结体积明显缩小并紧实，结构紧凑"
+      ],
+      "observable_checks": [],
+      "unobservable_checks": [],
+      "weight": 20.0,
+      "evidence_refs": [
+        {
+          "kind": "video",
+          "ref": "video@233910ms",
+          "description": "手指捏住绳结部位进行微调，拉动绳端使结体收紧定型",
+          "asset_id": "80e504c539c942348f17ec8677da417b",
+          "timestamp_ms": 233910,
+          "page": null,
+          "section": null,
+          "chunk_id": null,
+          "chunk_index": null,
+          "content_hash": null
+        },
+        {
+          "kind": "video",
+          "ref": "video@189000ms",
+          "description": "继续收紧和调整绳结形态",
+          "asset_id": "80e504c539c942348f17ec8677da417b",
+          "timestamp_ms": 189000,
+          "page": null,
+          "section": null,
+          "chunk_id": null,
+          "chunk_index": null,
+          "content_hash": null
+        }
+      ],
+      "teaching": {
+        "source_asset_id": "80e504c539c942348f17ec8677da417b",
+        "start_ms": 216000,
+        "end_ms": 233910,
+        "instruction": "手指捏住绳结部位进行微调，同时双手分别拉住绳索两端向两侧用力，消除绳结内部空隙使其紧固成型。",
+        "reference_timestamps_ms": [
+          216000,
+          233760
+        ]
+      },
+      "verification": {
+        "checks": [
+          {
+            "id": "completion_checks_1",
+            "criterion": "绳结体积明显缩小并紧实，结构紧凑",
+            "category": "completion",
+            "required": true,
+            "mode": "visual",
+            "correction": ""
+          }
+        ],
+        "confirm_windows": 2,
+        "teacher_confirmed": false
+      }
+    },
+    {
+      "id": "step_05",
+      "index": 5,
+      "name": "展示完成的绳结",
+      "predecessors": [
+        4
+      ],
+      "optional": false,
+      "critical": false,
+      "tools": [
+        "绳索"
+      ],
+      "objects": [],
+      "actions": [
+        "持绳展示"
+      ],
+      "expected_duration_s": 60,
+      "completion_checks": [
+        "绳结悬空展示，绳圈结构清晰可见且保持固定形状"
+      ],
+      "observable_checks": [],
+      "unobservable_checks": [],
+      "weight": 10.0,
+      "evidence_refs": [
+        {
+          "kind": "video",
+          "ref": "video@65940ms",
+          "description": "单手提起已打好的绳结部分，向镜头展示其形状",
+          "asset_id": "80e504c539c942348f17ec8677da417b",
+          "timestamp_ms": 65940,
+          "page": null,
+          "section": null,
+          "chunk_id": null,
+          "chunk_index": null,
+          "content_hash": null
+        },
+        {
+          "kind": "video",
+          "ref": "video@216000ms",
+          "description": "双手持绳，向镜头展示已打好的绳结结构",
+          "asset_id": "80e504c539c942348f17ec8677da417b",
+          "timestamp_ms": 216000,
+          "page": null,
+          "section": null,
+          "chunk_id": null,
+          "chunk_index": null,
+          "content_hash": null
+        }
+      ],
+      "teaching": {
+        "source_asset_id": "80e504c539c942348f17ec8677da417b",
+        "start_ms": 65940,
+        "end_ms": 71910,
+        "instruction": "单手提拉或双手持握已收紧的绳结，将其悬空展示，检查绳圈结构是否清晰、牢固。",
+        "reference_timestamps_ms": [
+          65940,
+          71760
+        ]
+      },
+      "verification": {
+        "checks": [
+          {
+            "id": "completion_checks_1",
+            "criterion": "绳结悬空展示，绳圈结构清晰可见且保持固定形状",
+            "category": "completion",
+            "required": true,
+            "mode": "visual",
+            "correction": ""
+          }
+        ],
+        "confirm_windows": 2,
+        "teacher_confirmed": false
+      }
+    },
+    {
+      "id": "step_06",
+      "index": 6,
+      "name": "将绳圈套入系缆桩固定",
+      "predecessors": [
+        5
+      ],
+      "optional": false,
+      "critical": false,
+      "tools": [
+        "绳索",
+        "系缆桩"
+      ],
+      "objects": [
+        "船舷栏杆"
+      ],
+      "actions": [
+        "侧身套桩",
+        "缠绕绳索"
+      ],
+      "expected_duration_s": 60,
+      "completion_checks": [
+        "绳圈已套在系缆桩上，绳索在系缆桩上保持稳固"
+      ],
+      "observable_checks": [
+        "操作时身体重心稳定，未过度靠近甲板边缘"
+      ],
+      "unobservable_checks": [],
+      "weight": 10.0,
+      "evidence_refs": [
+        {
+          "kind": "video",
+          "ref": "video@243000ms",
+          "description": "将整理好的绳圈移向船舷系缆桩，模拟套桩或固定操作",
+          "asset_id": "80e504c539c942348f17ec8677da417b",
+          "timestamp_ms": 243000,
+          "page": null,
+          "section": null,
+          "chunk_id": null,
+          "chunk_index": null,
+          "content_hash": null
+        },
+        {
+          "kind": "video",
+          "ref": "video@297000ms",
+          "description": "将制作好的绳圈套在木质系缆桩上，并整理绳索位置",
+          "asset_id": "80e504c539c942348f17ec8677da417b",
+          "timestamp_ms": 297000,
+          "page": null,
+          "section": null,
+          "chunk_id": null,
+          "chunk_index": null,
+          "content_hash": null
+        }
+      ],
+      "teaching": {
+        "source_asset_id": "80e504c539c942348f17ec8677da417b",
+        "start_ms": 243000,
+        "end_ms": 299850,
+        "instruction": "将打好并收紧的绳圈移至船舷旁的系缆桩处，把绳圈套入系缆桩，并整理绳索位置使其稳固贴合。",
+        "reference_timestamps_ms": [
+          243000,
+          299700
+        ]
+      },
+      "verification": {
+        "checks": [
+          {
+            "id": "completion_checks_1",
+            "criterion": "绳圈已套在系缆桩上，绳索在系缆桩上保持稳固",
+            "category": "completion",
+            "required": true,
+            "mode": "visual",
+            "correction": ""
+          },
+          {
+            "id": "observable_checks_1",
+            "criterion": "操作时身体重心稳定，未过度靠近甲板边缘",
+            "category": "safety",
+            "required": true,
+            "mode": "visual",
+            "correction": ""
+          }
+        ],
+        "confirm_windows": 2,
+        "teacher_confirmed": false
+      }
+    }
+  ]
+}

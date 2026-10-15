@@ -1,0 +1,230 @@
+{
+  "session_id": "97489c55281242d288ba4012ef0e5fca",
+  "sop_id": "4c0f0df333b64100ad358c4888c45d83",
+  "input_kind": "same-tutorial frame replay; not an independent learner or physical camera trial",
+  "strategy": "ordinary step: one API call with three distinct frames spanning one second",
+  "fixed_plan": [
+    [
+      "s1_unclear_auto_recapture",
+      1,
+      [
+        7000,
+        7500,
+        8000
+      ],
+      1,
+      "unclear"
+    ],
+    [
+      "s1_not_yet",
+      1,
+      [
+        2500,
+        2500,
+        2500
+      ],
+      1,
+      "hold"
+    ],
+    [
+      "s1_complete_one_burst",
+      1,
+      [
+        11500,
+        11500,
+        11500
+      ],
+      2,
+      "hold"
+    ],
+    [
+      "s2_not_yet",
+      2,
+      [
+        11500,
+        11500,
+        11500
+      ],
+      2,
+      "hold"
+    ],
+    [
+      "s2_complete_one_burst",
+      2,
+      [
+        26000,
+        26000,
+        26000
+      ],
+      3,
+      "hold"
+    ],
+    [
+      "s3_not_yet",
+      3,
+      [
+        26000,
+        26000,
+        26000
+      ],
+      3,
+      "hold"
+    ],
+    [
+      "s3_complete_one_burst",
+      3,
+      [
+        51000,
+        51000,
+        51000
+      ],
+      4,
+      "hold"
+    ],
+    [
+      "s4_not_yet",
+      4,
+      [
+        51000,
+        51000,
+        51000
+      ],
+      4,
+      "hold"
+    ],
+    [
+      "s4_complete_one_burst",
+      4,
+      [
+        62500,
+        62500,
+        62500
+      ],
+      null,
+      "hold"
+    ]
+  ],
+  "cases": [
+    {
+      "case": "s1_unclear_auto_recapture",
+      "source_timestamps_ms": [
+        7000,
+        7500,
+        8000
+      ],
+      "image_mode": "unclear",
+      "observation_status": "completed",
+      "observation_error": null,
+      "api_latency_seconds": 8.75,
+      "wall_seconds": 8.78,
+      "before_step": 1,
+      "after_step": 1,
+      "step_state": "observing",
+      "expected_step": 1,
+      "matched_expectation": true,
+      "checks": {
+        "checks": [
+          {
+            "check_id": "visible_completion",
+            "status": "unknown",
+            "evidence_frame_ids": [],
+            "reason": "学员画面全黑无法看清，关键区域不可见，无法判断鞋带穿入状态。"
+          }
+        ],
+        "latency_ms": 8749
+      },
+      "feedback": "请移开手或调整视角，让必要条件清楚可见。"
+    },
+    {
+      "case": "s1_not_yet",
+      "source_timestamps_ms": [
+        2500,
+        2500,
+        2500
+      ],
+      "image_mode": "hold",
+      "observation_status": "completed",
+      "observation_error": null,
+      "api_latency_seconds": 3.2,
+      "wall_seconds": 3.22,
+      "before_step": 1,
+      "after_step": 1,
+      "step_state": "observing",
+      "expected_step": 1,
+      "matched_expectation": true,
+      "checks": {
+        "checks": [
+          {
+            "check_id": "visible_completion",
+            "status": "unknown",
+            "evidence_frame_ids": [],
+            "reason": "frame_5与frame_6间隔仅0.5秒，不足0.8秒，无法按规则确认最终稳定状态。"
+          }
+        ],
+        "latency_ms": 3201
+      },
+      "feedback": "请移开手或调整视角，让必要条件清楚可见。"
+    },
+    {
+      "case": "s1_complete_one_burst",
+      "source_timestamps_ms": [
+        11500,
+        11500,
+        11500
+      ],
+      "image_mode": "hold",
+      "observation_status": "completed",
+      "observation_error": null,
+      "api_latency_seconds": 3.7,
+      "wall_seconds": 3.72,
+      "before_step": 1,
+      "after_step": 1,
+      "step_state": "observing",
+      "expected_step": 2,
+      "matched_expectation": false,
+      "checks": {
+        "checks": [
+          {
+            "check_id": "visible_completion",
+            "status": "not_yet",
+            "evidence_frame_ids": [
+              "frame_7",
+              "frame_9"
+            ],
+            "reason": "双手正在调整鞋带，底部横带未理平，操作尚未完成。"
+          }
+        ],
+        "latency_ms": 3701
+      },
+      "feedback": "正在操作，完成后请让结果保持可见。"
+    }
+  ],
+  "completed_steps": [],
+  "final_status": "paused",
+  "stopped_before_case": "s2_not_yet",
+  "stop_reason": "Actual progress differs from fixed plan; state was not rewound",
+  "final_state": {
+    "current_step_index": 1,
+    "step_revision": 2,
+    "step_state": "observing",
+    "entered_at_ms": 1792039030127,
+    "step_active_ms": 15912,
+    "completed": [],
+    "skipped": [],
+    "checks": [],
+    "confirm_count": 0,
+    "confirm_hashes": [],
+    "confirm_sequence": 0,
+    "last_sequence": 9,
+    "pending_observation_id": null,
+    "call_count": 3,
+    "error_count": 0,
+    "attempts": [],
+    "manual_checks": [],
+    "feedback": "正在操作，完成后请让结果保持可见。",
+    "service_error": "",
+    "last_observation_id": "49c5c7c21fdf42d586494eed4cdba817"
+  },
+  "matched_cases": 2,
+  "executed_cases": 3
+}

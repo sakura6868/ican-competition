@@ -1,0 +1,1261 @@
+{
+  "analysis_format": "teaching_windows_v1",
+  "window_analyses": [
+    {
+      "start_ms": 0,
+      "end_ms": 30000,
+      "analysis": {
+        "step_candidates": [
+          {
+            "name": "展示折纸杯成品",
+            "timestamp_ms": 0,
+            "evidence_refs": [
+              "video@0ms",
+              "video@5970ms"
+            ],
+            "start_ms": 0,
+            "end_ms": 11940,
+            "instruction": "视频开头展示了已经完成的折纸杯成品，包括一个白底红边的杯子和两个不同颜色的成品示例，并配有'ORIGAMI CUP'标题。",
+            "completion_checks": [
+              "确认看到了折纸杯的最终形态",
+              "确认理解了本教程的目标是制作折纸杯"
+            ],
+            "batch_index": 0,
+            "source_order": 0,
+            "source_frame_index": 0
+          },
+          {
+            "name": "片头展示",
+            "timestamp_ms": 11940,
+            "evidence_refs": [
+              "video@11940ms"
+            ],
+            "start_ms": 11940,
+            "end_ms": 23880,
+            "instruction": "显示频道名称'Crafting on a Budget'和'Christine's Crafts'标志的过渡画面。",
+            "completion_checks": [
+              "确认这是视频的片头部分，无具体操作步骤"
+            ],
+            "batch_index": 0,
+            "source_order": 1,
+            "source_frame_index": 2
+          },
+          {
+            "name": "准备三角形纸张",
+            "timestamp_ms": 23880,
+            "evidence_refs": [
+              "video@23880ms",
+              "video@27000ms"
+            ],
+            "start_ms": 23880,
+            "end_ms": 29850,
+            "instruction": "将一张正方形纸沿对角线折叠成三角形，或者直接使用三角形纸张。演示者用手指指出三角形的底边两个角。",
+            "completion_checks": [
+              "纸张呈现为平整的三角形",
+              "红色面朝上（根据后续步骤推断）",
+              "底边水平放置"
+            ],
+            "batch_index": 0,
+            "source_order": 2,
+            "source_frame_index": 3
+          },
+          {
+            "name": "折叠底角",
+            "timestamp_ms": 29850,
+            "evidence_refs": [
+              "video@29850ms"
+            ],
+            "start_ms": 29850,
+            "end_ms": 30000,
+            "instruction": "开始进行下一步折叠，右手捏住三角形右侧部分向上或向内折叠，左手按住纸张固定。由于时间窗口截止，具体折叠目标位置未完全展示。",
+            "completion_checks": [
+              "动作已开始，右手正在操作纸张一角",
+              "具体完成状态需参考下一批次"
+            ],
+            "batch_index": 0,
+            "source_order": 3,
+            "source_frame_index": 5
+          }
+        ],
+        "tool_candidates": [],
+        "object_candidates": [
+          {
+            "name": "折纸杯成品",
+            "description": "视频开头展示的已完成折纸作品，呈立体杯状，有白色内衬和彩色外层。",
+            "batch_index": 0,
+            "source_order": 0,
+            "source_frame_index": 0,
+            "timestamp_ms": 0
+          },
+          {
+            "name": "红色三角形纸",
+            "description": "用于折叠的主要材料，呈等腰直角三角形形状，红色面朝上。",
+            "batch_index": 0,
+            "source_order": 1,
+            "source_frame_index": 5,
+            "timestamp_ms": 29850
+          }
+        ],
+        "action_candidates": [
+          {
+            "name": "展示成品",
+            "description": "双手持握或摆放已完成的折纸杯，向观众展示最终效果。",
+            "batch_index": 0,
+            "source_order": 0,
+            "source_frame_index": 0,
+            "timestamp_ms": 0
+          },
+          {
+            "name": "指示位置",
+            "description": "用手指指向三角形纸张的底角，强调起始位置或参考点。",
+            "batch_index": 0,
+            "source_order": 1,
+            "source_frame_index": 2,
+            "timestamp_ms": 11940
+          },
+          {
+            "name": "折叠纸张",
+            "description": "用手捏住纸张边缘进行翻折动作，左手辅助固定。",
+            "batch_index": 0,
+            "source_order": 2,
+            "source_frame_index": 5,
+            "timestamp_ms": 29850
+          }
+        ],
+        "safety_requirements": [],
+        "segment_id": "0c115b3d19794e36b2a192ffcefe07c9:window:0",
+        "analysis_format": "timeline_batches_v1",
+        "batch_count": 1,
+        "batch_analyses": [
+          {
+            "batch_index": 0,
+            "batch_number": 1,
+            "frames": [
+              {
+                "image_order": 0,
+                "source_frame_index": 0,
+                "timestamp_ms": 0
+              },
+              {
+                "image_order": 1,
+                "source_frame_index": 1,
+                "timestamp_ms": 5970
+              },
+              {
+                "image_order": 2,
+                "source_frame_index": 2,
+                "timestamp_ms": 11940
+              },
+              {
+                "image_order": 3,
+                "source_frame_index": 3,
+                "timestamp_ms": 23880
+              },
+              {
+                "image_order": 4,
+                "source_frame_index": 4,
+                "timestamp_ms": 27000
+              },
+              {
+                "image_order": 5,
+                "source_frame_index": 5,
+                "timestamp_ms": 29850
+              }
+            ],
+            "latency_ms": 16114,
+            "analysis": {
+              "step_candidates": [
+                {
+                  "name": "展示折纸杯成品",
+                  "timestamp_ms": 0,
+                  "evidence_refs": [
+                    "video@0ms",
+                    "video@5970ms"
+                  ],
+                  "start_ms": 0,
+                  "end_ms": 11940,
+                  "instruction": "视频开头展示了已经完成的折纸杯成品，包括一个白底红边的杯子和两个不同颜色的成品示例，并配有'ORIGAMI CUP'标题。",
+                  "completion_checks": [
+                    "确认看到了折纸杯的最终形态",
+                    "确认理解了本教程的目标是制作折纸杯"
+                  ]
+                },
+                {
+                  "name": "片头展示",
+                  "timestamp_ms": 11940,
+                  "evidence_refs": [
+                    "video@11940ms"
+                  ],
+                  "start_ms": 11940,
+                  "end_ms": 23880,
+                  "instruction": "显示频道名称'Crafting on a Budget'和'Christine's Crafts'标志的过渡画面。",
+                  "completion_checks": [
+                    "确认这是视频的片头部分，无具体操作步骤"
+                  ]
+                },
+                {
+                  "name": "准备三角形纸张",
+                  "timestamp_ms": 23880,
+                  "evidence_refs": [
+                    "video@23880ms",
+                    "video@27000ms"
+                  ],
+                  "start_ms": 23880,
+                  "end_ms": 29850,
+                  "instruction": "将一张正方形纸沿对角线折叠成三角形，或者直接使用三角形纸张。演示者用手指指出三角形的底边两个角。",
+                  "completion_checks": [
+                    "纸张呈现为平整的三角形",
+                    "红色面朝上（根据后续步骤推断）",
+                    "底边水平放置"
+                  ]
+                },
+                {
+                  "name": "折叠底角",
+                  "timestamp_ms": 29850,
+                  "evidence_refs": [
+                    "video@29850ms"
+                  ],
+                  "start_ms": 29850,
+                  "end_ms": 30000,
+                  "instruction": "开始进行下一步折叠，右手捏住三角形右侧部分向上或向内折叠，左手按住纸张固定。由于时间窗口截止，具体折叠目标位置未完全展示。",
+                  "completion_checks": [
+                    "动作已开始，右手正在操作纸张一角",
+                    "具体完成状态需参考下一批次"
+                  ]
+                }
+              ],
+              "tool_candidates": [],
+              "object_candidates": [
+                {
+                  "name": "折纸杯成品",
+                  "description": "视频开头展示的已完成折纸作品，呈立体杯状，有白色内衬和彩色外层。"
+                },
+                {
+                  "name": "红色三角形纸",
+                  "description": "用于折叠的主要材料，呈等腰直角三角形形状，红色面朝上。"
+                }
+              ],
+              "action_candidates": [
+                {
+                  "name": "展示成品",
+                  "description": "双手持握或摆放已完成的折纸杯，向观众展示最终效果。"
+                },
+                {
+                  "name": "指示位置",
+                  "description": "用手指指向三角形纸张的底角，强调起始位置或参考点。"
+                },
+                {
+                  "name": "折叠纸张",
+                  "description": "用手捏住纸张边缘进行翻折动作，左手辅助固定。"
+                }
+              ],
+              "safety_requirements": []
+            }
+          }
+        ]
+      }
+    },
+    {
+      "start_ms": 27000,
+      "end_ms": 57000,
+      "analysis": {
+        "step_candidates": [
+          {
+            "name": "将三角形底角向上折叠",
+            "timestamp_ms": 29850,
+            "evidence_refs": [
+              "video@29850ms",
+              "video@38940ms"
+            ],
+            "start_ms": 27000,
+            "end_ms": 44910,
+            "instruction": "将红色三角形纸张底部的两个角分别向上折叠，使底边与斜边对齐或形成新的折痕。",
+            "completion_checks": [
+              "纸张底部出现向上的折角",
+              "折痕清晰平整"
+            ],
+            "batch_index": 0,
+            "source_order": 0,
+            "source_frame_index": 0
+          },
+          {
+            "name": "调整并压平折痕",
+            "timestamp_ms": 44910,
+            "evidence_refs": [
+              "video@44910ms",
+              "video@54000ms"
+            ],
+            "start_ms": 44910,
+            "end_ms": 54000,
+            "instruction": "用手抚平刚才折叠产生的折痕，确保纸张贴合紧密。",
+            "completion_checks": [
+              "折痕处无翘起",
+              "纸张表面平整"
+            ],
+            "batch_index": 0,
+            "source_order": 1,
+            "source_frame_index": 2
+          },
+          {
+            "name": "完成基础形状折叠",
+            "timestamp_ms": 56850,
+            "evidence_refs": [
+              "video@56850ms"
+            ],
+            "start_ms": 54000,
+            "end_ms": 57000,
+            "instruction": "整理纸张，使其呈现为带有内部折痕的多边形结构（类似风筝形或菱形的一部分）。",
+            "completion_checks": [
+              "纸张整体呈对称的多边形结构",
+              "所有折角均已压实"
+            ],
+            "batch_index": 0,
+            "source_order": 2,
+            "source_frame_index": 5
+          }
+        ],
+        "tool_candidates": [],
+        "object_candidates": [
+          {
+            "name": "红色正方形纸（已折成三角形）",
+            "batch_index": 0,
+            "source_order": 0,
+            "source_frame_index": 0,
+            "timestamp_ms": 27000
+          },
+          {
+            "name": "双手",
+            "batch_index": 0,
+            "source_order": 1,
+            "source_frame_index": 5,
+            "timestamp_ms": 56850
+          }
+        ],
+        "action_candidates": [
+          {
+            "name": "折叠",
+            "batch_index": 0,
+            "source_order": 0,
+            "source_frame_index": 0,
+            "timestamp_ms": 27000
+          },
+          {
+            "name": "按压",
+            "batch_index": 0,
+            "source_order": 1,
+            "source_frame_index": 2,
+            "timestamp_ms": 38940
+          },
+          {
+            "name": "抚平",
+            "batch_index": 0,
+            "source_order": 2,
+            "source_frame_index": 3,
+            "timestamp_ms": 44910
+          },
+          {
+            "name": "展示",
+            "batch_index": 0,
+            "source_order": 3,
+            "source_frame_index": 5,
+            "timestamp_ms": 56850
+          }
+        ],
+        "safety_requirements": [],
+        "segment_id": "0c115b3d19794e36b2a192ffcefe07c9:window:1",
+        "analysis_format": "timeline_batches_v1",
+        "batch_count": 1,
+        "batch_analyses": [
+          {
+            "batch_index": 0,
+            "batch_number": 1,
+            "frames": [
+              {
+                "image_order": 0,
+                "source_frame_index": 0,
+                "timestamp_ms": 27000
+              },
+              {
+                "image_order": 1,
+                "source_frame_index": 1,
+                "timestamp_ms": 29850
+              },
+              {
+                "image_order": 2,
+                "source_frame_index": 2,
+                "timestamp_ms": 38940
+              },
+              {
+                "image_order": 3,
+                "source_frame_index": 3,
+                "timestamp_ms": 44910
+              },
+              {
+                "image_order": 4,
+                "source_frame_index": 4,
+                "timestamp_ms": 54000
+              },
+              {
+                "image_order": 5,
+                "source_frame_index": 5,
+                "timestamp_ms": 56850
+              }
+            ],
+            "latency_ms": 10838,
+            "analysis": {
+              "step_candidates": [
+                {
+                  "name": "将三角形底角向上折叠",
+                  "timestamp_ms": 29850,
+                  "evidence_refs": [
+                    "video@29850ms",
+                    "video@38940ms"
+                  ],
+                  "start_ms": 27000,
+                  "end_ms": 44910,
+                  "instruction": "将红色三角形纸张底部的两个角分别向上折叠，使底边与斜边对齐或形成新的折痕。",
+                  "completion_checks": [
+                    "纸张底部出现向上的折角",
+                    "折痕清晰平整"
+                  ]
+                },
+                {
+                  "name": "调整并压平折痕",
+                  "timestamp_ms": 44910,
+                  "evidence_refs": [
+                    "video@44910ms",
+                    "video@54000ms"
+                  ],
+                  "start_ms": 44910,
+                  "end_ms": 54000,
+                  "instruction": "用手抚平刚才折叠产生的折痕，确保纸张贴合紧密。",
+                  "completion_checks": [
+                    "折痕处无翘起",
+                    "纸张表面平整"
+                  ]
+                },
+                {
+                  "name": "完成基础形状折叠",
+                  "timestamp_ms": 56850,
+                  "evidence_refs": [
+                    "video@56850ms"
+                  ],
+                  "start_ms": 54000,
+                  "end_ms": 57000,
+                  "instruction": "整理纸张，使其呈现为带有内部折痕的多边形结构（类似风筝形或菱形的一部分）。",
+                  "completion_checks": [
+                    "纸张整体呈对称的多边形结构",
+                    "所有折角均已压实"
+                  ]
+                }
+              ],
+              "tool_candidates": [],
+              "object_candidates": [
+                "红色正方形纸（已折成三角形）",
+                "双手"
+              ],
+              "action_candidates": [
+                "折叠",
+                "按压",
+                "抚平",
+                "展示"
+              ],
+              "safety_requirements": []
+            }
+          }
+        ]
+      }
+    },
+    {
+      "start_ms": 54000,
+      "end_ms": 84000,
+      "analysis": {
+        "step_candidates": [
+          {
+            "name": "整理折痕并翻转纸张",
+            "timestamp_ms": 54000,
+            "evidence_refs": [
+              "video@54000ms",
+              "video@56850ms",
+              "video@65940ms"
+            ],
+            "start_ms": 54000,
+            "end_ms": 65940,
+            "instruction": "按压平整红色折纸的折痕，然后将纸张翻转至另一面。",
+            "completion_checks": [
+              "折纸表面折痕清晰平整",
+              "纸张已翻转，呈现无折痕的红色平面"
+            ],
+            "batch_index": 0,
+            "source_order": 0,
+            "source_frame_index": 0
+          },
+          {
+            "name": "对折纸张",
+            "timestamp_ms": 71910,
+            "evidence_refs": [
+              "video@71910ms"
+            ],
+            "start_ms": 65940,
+            "end_ms": 71910,
+            "instruction": "将纸张沿中心线对折，使边缘对齐。",
+            "completion_checks": [
+              "纸张呈对折状态",
+              "可见白色内层与红色外层边缘对齐"
+            ],
+            "batch_index": 0,
+            "source_order": 1,
+            "source_frame_index": 2
+          },
+          {
+            "name": "撑开形成立体结构",
+            "timestamp_ms": 81000,
+            "evidence_refs": [
+              "video@81000ms",
+              "video@83850ms"
+            ],
+            "start_ms": 71910,
+            "end_ms": 84000,
+            "instruction": "从开口处将折叠好的纸张撑开，形成中空的立体容器形状。",
+            "completion_checks": [
+              "折纸已从扁平状态变为立体中空结构",
+              "内部呈现白色，外部为红色",
+              "容器开口张开，可容纳物体"
+            ],
+            "batch_index": 0,
+            "source_order": 2,
+            "source_frame_index": 5
+          }
+        ],
+        "tool_candidates": [
+          {
+            "name": "透明塑料盖/容器",
+            "timestamp_ms": 81000,
+            "evidence_refs": [
+              "video@81000ms",
+              "video@83850ms"
+            ],
+            "batch_index": 0,
+            "source_order": 0,
+            "source_frame_index": 0
+          }
+        ],
+        "object_candidates": [
+          {
+            "name": "红色折纸",
+            "timestamp_ms": 54000,
+            "evidence_refs": [
+              "video@54000ms",
+              "video@56850ms",
+              "video@65940ms",
+              "video@71910ms",
+              "video@81000ms",
+              "video@83850ms"
+            ],
+            "batch_index": 0,
+            "source_order": 0,
+            "source_frame_index": 0
+          }
+        ],
+        "action_candidates": [
+          {
+            "name": "按压折痕",
+            "timestamp_ms": 54000,
+            "evidence_refs": [
+              "video@54000ms"
+            ],
+            "batch_index": 0,
+            "source_order": 0,
+            "source_frame_index": 0
+          },
+          {
+            "name": "翻转纸张",
+            "timestamp_ms": 65940,
+            "evidence_refs": [
+              "video@65940ms"
+            ],
+            "batch_index": 0,
+            "source_order": 1,
+            "source_frame_index": 1
+          },
+          {
+            "name": "对折",
+            "timestamp_ms": 71910,
+            "evidence_refs": [
+              "video@71910ms"
+            ],
+            "batch_index": 0,
+            "source_order": 2,
+            "source_frame_index": 2
+          },
+          {
+            "name": "手持工具展示",
+            "timestamp_ms": 81000,
+            "evidence_refs": [
+              "video@81000ms"
+            ],
+            "batch_index": 0,
+            "source_order": 4,
+            "source_frame_index": 5
+          },
+          {
+            "name": "撑开立体化",
+            "timestamp_ms": 83850,
+            "evidence_refs": [
+              "video@83850ms"
+            ],
+            "batch_index": 0,
+            "source_order": 3,
+            "source_frame_index": 4
+          }
+        ],
+        "safety_requirements": [],
+        "segment_id": "0c115b3d19794e36b2a192ffcefe07c9:window:2",
+        "analysis_format": "timeline_batches_v1",
+        "batch_count": 1,
+        "batch_analyses": [
+          {
+            "batch_index": 0,
+            "batch_number": 1,
+            "frames": [
+              {
+                "image_order": 0,
+                "source_frame_index": 0,
+                "timestamp_ms": 54000
+              },
+              {
+                "image_order": 1,
+                "source_frame_index": 1,
+                "timestamp_ms": 56850
+              },
+              {
+                "image_order": 2,
+                "source_frame_index": 2,
+                "timestamp_ms": 65940
+              },
+              {
+                "image_order": 3,
+                "source_frame_index": 3,
+                "timestamp_ms": 71910
+              },
+              {
+                "image_order": 4,
+                "source_frame_index": 4,
+                "timestamp_ms": 81000
+              },
+              {
+                "image_order": 5,
+                "source_frame_index": 5,
+                "timestamp_ms": 83850
+              }
+            ],
+            "latency_ms": 15059,
+            "analysis": {
+              "step_candidates": [
+                {
+                  "name": "整理折痕并翻转纸张",
+                  "timestamp_ms": 54000,
+                  "evidence_refs": [
+                    "video@54000ms",
+                    "video@56850ms",
+                    "video@65940ms"
+                  ],
+                  "start_ms": 54000,
+                  "end_ms": 65940,
+                  "instruction": "按压平整红色折纸的折痕，然后将纸张翻转至另一面。",
+                  "completion_checks": [
+                    "折纸表面折痕清晰平整",
+                    "纸张已翻转，呈现无折痕的红色平面"
+                  ]
+                },
+                {
+                  "name": "对折纸张",
+                  "timestamp_ms": 71910,
+                  "evidence_refs": [
+                    "video@71910ms"
+                  ],
+                  "start_ms": 65940,
+                  "end_ms": 71910,
+                  "instruction": "将纸张沿中心线对折，使边缘对齐。",
+                  "completion_checks": [
+                    "纸张呈对折状态",
+                    "可见白色内层与红色外层边缘对齐"
+                  ]
+                },
+                {
+                  "name": "撑开形成立体结构",
+                  "timestamp_ms": 81000,
+                  "evidence_refs": [
+                    "video@81000ms",
+                    "video@83850ms"
+                  ],
+                  "start_ms": 71910,
+                  "end_ms": 84000,
+                  "instruction": "从开口处将折叠好的纸张撑开，形成中空的立体容器形状。",
+                  "completion_checks": [
+                    "折纸已从扁平状态变为立体中空结构",
+                    "内部呈现白色，外部为红色",
+                    "容器开口张开，可容纳物体"
+                  ]
+                }
+              ],
+              "tool_candidates": [
+                {
+                  "name": "透明塑料盖/容器",
+                  "timestamp_ms": 81000,
+                  "evidence_refs": [
+                    "video@81000ms",
+                    "video@83850ms"
+                  ]
+                }
+              ],
+              "object_candidates": [
+                {
+                  "name": "红色折纸",
+                  "timestamp_ms": 54000,
+                  "evidence_refs": [
+                    "video@54000ms",
+                    "video@56850ms",
+                    "video@65940ms",
+                    "video@71910ms",
+                    "video@81000ms",
+                    "video@83850ms"
+                  ]
+                }
+              ],
+              "action_candidates": [
+                {
+                  "name": "按压折痕",
+                  "timestamp_ms": 54000,
+                  "evidence_refs": [
+                    "video@54000ms"
+                  ]
+                },
+                {
+                  "name": "翻转纸张",
+                  "timestamp_ms": 65940,
+                  "evidence_refs": [
+                    "video@65940ms"
+                  ]
+                },
+                {
+                  "name": "对折",
+                  "timestamp_ms": 71910,
+                  "evidence_refs": [
+                    "video@71910ms"
+                  ]
+                },
+                {
+                  "name": "撑开立体化",
+                  "timestamp_ms": 83850,
+                  "evidence_refs": [
+                    "video@83850ms"
+                  ]
+                },
+                {
+                  "name": "手持工具展示",
+                  "timestamp_ms": 81000,
+                  "evidence_refs": [
+                    "video@81000ms"
+                  ]
+                }
+              ],
+              "safety_requirements": []
+            }
+          }
+        ]
+      }
+    },
+    {
+      "start_ms": 81000,
+      "end_ms": 111000,
+      "analysis": {
+        "step_candidates": [
+          {
+            "name": "展示折纸成品与参照模具",
+            "timestamp_ms": 81000,
+            "evidence_refs": [
+              "video@81000ms"
+            ],
+            "start_ms": 81000,
+            "end_ms": 86970,
+            "instruction": "将折好的红白双色纸船平放在桌面上，右手持透明塑料模具置于右侧进行对比展示。",
+            "completion_checks": [
+              "纸船平稳放置于桌面左侧",
+              "透明模具位于画面右侧可见范围内"
+            ],
+            "batch_index": 0,
+            "source_order": 0,
+            "source_frame_index": 0
+          },
+          {
+            "name": "手持展示纸船内部结构",
+            "timestamp_ms": 86970,
+            "evidence_refs": [
+              "video@86970ms",
+              "video@98910ms",
+              "video@104880ms"
+            ],
+            "start_ms": 86970,
+            "end_ms": 109272,
+            "instruction": "左手拿起纸船，翻转并倾斜以展示其白色的内部空腔结构，同时保持右手持有透明模具作为参照。",
+            "completion_checks": [
+              "纸船被左手稳固握持",
+              "纸船内部白色区域清晰朝向镜头可见",
+              "透明模具仍在画面中作为尺寸或形状参照"
+            ],
+            "batch_index": 0,
+            "source_order": 1,
+            "source_frame_index": 2
+          },
+          {
+            "name": "视频结束致谢画面",
+            "timestamp_ms": 109272,
+            "evidence_refs": [
+              "video@109272ms",
+              "video@110850ms"
+            ],
+            "start_ms": 109272,
+            "end_ms": 111000,
+            "instruction": "画面切换为粉色波点折纸成品特写，屏幕中央显示黑色文字“THANK YOU FOR WATCHING”，表示教程结束。",
+            "completion_checks": [
+              "画面主体变为粉色波点折纸",
+              "屏幕上清晰可见“THANK YOU FOR WATCHING”字样"
+            ],
+            "batch_index": 0,
+            "source_order": 2,
+            "source_frame_index": 5
+          }
+        ],
+        "tool_candidates": [
+          {
+            "name": "透明塑料模具",
+            "description": "用于对比折纸形状或尺寸的半透明白色塑料容器状物体",
+            "batch_index": 0,
+            "source_order": 0,
+            "source_frame_index": 0,
+            "timestamp_ms": 81000
+          }
+        ],
+        "object_candidates": [
+          {
+            "name": "红白双色折纸船",
+            "description": "外部为橙红色、内部为白色的立体折纸作品，呈船型或斗型",
+            "batch_index": 0,
+            "source_order": 0,
+            "source_frame_index": 0,
+            "timestamp_ms": 81000
+          },
+          {
+            "name": "粉色波点折纸",
+            "description": "出现在结尾画面的粉红色带白色波点的折纸成品",
+            "batch_index": 0,
+            "source_order": 1,
+            "source_frame_index": 5,
+            "timestamp_ms": 110850
+          }
+        ],
+        "action_candidates": [
+          {
+            "name": "对比展示",
+            "description": "将折纸成品与透明模具并置，以展示两者形态关系",
+            "batch_index": 0,
+            "source_order": 0,
+            "source_frame_index": 0,
+            "timestamp_ms": 81000
+          },
+          {
+            "name": "翻转展示内部",
+            "description": "手持折纸并调整角度，使内部空腔结构面向观察者",
+            "batch_index": 0,
+            "source_order": 1,
+            "source_frame_index": 5,
+            "timestamp_ms": 110850
+          }
+        ],
+        "safety_requirements": [],
+        "segment_id": "0c115b3d19794e36b2a192ffcefe07c9:window:3",
+        "analysis_format": "timeline_batches_v1",
+        "batch_count": 1,
+        "batch_analyses": [
+          {
+            "batch_index": 0,
+            "batch_number": 1,
+            "frames": [
+              {
+                "image_order": 0,
+                "source_frame_index": 0,
+                "timestamp_ms": 81000
+              },
+              {
+                "image_order": 1,
+                "source_frame_index": 1,
+                "timestamp_ms": 86970
+              },
+              {
+                "image_order": 2,
+                "source_frame_index": 2,
+                "timestamp_ms": 98910
+              },
+              {
+                "image_order": 3,
+                "source_frame_index": 3,
+                "timestamp_ms": 104880
+              },
+              {
+                "image_order": 4,
+                "source_frame_index": 4,
+                "timestamp_ms": 109272
+              },
+              {
+                "image_order": 5,
+                "source_frame_index": 5,
+                "timestamp_ms": 110850
+              }
+            ],
+            "latency_ms": 13275,
+            "analysis": {
+              "step_candidates": [
+                {
+                  "name": "展示折纸成品与参照模具",
+                  "timestamp_ms": 81000,
+                  "evidence_refs": [
+                    "video@81000ms"
+                  ],
+                  "start_ms": 81000,
+                  "end_ms": 86970,
+                  "instruction": "将折好的红白双色纸船平放在桌面上，右手持透明塑料模具置于右侧进行对比展示。",
+                  "completion_checks": [
+                    "纸船平稳放置于桌面左侧",
+                    "透明模具位于画面右侧可见范围内"
+                  ]
+                },
+                {
+                  "name": "手持展示纸船内部结构",
+                  "timestamp_ms": 86970,
+                  "evidence_refs": [
+                    "video@86970ms",
+                    "video@98910ms",
+                    "video@104880ms"
+                  ],
+                  "start_ms": 86970,
+                  "end_ms": 109272,
+                  "instruction": "左手拿起纸船，翻转并倾斜以展示其白色的内部空腔结构，同时保持右手持有透明模具作为参照。",
+                  "completion_checks": [
+                    "纸船被左手稳固握持",
+                    "纸船内部白色区域清晰朝向镜头可见",
+                    "透明模具仍在画面中作为尺寸或形状参照"
+                  ]
+                },
+                {
+                  "name": "视频结束致谢画面",
+                  "timestamp_ms": 109272,
+                  "evidence_refs": [
+                    "video@109272ms",
+                    "video@110850ms"
+                  ],
+                  "start_ms": 109272,
+                  "end_ms": 111000,
+                  "instruction": "画面切换为粉色波点折纸成品特写，屏幕中央显示黑色文字“THANK YOU FOR WATCHING”，表示教程结束。",
+                  "completion_checks": [
+                    "画面主体变为粉色波点折纸",
+                    "屏幕上清晰可见“THANK YOU FOR WATCHING”字样"
+                  ]
+                }
+              ],
+              "tool_candidates": [
+                {
+                  "name": "透明塑料模具",
+                  "description": "用于对比折纸形状或尺寸的半透明白色塑料容器状物体"
+                }
+              ],
+              "object_candidates": [
+                {
+                  "name": "红白双色折纸船",
+                  "description": "外部为橙红色、内部为白色的立体折纸作品，呈船型或斗型"
+                },
+                {
+                  "name": "粉色波点折纸",
+                  "description": "出现在结尾画面的粉红色带白色波点的折纸成品"
+                }
+              ],
+              "action_candidates": [
+                {
+                  "name": "对比展示",
+                  "description": "将折纸成品与透明模具并置，以展示两者形态关系"
+                },
+                {
+                  "name": "翻转展示内部",
+                  "description": "手持折纸并调整角度，使内部空腔结构面向观察者"
+                }
+              ],
+              "safety_requirements": []
+            }
+          }
+        ]
+      }
+    },
+    {
+      "start_ms": 108000,
+      "end_ms": 114510,
+      "analysis": {
+        "step_candidates": [
+          {
+            "name": "视频结束画面展示",
+            "timestamp_ms": 108000,
+            "evidence_refs": [
+              "video@108000ms",
+              "video@114360ms"
+            ],
+            "start_ms": 108000,
+            "end_ms": 114510,
+            "instruction": "展示折纸成品及感谢观看字幕，无具体操作步骤。",
+            "completion_checks": [
+              "画面显示粉色波点折纸成品",
+              "屏幕可见'THANK YOU FOR WATCHING'文字"
+            ],
+            "batch_index": 0,
+            "source_order": 0,
+            "source_frame_index": 0
+          }
+        ],
+        "tool_candidates": [],
+        "object_candidates": [
+          {
+            "name": "粉色波点折纸成品",
+            "batch_index": 0,
+            "source_order": 0,
+            "source_frame_index": 0,
+            "timestamp_ms": 108000
+          }
+        ],
+        "action_candidates": [
+          {
+            "name": "静态展示",
+            "batch_index": 0,
+            "source_order": 0,
+            "source_frame_index": 0,
+            "timestamp_ms": 108000
+          }
+        ],
+        "safety_requirements": [],
+        "segment_id": "0c115b3d19794e36b2a192ffcefe07c9:window:4",
+        "analysis_format": "timeline_batches_v1",
+        "batch_count": 1,
+        "batch_analyses": [
+          {
+            "batch_index": 0,
+            "batch_number": 1,
+            "frames": [
+              {
+                "image_order": 0,
+                "source_frame_index": 0,
+                "timestamp_ms": 108000
+              },
+              {
+                "image_order": 1,
+                "source_frame_index": 1,
+                "timestamp_ms": 109272
+              },
+              {
+                "image_order": 2,
+                "source_frame_index": 2,
+                "timestamp_ms": 110544
+              },
+              {
+                "image_order": 3,
+                "source_frame_index": 3,
+                "timestamp_ms": 111816
+              },
+              {
+                "image_order": 4,
+                "source_frame_index": 4,
+                "timestamp_ms": 113088
+              },
+              {
+                "image_order": 5,
+                "source_frame_index": 5,
+                "timestamp_ms": 114360
+              }
+            ],
+            "latency_ms": 5834,
+            "analysis": {
+              "step_candidates": [
+                {
+                  "name": "视频结束画面展示",
+                  "timestamp_ms": 108000,
+                  "evidence_refs": [
+                    "video@108000ms",
+                    "video@114360ms"
+                  ],
+                  "start_ms": 108000,
+                  "end_ms": 114510,
+                  "instruction": "展示折纸成品及感谢观看字幕，无具体操作步骤。",
+                  "completion_checks": [
+                    "画面显示粉色波点折纸成品",
+                    "屏幕可见'THANK YOU FOR WATCHING'文字"
+                  ]
+                }
+              ],
+              "tool_candidates": [],
+              "object_candidates": [
+                "粉色波点折纸成品"
+              ],
+              "action_candidates": [
+                "静态展示"
+              ],
+              "safety_requirements": []
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "source_asset_id": "0c115b3d19794e36b2a192ffcefe07c9",
+  "duration_ms": 114510,
+  "transcript_status": "disabled_visual_only",
+  "coverage": [
+    {
+      "start_ms": 0,
+      "end_ms": 30000
+    },
+    {
+      "start_ms": 27000,
+      "end_ms": 57000
+    },
+    {
+      "start_ms": 54000,
+      "end_ms": 84000
+    },
+    {
+      "start_ms": 81000,
+      "end_ms": 111000
+    },
+    {
+      "start_ms": 108000,
+      "end_ms": 114510
+    }
+  ],
+  "reference_timeline": [
+    {
+      "frame_index": 0,
+      "timestamp_ms": 0
+    },
+    {
+      "frame_index": 1,
+      "timestamp_ms": 5970
+    },
+    {
+      "frame_index": 2,
+      "timestamp_ms": 11940
+    },
+    {
+      "frame_index": 3,
+      "timestamp_ms": 17910
+    },
+    {
+      "frame_index": 4,
+      "timestamp_ms": 23880
+    },
+    {
+      "frame_index": 5,
+      "timestamp_ms": 27000
+    },
+    {
+      "frame_index": 6,
+      "timestamp_ms": 29850
+    },
+    {
+      "frame_index": 7,
+      "timestamp_ms": 32970
+    },
+    {
+      "frame_index": 8,
+      "timestamp_ms": 38940
+    },
+    {
+      "frame_index": 9,
+      "timestamp_ms": 44910
+    },
+    {
+      "frame_index": 10,
+      "timestamp_ms": 50880
+    },
+    {
+      "frame_index": 11,
+      "timestamp_ms": 54000
+    },
+    {
+      "frame_index": 12,
+      "timestamp_ms": 56850
+    },
+    {
+      "frame_index": 13,
+      "timestamp_ms": 59970
+    },
+    {
+      "frame_index": 14,
+      "timestamp_ms": 65940
+    },
+    {
+      "frame_index": 15,
+      "timestamp_ms": 71910
+    },
+    {
+      "frame_index": 16,
+      "timestamp_ms": 77880
+    },
+    {
+      "frame_index": 17,
+      "timestamp_ms": 81000
+    },
+    {
+      "frame_index": 18,
+      "timestamp_ms": 83850
+    },
+    {
+      "frame_index": 19,
+      "timestamp_ms": 86970
+    },
+    {
+      "frame_index": 20,
+      "timestamp_ms": 92940
+    },
+    {
+      "frame_index": 21,
+      "timestamp_ms": 98910
+    },
+    {
+      "frame_index": 22,
+      "timestamp_ms": 104880
+    },
+    {
+      "frame_index": 23,
+      "timestamp_ms": 108000
+    },
+    {
+      "frame_index": 24,
+      "timestamp_ms": 109272
+    },
+    {
+      "frame_index": 25,
+      "timestamp_ms": 110544
+    },
+    {
+      "frame_index": 26,
+      "timestamp_ms": 110850
+    },
+    {
+      "frame_index": 27,
+      "timestamp_ms": 111816
+    },
+    {
+      "frame_index": 28,
+      "timestamp_ms": 113088
+    },
+    {
+      "frame_index": 29,
+      "timestamp_ms": 114360
+    }
+  ]
+}

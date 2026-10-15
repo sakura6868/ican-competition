@@ -1,0 +1,288 @@
+{
+  "session_id": "da2b3c42d2c14e19833aa29dec4c8a9c",
+  "sop_id": "2b37cbe48edb4807be0116198924ccb2",
+  "input_kind": "same-tutorial frame replay; not an independent learner or physical camera trial",
+  "strategy": "ordinary step: one API call with three distinct frames spanning one second",
+  "fixed_plan": [
+    [
+      "s1_unclear_auto_recapture",
+      1,
+      [
+        7000,
+        7500,
+        8000
+      ],
+      1,
+      "unclear"
+    ],
+    [
+      "s1_complete_one_burst",
+      1,
+      [
+        64000,
+        64000,
+        64000
+      ],
+      2,
+      "hold"
+    ],
+    [
+      "s2_complete_one_burst",
+      2,
+      [
+        64000,
+        64000,
+        64000
+      ],
+      3,
+      "hold"
+    ],
+    [
+      "s3_complete_one_burst",
+      3,
+      [
+        64000,
+        64000,
+        64000
+      ],
+      4,
+      "hold"
+    ],
+    [
+      "s4_complete_one_burst",
+      4,
+      [
+        64000,
+        64000,
+        64000
+      ],
+      null,
+      "hold"
+    ]
+  ],
+  "cases": [
+    {
+      "case": "s1_unclear_auto_recapture",
+      "source_timestamps_ms": [
+        7000,
+        7500,
+        8000
+      ],
+      "image_mode": "unclear",
+      "observation_status": "completed",
+      "observation_error": null,
+      "api_latency_seconds": 3.04,
+      "wall_seconds": 3.07,
+      "before_step": 1,
+      "after_step": 1,
+      "step_state": "observing",
+      "expected_step": 1,
+      "matched_expectation": true,
+      "checks": {
+        "checks": [
+          {
+            "check_id": "visible_completion",
+            "status": "unknown",
+            "evidence_frame_ids": [],
+            "reason": "学员画面全黑无法看清鞋带状态，标准图仅作参考，无法判定。"
+          }
+        ],
+        "latency_ms": 3043
+      },
+      "feedback": "请移开手或调整视角，让必要条件清楚可见。"
+    },
+    {
+      "case": "s1_complete_one_burst",
+      "source_timestamps_ms": [
+        64000,
+        64000,
+        64000
+      ],
+      "image_mode": "hold",
+      "observation_status": "completed",
+      "observation_error": null,
+      "api_latency_seconds": 3.31,
+      "wall_seconds": 3.33,
+      "before_step": 1,
+      "after_step": 2,
+      "step_state": "observing",
+      "expected_step": 2,
+      "matched_expectation": true,
+      "checks": {
+        "checks": [
+          {
+            "check_id": "visible_completion",
+            "status": "satisfied",
+            "evidence_frame_ids": [
+              "frame_5",
+              "frame_6"
+            ],
+            "reason": "鞋面下部可见多条连续平行横向鞋带段，左右鞋眼均已穿引，状态稳定。"
+          }
+        ],
+        "latency_ms": 3308
+      },
+      "feedback": "上一步已完成，请观看下一步示范。"
+    },
+    {
+      "case": "s2_complete_one_burst",
+      "source_timestamps_ms": [
+        64000,
+        64000,
+        64000
+      ],
+      "image_mode": "hold",
+      "observation_status": "completed",
+      "observation_error": null,
+      "api_latency_seconds": 3.21,
+      "wall_seconds": 3.23,
+      "before_step": 2,
+      "after_step": 3,
+      "step_state": "observing",
+      "expected_step": 3,
+      "matched_expectation": true,
+      "checks": {
+        "checks": [
+          {
+            "check_id": "visible_completion",
+            "status": "satisfied",
+            "evidence_frame_ids": [
+              "frame_7",
+              "frame_9"
+            ],
+            "reason": "鞋面下部至中部可见多条连续平行横向鞋带段，无漏穿鞋眼，状态稳定。"
+          }
+        ],
+        "latency_ms": 3209
+      },
+      "feedback": "上一步已完成，请观看下一步示范。"
+    },
+    {
+      "case": "s3_complete_one_burst",
+      "source_timestamps_ms": [
+        64000,
+        64000,
+        64000
+      ],
+      "image_mode": "hold",
+      "observation_status": "completed",
+      "observation_error": null,
+      "api_latency_seconds": 3.33,
+      "wall_seconds": 3.36,
+      "before_step": 3,
+      "after_step": 4,
+      "step_state": "observing",
+      "expected_step": 4,
+      "matched_expectation": true,
+      "checks": {
+        "checks": [
+          {
+            "check_id": "visible_completion",
+            "status": "satisfied",
+            "evidence_frame_ids": [
+              "frame_10",
+              "frame_12"
+            ],
+            "reason": "学员画面中可见五条连续横向鞋带段覆盖鞋面，左右鞋眼均已穿引，状态稳定。"
+          }
+        ],
+        "latency_ms": 3329
+      },
+      "feedback": "上一步已完成，请观看下一步示范。"
+    },
+    {
+      "case": "s4_complete_one_burst",
+      "source_timestamps_ms": [
+        64000,
+        64000,
+        64000
+      ],
+      "image_mode": "hold",
+      "observation_status": "completed",
+      "observation_error": null,
+      "api_latency_seconds": 3.32,
+      "wall_seconds": 3.81,
+      "before_step": 4,
+      "after_step": null,
+      "step_state": "completed",
+      "expected_step": null,
+      "matched_expectation": true,
+      "checks": {
+        "checks": [
+          {
+            "check_id": "visible_completion",
+            "status": "satisfied",
+            "evidence_frame_ids": [
+              "frame_13",
+              "frame_15"
+            ],
+            "reason": "两端从最上鞋眼伸出，横向段连续覆盖至底部，无漏穿或打结，状态稳定。"
+          }
+        ],
+        "latency_ms": 3316
+      },
+      "feedback": "全部步骤完成。"
+    }
+  ],
+  "completed_steps": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "final_status": "finished",
+  "final_state": {
+    "current_step_index": null,
+    "step_revision": 5,
+    "step_state": "completed",
+    "entered_at_ms": 1792039280064,
+    "step_active_ms": 0,
+    "completed": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "skipped": [],
+    "checks": [],
+    "confirm_count": 0,
+    "confirm_hashes": [],
+    "confirm_sequence": 0,
+    "last_sequence": 15,
+    "pending_observation_id": null,
+    "call_count": 5,
+    "error_count": 0,
+    "attempts": [
+      {
+        "step_index": 1,
+        "duration_ms": 6524,
+        "source": "visual_verified",
+        "completed_at_ms": 1792039273380
+      },
+      {
+        "step_index": 2,
+        "duration_ms": 3280,
+        "source": "visual_verified",
+        "completed_at_ms": 1792039276660
+      },
+      {
+        "step_index": 3,
+        "duration_ms": 3404,
+        "source": "visual_verified",
+        "completed_at_ms": 1792039280064
+      },
+      {
+        "step_index": 4,
+        "duration_ms": 3858,
+        "source": "visual_verified",
+        "completed_at_ms": 1792039283922
+      }
+    ],
+    "manual_checks": [],
+    "feedback": "全部步骤完成。",
+    "service_error": "",
+    "last_observation_id": "99294fd094934738b7a5b79036c059f0"
+  },
+  "matched_cases": 5,
+  "executed_cases": 5
+}

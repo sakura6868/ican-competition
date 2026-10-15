@@ -1,0 +1,5 @@
+{
+  "type": "SopCompileError",
+  "message": "Provider 分析失败: 模型缺少教学步骤的时间边界，请重新编译或调整模型",
+  "elapsed_seconds": 45.34
+}

@@ -1,0 +1,5 @@
+{
+  "type": "SopCompileError",
+  "message": "Provider 分析失败: 模型返回的教学片段时间无效",
+  "elapsed_seconds": 314.21
+}

@@ -1,0 +1,44 @@
+# Keep Docker build contexts small and prevent local/private material from leaving the machine.
+.git/
+.github/
+.claude/
+.env*
+!.env.example
+deploy/.env*
+!deploy/.env.example
+.DS_Store
+.coverage
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Local runtimes and package manager caches
+.runtime/
+tmp/
+deploy/runtime-data/
+backend/.venv/
+frontend/node_modules/
+**/__pycache__/
+**/.pytest_cache/
+**/.mypy_cache/
+**/.ruff_cache/
+
+# Runtime data, private media, local model files and generated artifacts
+data/
+backend/data/
+models/
+reports/
+output/
+工序智传_演示录制素材包/
+*.db
+*.db-wal
+*.db-shm
+*.mp4
+*.mov
+*.avi
+*.mkv
+*.webm
+
+# Documentation and local packaging are not needed by either runtime image.
+docs/
+*.zip

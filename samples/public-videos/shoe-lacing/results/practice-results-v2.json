@@ -1,0 +1,200 @@
+{
+  "session_id": "cb6eb8c66a174e19a2f8e3a233ef28f1",
+  "sop_id": "cc0fdfc26c534c77afefed9763fcc0e7",
+  "input_kind": "same-tutorial frame replay; not an independent learner or physical camera trial",
+  "strategy": "ordinary step: one API call with three distinct frames spanning one second",
+  "fixed_plan": [
+    [
+      "s1_unclear_auto_recapture",
+      1,
+      [
+        7000,
+        7500,
+        8000
+      ],
+      1,
+      "unclear"
+    ],
+    [
+      "s1_complete_one_burst",
+      1,
+      [
+        64000,
+        64000,
+        64000
+      ],
+      2,
+      "hold"
+    ],
+    [
+      "s2_complete_one_burst",
+      2,
+      [
+        64000,
+        64000,
+        64000
+      ],
+      3,
+      "hold"
+    ],
+    [
+      "s3_complete_one_burst",
+      3,
+      [
+        64000,
+        64000,
+        64000
+      ],
+      4,
+      "hold"
+    ],
+    [
+      "s4_complete_one_burst",
+      4,
+      [
+        64000,
+        64000,
+        64000
+      ],
+      null,
+      "hold"
+    ]
+  ],
+  "cases": [
+    {
+      "case": "s1_unclear_auto_recapture",
+      "source_timestamps_ms": [
+        7000,
+        7500,
+        8000
+      ],
+      "image_mode": "unclear",
+      "observation_status": "completed",
+      "observation_error": null,
+      "api_latency_seconds": 2.86,
+      "wall_seconds": 2.89,
+      "before_step": 1,
+      "after_step": 1,
+      "step_state": "observing",
+      "expected_step": 1,
+      "matched_expectation": true,
+      "checks": {
+        "checks": [
+          {
+            "check_id": "visible_completion",
+            "status": "unknown",
+            "evidence_frame_ids": [],
+            "reason": "学员画面全黑无法看清，关键区域不可见，无法判断鞋带穿入状态。"
+          }
+        ],
+        "latency_ms": 2856
+      },
+      "feedback": "请移开手或调整视角，让必要条件清楚可见。"
+    },
+    {
+      "case": "s1_complete_one_burst",
+      "source_timestamps_ms": [
+        64000,
+        64000,
+        64000
+      ],
+      "image_mode": "hold",
+      "observation_status": "completed",
+      "observation_error": null,
+      "api_latency_seconds": 5.25,
+      "wall_seconds": 5.28,
+      "before_step": 1,
+      "after_step": 2,
+      "step_state": "observing",
+      "expected_step": 2,
+      "matched_expectation": true,
+      "checks": {
+        "checks": [
+          {
+            "check_id": "visible_completion",
+            "status": "satisfied",
+            "evidence_frame_ids": [
+              "frame_5",
+              "frame_6"
+            ],
+            "reason": "最下方鞋眼已穿入鞋带，底部形成平直横带，两端伸出，状态稳定。"
+          }
+        ],
+        "latency_ms": 5251
+      },
+      "feedback": "上一步已完成，请观看下一步示范。"
+    },
+    {
+      "case": "s2_complete_one_burst",
+      "source_timestamps_ms": [
+        64000,
+        64000,
+        64000
+      ],
+      "image_mode": "hold",
+      "observation_status": "completed",
+      "observation_error": null,
+      "api_latency_seconds": 5.7,
+      "wall_seconds": 5.73,
+      "before_step": 2,
+      "after_step": 2,
+      "step_state": "correcting",
+      "expected_step": 3,
+      "matched_expectation": false,
+      "checks": {
+        "checks": [
+          {
+            "check_id": "visible_completion",
+            "status": "violated",
+            "evidence_frame_ids": [
+              "frame_8",
+              "frame_9"
+            ],
+            "reason": "鞋带呈平行横条状未交叉，且两端未穿入第二对鞋眼，结构明确错误。"
+          }
+        ],
+        "latency_ms": 5704
+      },
+      "feedback": "让左右鞋带先在鞋面中央交叉，再把每一端穿入对侧第二个鞋眼，形成完整 X 形。"
+    }
+  ],
+  "completed_steps": [
+    1
+  ],
+  "final_status": "paused",
+  "stopped_before_case": "s3_complete_one_burst",
+  "stop_reason": "Actual progress differs from fixed plan; state was not rewound",
+  "final_state": {
+    "current_step_index": 2,
+    "step_revision": 3,
+    "step_state": "observing",
+    "entered_at_ms": 1792039227657,
+    "step_active_ms": 5797,
+    "completed": [
+      1
+    ],
+    "skipped": [],
+    "checks": [],
+    "confirm_count": 0,
+    "confirm_hashes": [],
+    "confirm_sequence": 0,
+    "last_sequence": 9,
+    "pending_observation_id": null,
+    "call_count": 3,
+    "error_count": 1,
+    "attempts": [
+      {
+        "step_index": 1,
+        "duration_ms": 8277,
+        "source": "visual_verified",
+        "completed_at_ms": 1792039221860
+      }
+    ],
+    "manual_checks": [],
+    "feedback": "让左右鞋带先在鞋面中央交叉，再把每一端穿入对侧第二个鞋眼，形成完整 X 形。",
+    "service_error": "",
+    "last_observation_id": "0516b8d563ba4271981810b06364adfd"
+  },
+  "matched_cases": 2,
+  "executed_cases": 3
+}

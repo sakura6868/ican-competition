@@ -1,0 +1,737 @@
+{
+  "session_id": "ecdb9c67298e47dc8528eb8ad50b796f",
+  "sop_id": "9a6fa8ee6bc343c8a7c7748aba3d9379",
+  "sop_version": 2,
+  "input_kind": "same-tutorial frame replay; not independent learner, camera, or normal-speed playback",
+  "fixed_plan": [
+    [
+      "s1_incomplete",
+      [
+        1
+      ],
+      [
+        15000,
+        15400
+      ],
+      1,
+      0
+    ],
+    [
+      "s1_ok_1",
+      [
+        1
+      ],
+      [
+        24000,
+        24400
+      ],
+      1,
+      1
+    ],
+    [
+      "s1_ok_2",
+      [
+        1
+      ],
+      [
+        27000,
+        27400
+      ],
+      2,
+      0
+    ],
+    [
+      "s2_incomplete",
+      [
+        2
+      ],
+      [
+        25000,
+        25400
+      ],
+      2,
+      0
+    ],
+    [
+      "s2_ok_1",
+      [
+        2
+      ],
+      [
+        39000,
+        39400
+      ],
+      2,
+      1
+    ],
+    [
+      "s2_ok_2",
+      [
+        2
+      ],
+      [
+        40000,
+        40400
+      ],
+      3,
+      0
+    ],
+    [
+      "s3_incomplete",
+      [
+        3
+      ],
+      [
+        39000,
+        39400
+      ],
+      3,
+      0
+    ],
+    [
+      "s3_ok_1",
+      [
+        3
+      ],
+      [
+        55000,
+        55300
+      ],
+      3,
+      1
+    ],
+    [
+      "s3_ok_2",
+      [
+        3
+      ],
+      [
+        56000,
+        56300
+      ],
+      4,
+      0
+    ],
+    [
+      "s4_incomplete",
+      [
+        4
+      ],
+      [
+        56000,
+        56300
+      ],
+      4,
+      0
+    ],
+    [
+      "s4_ok_1",
+      [
+        4
+      ],
+      [
+        71000,
+        71300
+      ],
+      4,
+      1
+    ],
+    [
+      "s4_ok_2",
+      [
+        4
+      ],
+      [
+        72000,
+        72300
+      ],
+      5,
+      0
+    ],
+    [
+      "s5_incomplete",
+      [
+        5
+      ],
+      [
+        72000,
+        72300
+      ],
+      5,
+      0
+    ],
+    [
+      "s5_ok_1",
+      [
+        5
+      ],
+      [
+        77000,
+        77300
+      ],
+      5,
+      1
+    ],
+    [
+      "s5_ok_2",
+      [
+        5
+      ],
+      [
+        78000,
+        78300
+      ],
+      null,
+      0
+    ]
+  ],
+  "cases": [
+    {
+      "case": "s1_incomplete",
+      "source_timestamps_ms": [
+        15000,
+        15400
+      ],
+      "status": "completed",
+      "error": null,
+      "elapsed_seconds": 4.39,
+      "before_step": 1,
+      "after_step": 1,
+      "step_state": "observing",
+      "confirm_count": 0,
+      "expected_step": 1,
+      "expected_confirm_count": 0,
+      "matched_expectation": true,
+      "checks": {
+        "checks": [
+          {
+            "check_id": "visible_completion",
+            "status": "not_yet",
+            "evidence_frame_ids": [
+              "frame_1",
+              "frame_2"
+            ],
+            "reason": "在学员画面 frame_1 和 frame_2 中，红色纸张仍呈现为展开的矩形或正在被手拿起弯曲的状态，尚未沿对角线折叠并压平成三角形，外轮廓未形成三个角。"
+          }
+        ],
+        "latency_ms": 4306
+      },
+      "feedback": "正在操作，完成后请让结果保持可见。"
+    },
+    {
+      "case": "s1_ok_1",
+      "source_timestamps_ms": [
+        24000,
+        24400
+      ],
+      "status": "completed",
+      "error": null,
+      "elapsed_seconds": 4.78,
+      "before_step": 1,
+      "after_step": 1,
+      "step_state": "confirming",
+      "confirm_count": 1,
+      "expected_step": 1,
+      "expected_confirm_count": 1,
+      "matched_expectation": true,
+      "checks": {
+        "checks": [
+          {
+            "check_id": "visible_completion",
+            "status": "satisfied",
+            "evidence_frame_ids": [
+              "frame_3",
+              "frame_4"
+            ],
+            "reason": "在 frame_3 和 frame_4 中，红色纸张已沿对角线折叠成平整的三角形，外轮廓清晰可见三个角，底边折线平直，且尚未进行向内折起底角的后续操作，符合当前步骤完成标准。"
+          }
+        ],
+        "latency_ms": 4743
+      },
+      "feedback": "完成条件已满足，正在用新画面确认。"
+    },
+    {
+      "case": "s1_ok_2",
+      "source_timestamps_ms": [
+        27000,
+        27400
+      ],
+      "status": "completed",
+      "error": null,
+      "elapsed_seconds": 4.06,
+      "before_step": 1,
+      "after_step": 2,
+      "step_state": "observing",
+      "confirm_count": 0,
+      "expected_step": 2,
+      "expected_confirm_count": 0,
+      "matched_expectation": true,
+      "checks": {
+        "checks": [
+          {
+            "check_id": "visible_completion",
+            "status": "satisfied",
+            "evidence_frame_ids": [
+              "frame_5",
+              "frame_6"
+            ],
+            "reason": "在 frame_5 和 frame_6 中，红色纸张已沿对角线折叠成平整的三角形，外轮廓清晰可见三个角，底边折线平直，且尚未进行向内折起底角的后续操作，符合当前步骤完成标准。"
+          }
+        ],
+        "latency_ms": 3975
+      },
+      "feedback": "上一步已完成，请观看下一步示范。"
+    },
+    {
+      "case": "s2_incomplete",
+      "source_timestamps_ms": [
+        25000,
+        25400
+      ],
+      "status": "completed",
+      "error": null,
+      "elapsed_seconds": 4.26,
+      "before_step": 2,
+      "after_step": 2,
+      "step_state": "observing",
+      "confirm_count": 0,
+      "expected_step": 2,
+      "expected_confirm_count": 0,
+      "matched_expectation": true,
+      "checks": {
+        "checks": [
+          {
+            "check_id": "visible_completion",
+            "status": "not_yet",
+            "evidence_frame_ids": [
+              "frame_7",
+              "frame_8"
+            ],
+            "reason": "在学员画面 frame_7 和 frame_8 中，红色三角形纸张保持完全展开的原始状态，两个底角均未进行任何折叠操作，手指仅放置在底边附近，尚未开始执行折入动作。"
+          }
+        ],
+        "latency_ms": 4183
+      },
+      "feedback": "正在操作，完成后请让结果保持可见。"
+    },
+    {
+      "case": "s2_ok_1",
+      "source_timestamps_ms": [
+        39000,
+        39400
+      ],
+      "status": "completed",
+      "error": null,
+      "elapsed_seconds": 3.91,
+      "before_step": 2,
+      "after_step": 2,
+      "step_state": "confirming",
+      "confirm_count": 1,
+      "expected_step": 2,
+      "expected_confirm_count": 1,
+      "matched_expectation": true,
+      "checks": {
+        "checks": [
+          {
+            "check_id": "visible_completion",
+            "status": "satisfied",
+            "evidence_frame_ids": [
+              "frame_9",
+              "frame_10"
+            ],
+            "reason": "在学员画面 frame_9 和 frame_10 中，可以清晰看到三角形右侧的底角已经向对面的斜边折入并压平，折片的上边缘大致呈横向；而左侧的底角仍然保持展开状态，符合步骤要求。"
+          }
+        ],
+        "latency_ms": 3870
+      },
+      "feedback": "完成条件已满足，正在用新画面确认。"
+    },
+    {
+      "case": "s2_ok_2",
+      "source_timestamps_ms": [
+        40000,
+        40400
+      ],
+      "status": "completed",
+      "error": null,
+      "elapsed_seconds": 3.8,
+      "before_step": 2,
+      "after_step": 3,
+      "step_state": "observing",
+      "confirm_count": 0,
+      "expected_step": 3,
+      "expected_confirm_count": 0,
+      "matched_expectation": true,
+      "checks": {
+        "checks": [
+          {
+            "check_id": "visible_completion",
+            "status": "satisfied",
+            "evidence_frame_ids": [
+              "frame_11",
+              "frame_12"
+            ],
+            "reason": "在学员画面 frame_11 和 frame_12 中，可以清晰看到三角形右侧的底角已经向对面的斜边折入并压平，折片的上边缘大致呈横向；而左侧的底角仍然保持展开状态，符合步骤要求。"
+          }
+        ],
+        "latency_ms": 3733
+      },
+      "feedback": "上一步已完成，请观看下一步示范。"
+    },
+    {
+      "case": "s3_incomplete",
+      "source_timestamps_ms": [
+        39000,
+        39400
+      ],
+      "status": "completed",
+      "error": null,
+      "elapsed_seconds": 4.81,
+      "before_step": 3,
+      "after_step": 3,
+      "step_state": "observing",
+      "confirm_count": 0,
+      "expected_step": 3,
+      "expected_confirm_count": 0,
+      "matched_expectation": true,
+      "checks": {
+        "checks": [
+          {
+            "check_id": "visible_completion",
+            "status": "not_yet",
+            "evidence_frame_ids": [
+              "frame_13",
+              "frame_14"
+            ],
+            "reason": "在学员画面 frame_13 和 frame_14 中，可以看到纸张右侧的底角已经向斜边折入，但左侧的底角仍然向外延伸呈尖角状，尚未进行折叠。因此，两个底角并未都向内折入并交叠，杯身下部未完全收拢，操作仍在进行中。"
+          }
+        ],
+        "latency_ms": 4252
+      },
+      "feedback": "正在操作，完成后请让结果保持可见。"
+    },
+    {
+      "case": "s3_ok_1",
+      "source_timestamps_ms": [
+        55000,
+        55300
+      ],
+      "status": "completed",
+      "error": null,
+      "elapsed_seconds": 3.67,
+      "before_step": 3,
+      "after_step": 3,
+      "step_state": "confirming",
+      "confirm_count": 1,
+      "expected_step": 3,
+      "expected_confirm_count": 1,
+      "matched_expectation": true,
+      "checks": {
+        "checks": [
+          {
+            "check_id": "visible_completion",
+            "status": "satisfied",
+            "evidence_frame_ids": [
+              "frame_16"
+            ],
+            "reason": "在 frame_16 中，可以看到红色纸张的两个底角都已经向中心折入，并且两片折角在底部相互交叠，杯身下部已经收拢。同时，顶部的尖角仍然保持向上，没有被折叠，符合步骤要求。"
+          }
+        ],
+        "latency_ms": 3623
+      },
+      "feedback": "完成条件已满足，正在用新画面确认。"
+    },
+    {
+      "case": "s3_ok_2",
+      "source_timestamps_ms": [
+        56000,
+        56300
+      ],
+      "status": "completed",
+      "error": null,
+      "elapsed_seconds": 3.65,
+      "before_step": 3,
+      "after_step": 4,
+      "step_state": "observing",
+      "confirm_count": 0,
+      "expected_step": 4,
+      "expected_confirm_count": 0,
+      "matched_expectation": true,
+      "checks": {
+        "checks": [
+          {
+            "check_id": "visible_completion",
+            "status": "satisfied",
+            "evidence_frame_ids": [
+              "frame_17",
+              "frame_18"
+            ],
+            "reason": "在学员画面 frame_17 和 frame_18 中，可见红色纸张的两个底角均已向中心折入并相互交叠，杯身下部呈现收拢状态，且顶部的尖角依然保持向上未折叠，符合步骤完成标准。"
+          }
+        ],
+        "latency_ms": 3566
+      },
+      "feedback": "上一步已完成，请观看下一步示范。"
+    },
+    {
+      "case": "s4_incomplete",
+      "source_timestamps_ms": [
+        56000,
+        56300
+      ],
+      "status": "completed",
+      "error": null,
+      "elapsed_seconds": 4.59,
+      "before_step": 4,
+      "after_step": 4,
+      "step_state": "observing",
+      "confirm_count": 0,
+      "expected_step": 4,
+      "expected_confirm_count": 0,
+      "matched_expectation": true,
+      "checks": {
+        "checks": [
+          {
+            "check_id": "visible_completion",
+            "status": "not_yet",
+            "evidence_frame_ids": [
+              "frame_20"
+            ],
+            "reason": "在学员画面 frame_20 中，纸杯顶部仍然有一个明显的竖起尖角，尚未向下折叠。虽然双手正在按压纸面，但顶部的尖角结构依然完整存在，未满足'顶部不再有竖起尖角'及'两层尖角均已向下折平'的完成标准。"
+          }
+        ],
+        "latency_ms": 4060
+      },
+      "feedback": "正在操作，完成后请让结果保持可见。"
+    },
+    {
+      "case": "s4_ok_1",
+      "source_timestamps_ms": [
+        71000,
+        71300
+      ],
+      "status": "completed",
+      "error": null,
+      "elapsed_seconds": 5.22,
+      "before_step": 4,
+      "after_step": 4,
+      "step_state": "confirming",
+      "confirm_count": 1,
+      "expected_step": 4,
+      "expected_confirm_count": 1,
+      "matched_expectation": true,
+      "checks": {
+        "checks": [
+          {
+            "check_id": "visible_completion",
+            "status": "satisfied",
+            "evidence_frame_ids": [
+              "frame_21",
+              "frame_22"
+            ],
+            "reason": "在学员画面 frame_21 和 frame_22 中，双手持握纸杯顶部边缘进行展示。可见杯口处原本竖起的尖角已被向下折叠并压平，形成贴合的折片结构（呈现倒三角或平整边缘形态），顶部没有残留竖立的尖角。纸杯整体保持扁平状态，未撑开，符合步骤完成后的视觉特征。"
+          }
+        ],
+        "latency_ms": 5159
+      },
+      "feedback": "完成条件已满足，正在用新画面确认。"
+    },
+    {
+      "case": "s4_ok_2",
+      "source_timestamps_ms": [
+        72000,
+        72300
+      ],
+      "status": "completed",
+      "error": null,
+      "elapsed_seconds": 4.71,
+      "before_step": 4,
+      "after_step": 5,
+      "step_state": "observing",
+      "confirm_count": 0,
+      "expected_step": 5,
+      "expected_confirm_count": 0,
+      "matched_expectation": true,
+      "checks": {
+        "checks": [
+          {
+            "check_id": "visible_completion",
+            "status": "satisfied",
+            "evidence_frame_ids": [
+              "frame_23",
+              "frame_24"
+            ],
+            "reason": "在学员画面 frame_23 和 frame_24 中，纸杯保持扁平状态，顶部边缘平整，没有竖起的尖角。可以看到红色的折片已经向下折叠并贴合在白色杯身上，形成倒三角形的视觉效果，符合两层尖角均已折下并压平的特征。"
+          }
+        ],
+        "latency_ms": 4618
+      },
+      "feedback": "上一步已完成，请观看下一步示范。"
+    },
+    {
+      "case": "s5_incomplete",
+      "source_timestamps_ms": [
+        72000,
+        72300
+      ],
+      "status": "completed",
+      "error": null,
+      "elapsed_seconds": 6.09,
+      "before_step": 5,
+      "after_step": 5,
+      "step_state": "observing",
+      "confirm_count": 0,
+      "expected_step": 5,
+      "expected_confirm_count": 0,
+      "matched_expectation": true,
+      "checks": {
+        "checks": [
+          {
+            "check_id": "visible_completion",
+            "status": "not_yet",
+            "evidence_frame_ids": [
+              "frame_25",
+              "frame_26"
+            ],
+            "reason": "在学员画面 frame_25 和 frame_26 中，双手正捏住纸杯的上沿，纸杯整体仍呈现扁平折叠状态，杯口尚未明显张开，内部空腔不可见，未形成有底的立体容器，处于撑开操作的准备或起始阶段。"
+          }
+        ],
+        "latency_ms": 5569
+      },
+      "feedback": "正在操作，完成后请让结果保持可见。"
+    },
+    {
+      "case": "s5_ok_1",
+      "source_timestamps_ms": [
+        77000,
+        77300
+      ],
+      "status": "completed",
+      "error": null,
+      "elapsed_seconds": 4.43,
+      "before_step": 5,
+      "after_step": 5,
+      "step_state": "confirming",
+      "confirm_count": 1,
+      "expected_step": 5,
+      "expected_confirm_count": 1,
+      "matched_expectation": true,
+      "checks": {
+        "checks": [
+          {
+            "check_id": "visible_completion",
+            "status": "satisfied",
+            "evidence_frame_ids": [
+              "frame_27",
+              "frame_28"
+            ],
+            "reason": "在 frame_27 和 frame_28 中，纸杯已从扁平状态撑开，杯口明显张开，内部白色空腔清晰可见，形成了有底的立体容器结构，符合成形要求。"
+          }
+        ],
+        "latency_ms": 4346
+      },
+      "feedback": "完成条件已满足，正在用新画面确认。"
+    },
+    {
+      "case": "s5_ok_2",
+      "source_timestamps_ms": [
+        78000,
+        78300
+      ],
+      "status": "completed",
+      "error": null,
+      "elapsed_seconds": 5.13,
+      "before_step": 5,
+      "after_step": null,
+      "step_state": "completed",
+      "confirm_count": 0,
+      "expected_step": null,
+      "expected_confirm_count": 0,
+      "matched_expectation": true,
+      "checks": {
+        "checks": [
+          {
+            "check_id": "visible_completion",
+            "status": "satisfied",
+            "evidence_frame_ids": [
+              "frame_29",
+              "frame_30"
+            ],
+            "reason": "在 frame_29 和 frame_30 中，纸杯已从扁平状态撑开，杯口明显张开并朝向镜头，内部白色空腔清晰可见，形成了具有底部的立体容器结构，符合成形要求。"
+          }
+        ],
+        "latency_ms": 5064
+      },
+      "feedback": "全部步骤完成。"
+    }
+  ],
+  "completed_steps": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "final_status": "finished",
+  "final_state": {
+    "current_step_index": null,
+    "step_revision": 6,
+    "step_state": "completed",
+    "entered_at_ms": 1792037290258,
+    "step_active_ms": 0,
+    "completed": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "skipped": [],
+    "checks": [],
+    "confirm_count": 0,
+    "confirm_hashes": [],
+    "confirm_sequence": 0,
+    "last_sequence": 30,
+    "pending_observation_id": null,
+    "call_count": 15,
+    "error_count": 0,
+    "attempts": [
+      {
+        "step_index": 1,
+        "duration_ms": 13369,
+        "source": "visual_verified",
+        "completed_at_ms": 1792037251038
+      },
+      {
+        "step_index": 2,
+        "duration_ms": 12085,
+        "source": "visual_verified",
+        "completed_at_ms": 1792037263123
+      },
+      {
+        "step_index": 3,
+        "duration_ms": 12188,
+        "source": "visual_verified",
+        "completed_at_ms": 1792037275311
+      },
+      {
+        "step_index": 4,
+        "duration_ms": 14947,
+        "source": "visual_verified",
+        "completed_at_ms": 1792037290258
+      },
+      {
+        "step_index": 5,
+        "duration_ms": 16137,
+        "source": "visual_verified",
+        "completed_at_ms": 1792037306395
+      }
+    ],
+    "manual_checks": [],
+    "feedback": "全部步骤完成。",
+    "service_error": "",
+    "last_observation_id": "0f830e1d25754aedaee55b2a874e355d"
+  },
+  "matched_cases": 15,
+  "executed_cases": 15
+}

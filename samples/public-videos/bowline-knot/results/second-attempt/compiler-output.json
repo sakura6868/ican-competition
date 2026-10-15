@@ -1,0 +1,233 @@
+{
+  "source_grade": "video_reference",
+  "steps": [
+    {
+      "name": "展示绳索初始状态",
+      "index": 0,
+      "predecessors": [],
+      "tools": [
+        "绳索"
+      ],
+      "objects": [],
+      "actions": [
+        "持绳展示"
+      ],
+      "completion_checks": [
+        "绳索呈直线状态，两端被双手稳定握持"
+      ],
+      "observable_checks": [],
+      "unobservable_checks": [],
+      "weight": 5,
+      "evidence_refs": [
+        {
+          "kind": "video",
+          "ref": "video@0ms",
+          "timestamp_ms": 0,
+          "description": "演示者蹲在甲板上，双手持握已成型的绳圈面向镜头展示"
+        },
+        {
+          "kind": "video",
+          "ref": "video@270000ms",
+          "timestamp_ms": 270000,
+          "description": "双手持绳向镜头展示绳索的直线状态"
+        }
+      ]
+    },
+    {
+      "name": "制作基础绳圈并交叉",
+      "index": 1,
+      "predecessors": [
+        0
+      ],
+      "tools": [
+        "绳索"
+      ],
+      "objects": [],
+      "actions": [
+        "绕绳成圈",
+        "扭转绳索"
+      ],
+      "completion_checks": [
+        "绳索弯曲形成闭合或半闭合的环状结构，绳头与主绳身发生交叉"
+      ],
+      "observable_checks": [],
+      "unobservable_checks": [
+        "绳圈的具体穿绕方向及交叉上下关系需人工确认"
+      ],
+      "weight": 25,
+      "evidence_refs": [
+        {
+          "kind": "video",
+          "ref": "video@146940ms",
+          "timestamp_ms": 146940,
+          "description": "将绳索弯曲形成一个大绳圈，并将绳头部分与主绳进行交叉重叠"
+        },
+        {
+          "kind": "video",
+          "ref": "video@281940ms",
+          "timestamp_ms": 281940,
+          "description": "将绳索交叉并扭转形成一个明显的绳圈"
+        }
+      ]
+    },
+    {
+      "name": "穿插编织并收紧绳结",
+      "index": 2,
+      "predecessors": [
+        1
+      ],
+      "tools": [
+        "绳索"
+      ],
+      "objects": [],
+      "actions": [
+        "打结",
+        "拉紧绳结",
+        "调整绳圈"
+      ],
+      "completion_checks": [
+        "绳结结构紧凑，体积明显缩小并紧实，无松散绳段"
+      ],
+      "observable_checks": [],
+      "unobservable_checks": [
+        "绳结内部具体的穿插路径和最终结型名称需人工确认"
+      ],
+      "weight": 35,
+      "evidence_refs": [
+        {
+          "kind": "video",
+          "ref": "video@162000ms",
+          "timestamp_ms": 162000,
+          "description": "双手配合拉紧绳索两端使绳圈收缩并固定形状完成初步成型"
+        },
+        {
+          "kind": "video",
+          "ref": "video@200940ms",
+          "timestamp_ms": 200940,
+          "description": "通过手指穿插和拉扯动作演示绳结的编织过程"
+        },
+        {
+          "kind": "video",
+          "ref": "video@233910ms",
+          "timestamp_ms": 233910,
+          "description": "手指捏住绳结部位进行微调拉动绳端使结体收紧定型"
+        }
+      ]
+    },
+    {
+      "name": "悬空展示绳结形态",
+      "index": 3,
+      "predecessors": [
+        2
+      ],
+      "tools": [
+        "绳索"
+      ],
+      "objects": [],
+      "actions": [
+        "持绳展示"
+      ],
+      "completion_checks": [
+        "绳结完整呈现且悬空，绳圈结构清晰可见"
+      ],
+      "observable_checks": [],
+      "unobservable_checks": [],
+      "weight": 10,
+      "evidence_refs": [
+        {
+          "kind": "video",
+          "ref": "video@65940ms",
+          "timestamp_ms": 65940,
+          "description": "单手提起已打好的绳结部分向镜头展示其形状"
+        },
+        {
+          "kind": "video",
+          "ref": "video@216000ms",
+          "timestamp_ms": 216000,
+          "description": "双手持绳向镜头展示已打好的绳结结构保持绳圈张开以便观察"
+        }
+      ]
+    },
+    {
+      "name": "将绳圈套入系缆桩固定",
+      "index": 4,
+      "predecessors": [
+        3
+      ],
+      "tools": [
+        "绳索",
+        "系缆桩"
+      ],
+      "objects": [
+        "木质甲板/船头结构"
+      ],
+      "actions": [
+        "侧身套桩",
+        "缠绕绳索"
+      ],
+      "completion_checks": [
+        "绳圈已套在系缆桩上，绳索与系缆桩接触并被约束"
+      ],
+      "observable_checks": [],
+      "unobservable_checks": [
+        "绳索在系缆桩上的具体缠绕圈数及收尾方式需人工确认"
+      ],
+      "weight": 20,
+      "evidence_refs": [
+        {
+          "kind": "video",
+          "ref": "video@243000ms",
+          "timestamp_ms": 243000,
+          "description": "将整理好的绳圈移向船舷系缆桩模拟套桩操作"
+        },
+        {
+          "kind": "video",
+          "ref": "video@297000ms",
+          "timestamp_ms": 297000,
+          "description": "双手配合将绳索在木质系缆桩上进行缠绕和穿插逐步构建绳结结构"
+        }
+      ]
+    },
+    {
+      "name": "拉紧绳索完成系泊",
+      "index": 5,
+      "predecessors": [
+        4
+      ],
+      "tools": [
+        "绳索",
+        "系缆桩"
+      ],
+      "objects": [],
+      "actions": [
+        "拉紧绳索"
+      ],
+      "completion_checks": [
+        "绳索在系缆桩上受力绷紧，整体结构稳固不松脱"
+      ],
+      "observable_checks": [],
+      "unobservable_checks": [],
+      "weight": 5,
+      "evidence_refs": [
+        {
+          "kind": "video",
+          "ref": "video@314910ms",
+          "timestamp_ms": 314910,
+          "description": "双手向两侧拉紧绳索以固定绳结"
+        },
+        {
+          "kind": "video",
+          "ref": "video@324000ms",
+          "timestamp_ms": 324000,
+          "description": "绳结已受力拉紧，绳索在系缆桩上保持稳固"
+        }
+      ]
+    }
+  ],
+  "teaching": {
+    "source_asset_id": "80e504c539c942348f17ec8677da417b",
+    "start_ms": 146940,
+    "end_ms": 324000,
+    "instruction": "学员在船头甲板处使用粗麻绳，首先将绳索弯曲形成绳圈并使绳头与主绳交叉；接着双手配合进行穿插编织，拉紧绳索两端使绳结收紧定型；随后悬空检查绳结形态是否紧凑正确；最后将打好绳结的绳圈套入旁边的黑色系缆桩，并在桩上缠绕后向两侧用力拉紧绳索，确保系泊结构稳固。全程需注意甲板防滑及避免手指被绳索夹伤。"
+  }
+}

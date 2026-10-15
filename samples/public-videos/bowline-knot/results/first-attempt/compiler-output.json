@@ -1,0 +1,867 @@
+{
+  "source_grade": "video_reference",
+  "steps": [
+    {
+      "name": "手持绳圈进行讲解示范",
+      "index": 0,
+      "predecessors": [],
+      "tools": [
+        {
+          "name": "绳索"
+        }
+      ],
+      "objects": [
+        {
+          "name": "船锚"
+        },
+        {
+          "name": "木质甲板/结构"
+        },
+        {
+          "name": "白色栏杆"
+        }
+      ],
+      "actions": [
+        {
+          "name": "蹲姿持物"
+        },
+        {
+          "name": "面向镜头讲解"
+        }
+      ],
+      "completion_checks": [
+        "演示者保持蹲姿或坐姿稳定",
+        "双手稳定持握已成型的绳圈",
+        "绳圈形状完整可见"
+      ],
+      "observable_checks": [],
+      "unobservable_checks": [],
+      "weight": 1,
+      "evidence_refs": [
+        {
+          "kind": "video",
+          "ref": "video@0ms",
+          "timestamp_ms": 0,
+          "description": "演示者蹲在甲板上，双手持握一个已成型的绳圈，面向镜头进行讲解或展示。"
+        },
+        {
+          "kind": "video",
+          "ref": "video@5970ms",
+          "timestamp_ms": 5970,
+          "description": "演示者面向镜头讲解姿态。"
+        },
+        {
+          "kind": "video",
+          "ref": "video@11940ms",
+          "timestamp_ms": 11940,
+          "description": "演示者面向镜头讲解姿态。"
+        },
+        {
+          "kind": "video",
+          "ref": "video@23880ms",
+          "timestamp_ms": 23880,
+          "description": "演示者持续持握绳圈。"
+        },
+        {
+          "kind": "video",
+          "ref": "video@27000ms",
+          "timestamp_ms": 27000,
+          "description": "演示者持续持握绳圈。"
+        },
+        {
+          "kind": "video",
+          "ref": "video@29850ms",
+          "timestamp_ms": 29850,
+          "description": "演示者持续持握绳圈。"
+        }
+      ],
+      "teaching": {
+        "source_asset_id": "80e504c539c942348f17ec8677da417b",
+        "start_ms": 0,
+        "end_ms": 29850,
+        "instruction": "演示者蹲在甲板上，双手持握一个已成型的绳圈，面向镜头进行讲解或展示。"
+      }
+    },
+    {
+      "name": "演示绳结打法与调整",
+      "index": 1,
+      "predecessors": [
+        0
+      ],
+      "tools": [
+        {
+          "name": "绳索"
+        }
+      ],
+      "objects": [
+        {
+          "name": "船锚"
+        },
+        {
+          "name": "木质甲板/船头结构"
+        },
+        {
+          "name": "白色栏杆"
+        }
+      ],
+      "actions": [
+        {
+          "name": "手持绳索打结"
+        },
+        {
+          "name": "调整绳圈形状"
+        }
+      ],
+      "completion_checks": [
+        "绳索在手中形成特定的交叉或环状结扣结构",
+        "演示者保持蹲姿或坐姿稳定操作"
+      ],
+      "observable_checks": [],
+      "unobservable_checks": [],
+      "weight": 1,
+      "evidence_refs": [
+        {
+          "kind": "video",
+          "ref": "video@38940ms",
+          "timestamp_ms": 38940,
+          "description": "双手持绳索进行打结操作示范。"
+        },
+        {
+          "kind": "video",
+          "ref": "video@44910ms",
+          "timestamp_ms": 44910,
+          "description": "调整绳圈形状。"
+        },
+        {
+          "kind": "video",
+          "ref": "video@54000ms",
+          "timestamp_ms": 54000,
+          "description": "双手配合将绳索交叉缠绕，形成绳结的初始结构。"
+        },
+        {
+          "kind": "video",
+          "ref": "video@56850ms",
+          "timestamp_ms": 56850,
+          "description": "双手配合将绳索交叉缠绕。"
+        }
+      ],
+      "teaching": {
+        "source_asset_id": "80e504c539c942348f17ec8677da417b",
+        "start_ms": 27000,
+        "end_ms": 56850,
+        "instruction": "在船头甲板处，双手持绳索进行打结操作示范，通过手指穿插和拉扯动作演示绳结的编织过程。"
+      }
+    },
+    {
+      "name": "展示绳结形态",
+      "index": 2,
+      "predecessors": [
+        1
+      ],
+      "tools": [
+        {
+          "name": "绳索"
+        }
+      ],
+      "objects": [
+        {
+          "name": "船锚"
+        },
+        {
+          "name": "栏杆"
+        },
+        {
+          "name": "木质甲板/结构"
+        }
+      ],
+      "actions": [
+        {
+          "name": "展示"
+        }
+      ],
+      "completion_checks": [
+        "绳结悬空展示于画面中央",
+        "绳圈结构清晰可见"
+      ],
+      "observable_checks": [],
+      "unobservable_checks": [],
+      "weight": 1,
+      "evidence_refs": [
+        {
+          "kind": "video",
+          "ref": "video@65940ms",
+          "timestamp_ms": 65940,
+          "description": "单手提起已打好的绳结部分，向镜头展示其形状。"
+        }
+      ],
+      "teaching": {
+        "source_asset_id": "80e504c539c942348f17ec8677da417b",
+        "start_ms": 65940,
+        "end_ms": 71910,
+        "instruction": "单手提起已打好的绳结部分，向镜头展示其形状，另一只手自然下垂或辅助。"
+      }
+    },
+    {
+      "name": "拉直并放松绳索",
+      "index": 3,
+      "predecessors": [
+        2
+      ],
+      "tools": [
+        {
+          "name": "绳索"
+        }
+      ],
+      "objects": [
+        {
+          "name": "船锚"
+        },
+        {
+          "name": "木质甲板/船头结构"
+        },
+        {
+          "name": "白色栏杆"
+        }
+      ],
+      "actions": [
+        {
+          "name": "拉紧"
+        },
+        {
+          "name": "放松绳索"
+        },
+        {
+          "name": "半蹲讲解"
+        }
+      ],
+      "completion_checks": [
+        "绳索在两手之间呈紧绷直线状态或呈现自然松弛下垂状态",
+        "之前的绳结结构消失或变平"
+      ],
+      "observable_checks": [],
+      "unobservable_checks": [],
+      "weight": 1,
+      "evidence_refs": [
+        {
+          "kind": "video",
+          "ref": "video@71910ms",
+          "timestamp_ms": 71910,
+          "description": "双手分别握住绳索两端，向两侧用力拉直绳索。"
+        },
+        {
+          "kind": "video",
+          "ref": "video@81000ms",
+          "timestamp_ms": 81000,
+          "description": "双手分别握住绳索两端，向两侧水平拉直绳索进行展示。"
+        },
+        {
+          "kind": "video",
+          "ref": "video@83850ms",
+          "timestamp_ms": 83850,
+          "description": "双手向两侧用力使绳索绷直的动作。"
+        },
+        {
+          "kind": "video",
+          "ref": "video@92940ms",
+          "timestamp_ms": 92940,
+          "description": "拉直绳索展示。"
+        },
+        {
+          "kind": "video",
+          "ref": "video@98910ms",
+          "timestamp_ms": 98910,
+          "description": "拉直绳索展示。"
+        },
+        {
+          "kind": "video",
+          "ref": "video@108000ms",
+          "timestamp_ms": 108000,
+          "description": "讲解员双手分别握住绳索两端，向两侧水平拉直绳索进行展示。"
+        },
+        {
+          "kind": "video",
+          "ref": "video@110850ms",
+          "timestamp_ms": 110850,
+          "description": "略微放松绳索使其自然下垂。"
+        }
+      ],
+      "teaching": {
+        "source_asset_id": "80e504c539c942348f17ec8677da417b",
+        "start_ms": 71910,
+        "end_ms": 110850,
+        "instruction": "双手分别握住绳索两端，向两侧用力拉直绳索进行展示，随后略微放松绳索使其自然下垂，全程保持半蹲姿态面向镜头讲解。"
+      }
+    },
+    {
+      "name": "持绳展示与收拢准备",
+      "index": 4,
+      "predecessors": [
+        3
+      ],
+      "tools": [
+        {
+          "name": "绳索"
+        },
+        {
+          "name": "木质船舷/系缆桩基座"
+        }
+      ],
+      "objects": [
+        {
+          "name": "黑色锚状物"
+        },
+        {
+          "name": "白色栏杆"
+        },
+        {
+          "name": "城市天际线"
+        }
+      ],
+      "actions": [
+        {
+          "name": "持绳展示"
+        },
+        {
+          "name": "口头讲解"
+        },
+        {
+          "name": "收拢绳索"
+        }
+      ],
+      "completion_checks": [
+        "左手固定绳端位置稳定",
+        "绳索从拉直变为微弧形态",
+        "双手在胸前汇合共同握住绳索中段",
+        "绳索下端形成环状或垂落"
+      ],
+      "observable_checks": [],
+      "unobservable_checks": [],
+      "weight": 1,
+      "evidence_refs": [
+        {
+          "kind": "video",
+          "ref": "video@119940ms",
+          "timestamp_ms": 119940,
+          "description": "讲解员保持左手位置，右手微调绳索张力，配合口型进行讲解，绳索呈现自然下垂弧度。"
+        },
+        {
+          "kind": "video",
+          "ref": "video@125910ms",
+          "timestamp_ms": 125910,
+          "description": "讲解员视线面向镜头进行说明。"
+        },
+        {
+          "kind": "video",
+          "ref": "video@135000ms",
+          "timestamp_ms": 135000,
+          "description": "讲解员将双手收拢至胸前，共同握住绳索中段。"
+        },
+        {
+          "kind": "video",
+          "ref": "video@137850ms",
+          "timestamp_ms": 137850,
+          "description": "双手收拢准备进行下一步的打结或缠绕操作。"
+        }
+      ],
+      "teaching": {
+        "source_asset_id": "80e504c539c942348f17ec8677da417b",
+        "start_ms": 108000,
+        "end_ms": 137850,
+        "instruction": "讲解员双手持绳，左手固定绳端于木质结构旁，右手拉直绳身进行展示；随后微调绳索张力配合讲解，最后将双手收拢至胸前共同握住绳索中段，准备进行下一步打结操作。"
+      }
+    },
+    {
+      "name": "形成绳圈并交叉",
+      "index": 5,
+      "predecessors": [
+        4
+      ],
+      "tools": [
+        {
+          "name": "绳索"
+        }
+      ],
+      "objects": [
+        {
+          "name": "船体甲板设施"
+        },
+        {
+          "name": "背景城市景观"
+        }
+      ],
+      "actions": [
+        {
+          "name": "绕绳成圈"
+        },
+        {
+          "name": "面向镜头讲解"
+        }
+      ],
+      "completion_checks": [
+        "绳索弯曲形成一个明显的大绳圈",
+        "绳头部分与主绳发生交叉或重叠"
+      ],
+      "observable_checks": [],
+      "unobservable_checks": [],
+      "weight": 1,
+      "evidence_refs": [
+        {
+          "kind": "video",
+          "ref": "video@146940ms",
+          "timestamp_ms": 146940,
+          "description": "将绳索弯曲形成一个大绳圈，并将绳头部分与主绳进行交叉或重叠。"
+        },
+        {
+          "kind": "video",
+          "ref": "video@152910ms",
+          "timestamp_ms": 152910,
+          "description": "构建结的基础结构。"
+        }
+      ],
+      "teaching": {
+        "source_asset_id": "80e504c539c942348f17ec8677da417b",
+        "start_ms": 135000,
+        "end_ms": 155000,
+        "instruction": "演示者双手持绳展示初始形态后，将绳索弯曲形成一个大绳圈，并将绳头部分与主绳进行交叉或重叠，构建结的基础结构。"
+      }
+    },
+    {
+      "name": "收紧并整理绳结",
+      "index": 6,
+      "predecessors": [
+        5
+      ],
+      "tools": [
+        {
+          "name": "绳索"
+        }
+      ],
+      "objects": [
+        {
+          "name": "船体甲板设施"
+        },
+        {
+          "name": "背景城市景观"
+        }
+      ],
+      "actions": [
+        {
+          "name": "拉紧绳结"
+        }
+      ],
+      "completion_checks": [
+        "绳结结构紧凑且体积缩小",
+        "绳索被拉紧定型"
+      ],
+      "observable_checks": [],
+      "unobservable_checks": [],
+      "weight": 1,
+      "evidence_refs": [
+        {
+          "kind": "video",
+          "ref": "video@162000ms",
+          "timestamp_ms": 162000,
+          "description": "双手配合拉紧绳索两端，使绳圈收缩并固定形状。"
+        },
+        {
+          "kind": "video",
+          "ref": "video@164850ms",
+          "timestamp_ms": 164850,
+          "description": "完成绳结的初步成型。"
+        },
+        {
+          "kind": "video",
+          "ref": "video@173940ms",
+          "timestamp_ms": 173940,
+          "description": "双手配合将绳子绕成环状并收紧。"
+        },
+        {
+          "kind": "video",
+          "ref": "video@179910ms",
+          "timestamp_ms": 179910,
+          "description": "调整手势，左手拉住绳圈上部，右手整理下方绳段。"
+        },
+        {
+          "kind": "video",
+          "ref": "video@189000ms",
+          "timestamp_ms": 189000,
+          "description": "继续收紧和调整绳结形态。"
+        },
+        {
+          "kind": "video",
+          "ref": "video@191850ms",
+          "timestamp_ms": 191850,
+          "description": "继续收紧和调整绳结形态。"
+        },
+        {
+          "kind": "video",
+          "ref": "video@200940ms",
+          "timestamp_ms": 200940,
+          "description": "通过手指穿插和拉扯动作演示绳结的编织过程。"
+        },
+        {
+          "kind": "video",
+          "ref": "video@206910ms",
+          "timestamp_ms": 206910,
+          "description": "通过手指穿插和拉扯动作演示绳结的编织过程。"
+        }
+      ],
+      "teaching": {
+        "source_asset_id": "80e504c539c942348f17ec8677da417b",
+        "start_ms": 162000,
+        "end_ms": 218850,
+        "instruction": "双手配合拉紧绳索两端，使绳圈收缩并固定形状；期间不断调整手势、穿插拉扯以收紧绳结，直至绳结结构紧凑定型。"
+      }
+    },
+    {
+      "name": "展示最终绳结形态",
+      "index": 7,
+      "predecessors": [
+        6
+      ],
+      "tools": [
+        {
+          "name": "粗麻绳"
+        }
+      ],
+      "objects": [
+        {
+          "name": "绳结"
+        },
+        {
+          "name": "护林员制服"
+        },
+        {
+          "name": "白色栏杆"
+        }
+      ],
+      "actions": [
+        {
+          "name": "持绳展示"
+        }
+      ],
+      "completion_checks": [
+        "绳结完整呈现于画面中央",
+        "双手稳定持握绳索两端保持绳圈张开"
+      ],
+      "observable_checks": [],
+      "unobservable_checks": [],
+      "weight": 1,
+      "evidence_refs": [
+        {
+          "kind": "video",
+          "ref": "video@216000ms",
+          "timestamp_ms": 216000,
+          "description": "双手持绳，向镜头展示已打好的绳结结构，保持绳圈张开以便观察。"
+        },
+        {
+          "kind": "video",
+          "ref": "video@218850ms",
+          "timestamp_ms": 218850,
+          "description": "双手持绳展示绳结。"
+        },
+        {
+          "kind": "video",
+          "ref": "video@227940ms",
+          "timestamp_ms": 227940,
+          "description": "双手持绳展示绳结。"
+        }
+      ],
+      "teaching": {
+        "source_asset_id": "80e504c539c942348f17ec8677da417b",
+        "start_ms": 216000,
+        "end_ms": 227940,
+        "instruction": "双手持绳，向镜头展示已打好的绳结结构，保持绳圈张开以便观察。"
+      }
+    },
+    {
+      "name": "微调收紧绳结",
+      "index": 8,
+      "predecessors": [
+        7
+      ],
+      "tools": [
+        {
+          "name": "粗麻绳"
+        }
+      ],
+      "objects": [
+        {
+          "name": "绳结"
+        }
+      ],
+      "actions": [
+        {
+          "name": "拉紧绳结"
+        }
+      ],
+      "completion_checks": [
+        "绳结体积明显缩小并紧实",
+        "手部动作集中于结扣处"
+      ],
+      "observable_checks": [],
+      "unobservable_checks": [],
+      "weight": 1,
+      "evidence_refs": [
+        {
+          "kind": "video",
+          "ref": "video@233910ms",
+          "timestamp_ms": 233910,
+          "description": "手指捏住绳结部位进行微调，拉动绳端使结体收紧定型。"
+        }
+      ],
+      "teaching": {
+        "source_asset_id": "80e504c539c942348f17ec8677da417b",
+        "start_ms": 233910,
+        "end_ms": 233910,
+        "instruction": "手指捏住绳结部位进行微调，拉动绳端使结体收紧定型。"
+      }
+    },
+    {
+      "name": "套入系缆桩演示",
+      "index": 9,
+      "predecessors": [
+        8
+      ],
+      "tools": [
+        {
+          "name": "粗麻绳"
+        },
+        {
+          "name": "系缆桩"
+        }
+      ],
+      "objects": [
+        {
+          "name": "穿制服的人员"
+        },
+        {
+          "name": "船舷栏杆"
+        },
+        {
+          "name": "城市背景建筑"
+        }
+      ],
+      "actions": [
+        {
+          "name": "侧身套桩"
+        },
+        {
+          "name": "系泊操作"
+        }
+      ],
+      "completion_checks": [
+        "绳圈已套在或靠近黑色金属系缆桩上",
+        "身体转向侧方配合操作"
+      ],
+      "observable_checks": [],
+      "unobservable_checks": [],
+      "weight": 1,
+      "evidence_refs": [
+        {
+          "kind": "video",
+          "ref": "video@243000ms",
+          "timestamp_ms": 243000,
+          "description": "将整理好的绳圈移向船舷系缆桩，模拟套桩或固定操作。"
+        },
+        {
+          "kind": "video",
+          "ref": "video@245850ms",
+          "timestamp_ms": 245850,
+          "description": "将处理好的绳索套入或缠绕在旁边的黑色系缆桩/固定装置上。"
+        },
+        {
+          "kind": "video",
+          "ref": "video@254940ms",
+          "timestamp_ms": 254940,
+          "description": "双手配合将绳索弯曲并交叉，形成一个基础的绳圈结构。"
+        }
+      ],
+      "teaching": {
+        "source_asset_id": "80e504c539c942348f17ec8677da417b",
+        "start_ms": 243000,
+        "end_ms": 272850,
+        "instruction": "将整理好的绳圈移向船舷系缆桩，模拟套桩或固定操作；期间可再次制作绳圈并调整收紧，最终将绳索套入或缠绕在系缆桩上。"
+      }
+    },
+    {
+      "name": "在系缆桩上缠绕并打结",
+      "index": 10,
+      "predecessors": [
+        9
+      ],
+      "tools": [
+        {
+          "name": "绳索"
+        },
+        {
+          "name": "系缆桩"
+        }
+      ],
+      "objects": [
+        {
+          "name": "船只甲板"
+        },
+        {
+          "name": "水面"
+        },
+        {
+          "name": "城市建筑背景"
+        },
+        {
+          "name": "栏杆"
+        }
+      ],
+      "actions": [
+        {
+          "name": "缠绕绳索"
+        },
+        {
+          "name": "打结"
+        }
+      ],
+      "completion_checks": [
+        "绳索已绕过系缆桩",
+        "绳圈已初步成型并穿入系缆桩结构"
+      ],
+      "observable_checks": [],
+      "unobservable_checks": [],
+      "weight": 1,
+      "evidence_refs": [
+        {
+          "kind": "video",
+          "ref": "video@270000ms",
+          "timestamp_ms": 270000,
+          "description": "双手持绳，向镜头展示绳索的直线状态，准备开始打结演示。"
+        },
+        {
+          "kind": "video",
+          "ref": "video@281940ms",
+          "timestamp_ms": 281940,
+          "description": "将绳索交叉并扭转，形成一个明显的绳圈（Loop），为穿绳做准备。"
+        },
+        {
+          "kind": "video",
+          "ref": "video@287910ms",
+          "timestamp_ms": 287910,
+          "description": "将绳索交叉并扭转形成绳圈。"
+        },
+        {
+          "kind": "video",
+          "ref": "video@297000ms",
+          "timestamp_ms": 297000,
+          "description": "双手配合将绳索在木质系缆桩上进行缠绕和穿插，逐步构建绳结结构。"
+        },
+        {
+          "kind": "video",
+          "ref": "video@299850ms",
+          "timestamp_ms": 299850,
+          "description": "将制作好的绳圈套在木质系缆桩上，并整理绳索位置。"
+        },
+        {
+          "kind": "video",
+          "ref": "video@308940ms",
+          "timestamp_ms": 308940,
+          "description": "双手配合将绳索在木质系缆桩上进行缠绕和穿插。"
+        },
+        {
+          "kind": "video",
+          "ref": "video@314910ms",
+          "timestamp_ms": 314910,
+          "description": "双手配合将绳索在木质系缆桩上进行缠绕和穿插。"
+        }
+      ],
+      "teaching": {
+        "source_asset_id": "80e504c539c942348f17ec8677da417b",
+        "start_ms": 270000,
+        "end_ms": 314910,
+        "instruction": "双手持绳展示直线状态后，将绳索交叉并扭转形成绳圈，随后双手配合将绳索在木质系缆桩上进行缠绕和穿插，逐步构建绳结结构。"
+      }
+    },
+    {
+      "name": "拉紧绳索并讲解示意",
+      "index": 11,
+      "predecessors": [
+        10
+      ],
+      "tools": [
+        {
+          "name": "绳索"
+        },
+        {
+          "name": "系缆桩"
+        }
+      ],
+      "objects": [
+        {
+          "name": "穿制服的演示者"
+        },
+        {
+          "name": "船舷栏杆"
+        }
+      ],
+      "actions": [
+        {
+          "name": "拉紧绳索"
+        },
+        {
+          "name": "手势讲解"
+        },
+        {
+          "name": "调整绳结"
+        }
+      ],
+      "completion_checks": [
+        "绳结已受力拉紧并在系缆桩上保持稳固",
+        "出现明显的讲解手势"
+      ],
+      "observable_checks": [],
+      "unobservable_checks": [],
+      "weight": 1,
+      "evidence_refs": [
+        {
+          "kind": "video",
+          "ref": "video@324000ms",
+          "timestamp_ms": 324000,
+          "description": "双手向两侧拉紧绳索以固定绳结，同时抬起右手进行手势示意或口头讲解。"
+        },
+        {
+          "kind": "video",
+          "ref": "video@326850ms",
+          "timestamp_ms": 326850,
+          "description": "双手向两侧拉紧绳索以固定绳结，同时抬起右手进行手势示意或口头讲解。"
+        },
+        {
+          "kind": "video",
+          "ref": "video@327396ms",
+          "timestamp_ms": 327396,
+          "description": "身穿制服的人员在船舷边手持绳索进行打结或系泊演示，期间配合手势讲解。"
+        },
+        {
+          "kind": "video",
+          "ref": "video@334188ms",
+          "timestamp_ms": 334188,
+          "description": "调整绳结。"
+        },
+        {
+          "kind": "video",
+          "ref": "video@337584ms",
+          "timestamp_ms": 337584,
+          "description": "调整绳结。"
+        },
+        {
+          "kind": "video",
+          "ref": "video@340980ms",
+          "timestamp_ms": 340980,
+          "description": "演示者面向镜头进行讲解。"
+        }
+      ],
+      "teaching": {
+        "source_asset_id": "80e504c539c942348f17ec8677da417b",
+        "start_ms": 324000,
+        "end_ms": 340980,
+        "instruction": "双手向两侧拉紧绳索以固定绳结，同时抬起右手进行手势示意或口头讲解，并对绳结进行最终调整。"
+      }
+    }
+  ]
+}

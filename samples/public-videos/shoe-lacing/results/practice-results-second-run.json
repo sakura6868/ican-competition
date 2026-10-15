@@ -1,0 +1,233 @@
+{
+  "session_id": "b33995ed216b4ff5b0c164ec606d2a8b",
+  "sop_id": "4c0f0df333b64100ad358c4888c45d83",
+  "input_kind": "same-tutorial frame replay; not an independent learner or physical camera trial",
+  "strategy": "ordinary step: one API call with three distinct frames spanning one second",
+  "fixed_plan": [
+    [
+      "s1_unclear_auto_recapture",
+      1,
+      [
+        7000,
+        7500,
+        8000
+      ],
+      1,
+      "unclear"
+    ],
+    [
+      "s1_not_yet",
+      1,
+      [
+        2500,
+        2500,
+        2500
+      ],
+      1,
+      "hold"
+    ],
+    [
+      "s1_complete_one_burst",
+      1,
+      [
+        11500,
+        11500,
+        11500
+      ],
+      2,
+      "hold"
+    ],
+    [
+      "s2_not_yet",
+      2,
+      [
+        11500,
+        11500,
+        11500
+      ],
+      2,
+      "hold"
+    ],
+    [
+      "s2_complete_one_burst",
+      2,
+      [
+        26000,
+        26000,
+        26000
+      ],
+      3,
+      "hold"
+    ],
+    [
+      "s3_not_yet",
+      3,
+      [
+        26000,
+        26000,
+        26000
+      ],
+      3,
+      "hold"
+    ],
+    [
+      "s3_complete_one_burst",
+      3,
+      [
+        51000,
+        51000,
+        51000
+      ],
+      4,
+      "hold"
+    ],
+    [
+      "s4_not_yet",
+      4,
+      [
+        51000,
+        51000,
+        51000
+      ],
+      4,
+      "hold"
+    ],
+    [
+      "s4_complete_one_burst",
+      4,
+      [
+        62500,
+        62500,
+        62500
+      ],
+      null,
+      "hold"
+    ]
+  ],
+  "cases": [
+    {
+      "case": "s1_unclear_auto_recapture",
+      "source_timestamps_ms": [
+        7000,
+        7500,
+        8000
+      ],
+      "image_mode": "unclear",
+      "observation_status": "completed",
+      "observation_error": null,
+      "api_latency_seconds": 3.76,
+      "wall_seconds": 3.79,
+      "before_step": 1,
+      "after_step": 1,
+      "step_state": "observing",
+      "expected_step": 1,
+      "matched_expectation": true,
+      "checks": {
+        "checks": [
+          {
+            "check_id": "visible_completion",
+            "status": "unknown",
+            "evidence_frame_ids": [],
+            "reason": "学员画面（frame_1, frame_2, frame_3）均极度昏暗或全黑，无法看清鞋眼、鞋带及穿入状态，关键区域不可见。"
+          }
+        ],
+        "latency_ms": 3759
+      },
+      "feedback": "请移开手或调整视角，让必要条件清楚可见。"
+    },
+    {
+      "case": "s1_not_yet",
+      "source_timestamps_ms": [
+        2500,
+        2500,
+        2500
+      ],
+      "image_mode": "hold",
+      "observation_status": "completed",
+      "observation_error": null,
+      "api_latency_seconds": 4.64,
+      "wall_seconds": 4.67,
+      "before_step": 1,
+      "after_step": 1,
+      "step_state": "observing",
+      "expected_step": 1,
+      "matched_expectation": true,
+      "checks": {
+        "checks": [
+          {
+            "check_id": "visible_completion",
+            "status": "unknown",
+            "evidence_frame_ids": [
+              "frame_5",
+              "frame_6"
+            ],
+            "reason": "在 frame_5 和 frame_6 中，虽然可以看到鞋带穿过了最下方的一对鞋眼且两端伸出，但两张画面的时间间隔仅为 0.5 秒（1792038974560ms 至 1792038975060ms），未达到规则要求的至少 0.8 秒间隔来确认最终稳定状态，因此判定为 unknown。"
+          }
+        ],
+        "latency_ms": 4645
+      },
+      "feedback": "请移开手或调整视角，让必要条件清楚可见。"
+    },
+    {
+      "case": "s1_complete_one_burst",
+      "source_timestamps_ms": [
+        11500,
+        11500,
+        11500
+      ],
+      "image_mode": "hold",
+      "observation_status": "completed",
+      "observation_error": null,
+      "api_latency_seconds": 5.43,
+      "wall_seconds": 5.46,
+      "before_step": 1,
+      "after_step": 1,
+      "step_state": "observing",
+      "expected_step": 2,
+      "matched_expectation": false,
+      "checks": {
+        "checks": [
+          {
+            "check_id": "visible_completion",
+            "status": "not_yet",
+            "evidence_frame_ids": [
+              "frame_7",
+              "frame_9"
+            ],
+            "reason": "在 frame_7 至 frame_9 中，双手正在操作鞋带，虽然最下方鞋眼处可见黄色鞋带形成的横带结构，但手部仍在调整位置，且三帧画面时间跨度仅为 1.0 秒（1792038978778ms 至 1792038979778ms），处于连续操作过程中，尚未呈现松手后的最终静止完成状态。"
+          }
+        ],
+        "latency_ms": 5435
+      },
+      "feedback": "正在操作，完成后请让结果保持可见。"
+    }
+  ],
+  "completed_steps": [],
+  "final_status": "paused",
+  "stopped_before_case": "s2_not_yet",
+  "stop_reason": "Actual progress differs from fixed plan; state was not rewound",
+  "final_state": {
+    "current_step_index": 1,
+    "step_revision": 2,
+    "step_state": "observing",
+    "entered_at_ms": 1792038984289,
+    "step_active_ms": 14100,
+    "completed": [],
+    "skipped": [],
+    "checks": [],
+    "confirm_count": 0,
+    "confirm_hashes": [],
+    "confirm_sequence": 0,
+    "last_sequence": 9,
+    "pending_observation_id": null,
+    "call_count": 3,
+    "error_count": 0,
+    "attempts": [],
+    "manual_checks": [],
+    "feedback": "正在操作，完成后请让结果保持可见。",
+    "service_error": "",
+    "last_observation_id": "553663af1f0b4c4982a3d0f32f535283"
+  },
+  "matched_cases": 2,
+  "executed_cases": 3
+}

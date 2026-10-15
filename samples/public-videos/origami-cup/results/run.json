@@ -1,0 +1,7 @@
+{
+  "asset_id": "0c115b3d19794e36b2a192ffcefe07c9",
+  "test_database": ".cache/simple-cup-qa/gongxu.db",
+  "model": "qwen3.8-max",
+  "input_kind": "complete real instructional video",
+  "analysis_reused": false
+}

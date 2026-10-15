@@ -1,0 +1,18 @@
+工序智传 · 开源与许可
+
+本应用采用 GNU Affero General Public License v3。
+应用源代码包含在随附项目源码包中（frontend/ 与 backend/）。
+
+本次前端复用了以下开源代码，并对当前教学系统进行了适配：
+
+1. Sakai Vue：自适应布局与导航状态
+https://github.com/primefaces/sakai-vue
+Copyright (c) 2018-2022 PrimeTek. MIT License.
+完整许可证：/licenses/sakai-MIT.txt
+
+2. Frappe Learning：课程卡片结构
+https://github.com/frappe/lms
+GNU Affero General Public License v3.
+完整许可证：/licenses/frappe-lms-AGPL-3.0.txt
+
+具体来源、修改说明及原文件摘要：frontend/THIRD_PARTY_NOTICES.md。

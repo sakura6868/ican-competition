@@ -1,0 +1,102 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  backend:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install uv
+        uses: astral-sh/setup-uv@v5
+        with:
+          python-version: "3.12"
+      - name: Install dependencies
+        working-directory: backend
+        run: uv sync --all-extras
+      - name: Lint (ruff)
+        working-directory: backend
+        run: uv run ruff check gongxu tests
+      - name: Type check (mypy strict)
+        working-directory: backend
+        run: uv run mypy gongxu
+      - name: Test (pytest + coverage)
+        working-directory: backend
+        run: uv run pytest --cov=gongxu --cov-report=term-missing
+      - name: Security tests
+        working-directory: backend
+        run: uv run pytest tests/security
+      - name: Secret scan (bandit)
+        working-directory: backend
+        run: uv run bandit -r gongxu -x tests
+      - name: Dependency audit (pip-audit)
+        working-directory: backend
+        run: uv run pip-audit
+
+  frontend:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+          cache-dependency-path: frontend/package-lock.json
+      - name: Install
+        working-directory: frontend
+        run: npm ci
+      - name: Test (vitest)
+        working-directory: frontend
+        run: npm test
+      - name: Build
+        working-directory: frontend
+        run: npm run build
+
+  e2e:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - uses: astral-sh/setup-uv@v5
+        with:
+          python-version: "3.12"
+      - name: Backend deps + migrate + seed
+        working-directory: backend
+        run: |
+          uv sync --all-extras
+          uv run python -m gongxu.db.migrate
+          uv run python -m gongxu.tests.seed
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+          cache-dependency-path: frontend/package-lock.json
+      - name: Frontend install
+        working-directory: frontend
+        run: npm ci
+      - name: Install Playwright chromium
+        working-directory: frontend
+        run: npx playwright install chromium
+      - name: Start backend + worker
+        working-directory: backend
+        run: |
+          uv run uvicorn gongxu.main:app --host 127.0.0.1 --port 8011 &
+          sleep 3
+          uv run python -m gongxu.worker &
+      - name: Run E2E (Playwright)
+        working-directory: frontend
+        run: npx playwright test --reporter=line
+      - name: Upload E2E trace
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: playwright-traces
+          path: frontend/test-results/

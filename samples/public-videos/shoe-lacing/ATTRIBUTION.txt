@@ -1,0 +1,6 @@
+Shoe Lacing Methods by Lrcolette
+Source: https://commons.wikimedia.org/wiki/File:Shoe_Lacing_Methods.webm
+License: Creative Commons Attribution-ShareAlike 3.0 Unported
+License URL: https://creativecommons.org/licenses/by-sa/3.0/
+
+The local copy is used to test SOP compilation and same-source frame replay.

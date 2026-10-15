@@ -1,0 +1,530 @@
+% !TEX program = xelatex
+% 工序智传开发日志 - 基于 Git、测试归档、数据清单与界面截图整理
+\documentclass[UTF8,11pt,a4paper]{ctexart}
+\usepackage[left=20mm,right=20mm,top=19mm,bottom=20mm]{geometry}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{enumitem}
+\usepackage{float}
+\usepackage{tikz}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{fancyhdr}
+\usepackage{caption}
+\usepackage{multicol}
+\usepackage{amssymb}
+\usetikzlibrary{arrows.meta,positioning,calc,shapes.geometric,fit,backgrounds}
+\hypersetup{colorlinks=true,linkcolor=teal!60!black,urlcolor=teal!60!black,pdftitle={工序智传项目开发日志}}
+
+\definecolor{ink}{HTML}{183349}
+\definecolor{teal}{HTML}{426B8C}
+\definecolor{mint}{HTML}{E6EDF2}
+\definecolor{gold}{HTML}{D9824C}
+\definecolor{rose}{HTML}{A24F4F}
+\definecolor{paper}{HTML}{F7F4EE}
+\definecolor{slate}{HTML}{5B6770}
+\pagecolor{white}
+\color{ink}
+\setlength{\parindent}{2em}
+\setlength{\parskip}{3pt}
+\renewcommand{\arraystretch}{1.3}
+\captionsetup{font=small,labelfont={bf,color=teal},justification=centering}
+\newcolumntype{Y}{>{\raggedright\arraybackslash}X}
+\newcolumntype{C}{>{\centering\arraybackslash}X}
+\newcommand{\statusok}{\textcolor{teal}{\textbf{已完成}}}
+\newcommand{\statusprogress}{\textcolor{gold}{\textbf{持续迭代}}}
+\newcommand{\statuslimit}{\textcolor{rose}{\textbf{边界说明}}}
+\newcommand{\infobox}[3]{\par\noindent\begingroup\setlength{\fboxsep}{6pt}\fcolorbox{#1}{#2}{\parbox{\dimexpr\linewidth-2\fboxsep-2\fboxrule\relax}{#3}}\endgroup\par}
+\newcommand{\evidence}[1]{\infobox{teal!55!black}{mint!45!white}{\small\textbf{佐证：}#1}}
+\newcommand{\warningbox}[1]{\infobox{rose!75!black}{rose!5!white}{\small\textbf{口径边界：}#1}}
+\newcommand{\sourcepath}[1]{{\scriptsize\url{#1}}}
+
+\pagestyle{fancy}
+\setlength{\headheight}{22pt}
+\fancyhf{}
+\lhead{\small\color{slate}工序智传 | 项目开发日志}
+\rhead{\small\color{slate}截至 2026-08-30}
+\cfoot{\small\color{slate}第 \thepage\ 页}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\headrule}{\hbox to\headwidth{\color{teal}\leaders\hrule height \headrulewidth\hfill}}
+
+\begin{document}
+
+% --------------------------------------------------------------------------
+% Cover
+\begin{titlepage}
+\thispagestyle{empty}
+\begin{tikzpicture}[remember picture,overlay]
+  \fill[ink] (current page.south west) rectangle (current page.north east);
+  \fill[teal] ([xshift=15mm,yshift=-15mm]current page.north west) circle (38mm);
+  \draw[mint,line width=1.2pt] ([xshift=15mm,yshift=-15mm]current page.north west) circle (25mm);
+  \draw[mint!70,line width=.45pt] ([xshift=15mm,yshift=-15mm]current page.north west) circle (17mm);
+  \foreach \a in {0,45,...,315}{\draw[mint!85,line width=.7pt] ([xshift=15mm,yshift=-15mm]current page.north west) -- ++(\a:17mm);}
+  \draw[mint!30,line width=1.2pt] ([xshift=158mm,yshift=-286mm]current page.north west) circle (52mm);
+  \draw[teal!70,line width=.5pt] ([xshift=158mm,yshift=-286mm]current page.north west) circle (43mm);
+\end{tikzpicture}
+\vspace*{39mm}
+{\color{mint}\fontsize{14}{18}\selectfont iCAN 参赛作品开发档案\par}
+\vspace{5mm}
+{\color{white}\fontsize{35}{43}\selectfont\bfseries 工序智传\par}
+\vspace{4mm}
+{\color{mint}\Large 以多模态理解连接教学视频、SOP 与新人操作考评\par}
+\vfill
+\begin{minipage}{.72\textwidth}
+\color{mint}\large
+\textbf{文档类型：}项目开发日志与证据索引\\[2mm]
+\textbf{记录区间：}2026-08-15 至 2026-08-30\\[2mm]
+\textbf{编制依据：}Git 提交记录、自动化测试归档、数据清单、部署验证记录、界面截图\\[2mm]
+\textbf{版本：}v1.0（供项目材料整理使用）
+\end{minipage}
+\vspace*{20mm}
+\end{titlepage}
+
+% --------------------------------------------------------------------------
+\section*{文档说明与真实性口径}
+\addcontentsline{toc}{section}{文档说明与真实性口径}
+\infobox{teal}{paper}{本日志按可追溯证据整理，而非事后补写的宣传稿。时间点优先以 Git 提交时间为准；测试数值以归档 JSON、测试报告与实现状态文档为准；界面图均来自项目内已归档的自动化截图。开发组成员身份未由仓库记录，故统一以“开发组/项目组”表述，不虚构个人姓名、会议逐字稿或模型效果。}
+
+\begin{itemize}[leftmargin=2em]
+  \item \textbf{版本边界：}本日志覆盖 2026-08-30 前已记录的工作。工作目录中存在后续未提交的迭代文件，未被包装为已冻结版本成果。
+  \item \textbf{实验边界：}Qwen 为外接多模态 Provider，不在本项目内训练本地大模型。单样本/开发集验证仅证明流程与特定样本表现，不等于工业级准确率、第三方认证或专家替代能力。
+  \item \textbf{数据边界：}IndustReal v2 的官方 held-out test 未访问；公开真人视频是否可发送至外部 Provider 需要逐次授权，未授权时系统应拒绝外发。
+  \item \textbf{界面边界：}部分截图来自 2026-08-16 的历史迭代，其“实时训练、工位配置、离线人工复核”等模块已在后续范围收敛中移除，不代表当前产品主线。
+\end{itemize}
+\evidence{Git 首次独立基线提交 \texttt{4427991}（2026-08-15）；实现状态、数据卡、模型卡、Qwen 授权评测说明及 \texttt{reports/generated/} 归档。}
+
+\tableofcontents
+\newpage
+
+% --------------------------------------------------------------------------
+\section{项目起点、目标与交付边界}
+\subsection{问题定义}
+工业现场中，资深技工的操作经验常留存在零散教学视频、口头传授和个人记忆里。新员工面对的不是“有没有视频”，而是如何从视频中获得结构化 SOP，并在完成操作后获得可解释、可追溯的反馈。\textbf{工序智传}以“标准示范视频/文档 - SOP - 新人操作视频 - 步骤证据 - 改进建议”为主线，目标是把隐性操作经验变成可复用、可审核的训练资源。
+
+\subsection{首发演示场景与范围收敛}
+首发演示锁定为\textbf{模块小车/履带机器人装配实训}：单人、单工作台、固定机位、9 个部件安装步骤。该场景具有标准视频来源、步骤定义和可复现演示素材，避免临时编造无数据支撑的新工序。
+
+\begin{center}
+\begin{tabularx}{\textwidth}{@{}p{31mm}Y Y@{}}
+\toprule
+\textbf{维度} & \textbf{首版已实现主线} & \textbf{明确不作的承诺}\\
+\midrule
+知识沉淀 & 授权资料加密入库、检索、SOP 草稿和发布校验 & 不把未核验文本直接当作可执行 SOP\\
+操作考评 & 预录视频上传、关键帧分析、步骤对齐、报告与改进建议 & 不宣称可替代专家终审或工业安全认证\\
+视觉能力 & Qwen 关键帧理解与结构化拒判、受控词表、证据记录 & 不宣称细微孔位、朝向、销钉和紧固关系已可靠识别\\
+隐私安全 & AES-GCM 资产加密、会话认证、审计、外发授权门控 & 不默认外发真人原始视频或 API Key\\
+\bottomrule
+\end{tabularx}
+\end{center}
+\evidence{范围说明见 \sourcepath{docs/CONTEST_DEMO_SCOPE.md}；功能实现说明见 \sourcepath{docs/IMPLEMENTATION_STATUS.md}。}
+
+\subsection{产品闭环图}
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}[node distance=7mm and 7mm, every node/.style={font=\small,align=center}, box/.style={draw=teal!80!black,rounded corners=2mm,minimum width=29mm,minimum height=14mm,fill=mint!35!white}, dark/.style={draw=ink,rounded corners=2mm,minimum width=29mm,minimum height=14mm,fill=ink,text=white}, arr/.style={-{Stealth[length=2.2mm]},line width=.7pt,teal!80!black}]
+\node[box] (source) {标准视频\\授权文档};
+\node[dark,right=of source] (asset) {加密资产库\\哈希与审计};
+\node[box,right=of asset] (sop) {RAG 检索与\\SOP 编辑/发布};
+\node[dark,below=of sop] (assess) {新人操作视频\\考评会话};
+\node[box,left=of assess] (vision) {关键帧最小化\\Qwen 视觉事实};
+\node[box,left=of vision] (report) {规则对齐、评分\\证据报告与建议};
+\draw[arr] (source)--(asset); \draw[arr] (asset)--(sop); \draw[arr] (sop)--(assess); \draw[arr] (assess)--(vision); \draw[arr] (vision)--(report);
+\draw[arr,dashed] (report.north)--++(0,8mm)-|(sop.south);
+\node[font=\scriptsize,color=slate,below=2mm of report] {反馈不反向篡改已发布 SOP；全部关键动作留审计记录};
+\end{tikzpicture}
+\caption{工序智传首版闭环。大模型输出受控为“视觉事实与文字建议”，数值评分由本地规则引擎完成。}
+\end{figure}
+
+% --------------------------------------------------------------------------
+\section{开发时间线与版本迭代}
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}[x=1cm,y=1cm,>=Stealth]
+\draw[teal,line width=1.1pt] (0,0) -- (15.3,0);
+\foreach \x/\d in {0/08-15,3/08-16,6.2/08-19,9.6/08-22--24,12.7/08-29,15.2/08-30}{
+ \fill[teal] (\x,0) circle (2.1pt); \node[font=\scriptsize,below=3mm] at (\x,0) {\d};}
+\node[font=\scriptsize,align=center,above=4mm,text width=25mm] at (0,0) {独立工程基线\\账号、加密、队列};
+\node[font=\scriptsize,align=center,below=4mm,text width=27mm] at (3,0) {RAG、SOP、语义门禁\\安全整改与 UI 审计};
+\node[font=\scriptsize,align=center,above=4mm,text width=27mm] at (6.2,0) {Qwen/ONNX 适配\\演示闭环与评分修复};
+\node[font=\scriptsize,align=center,above=4mm,text width=31mm] at (9.6,0) {全视频均匀抽帧、多视角融合\\范围收敛与文档归档};
+\node[font=\scriptsize,align=center,above=4mm,text width=27mm] at (12.7,0) {服务器部署\\Qwen pilot 流程验证};
+\node[font=\scriptsize,align=center,above=4mm,text width=26mm] at (15.2,0) {演示脚本与素材包\\开发日志整理};
+\end{tikzpicture}
+\caption{基于 Git 提交和归档文件整理的开发时间线。}
+\end{figure}
+
+\begin{longtable}{@{}p{22mm}p{24mm}p{78mm}p{28mm}@{}}
+\toprule
+\textbf{日期} & \textbf{版本节点} & \textbf{关键工作} & \textbf{证据}\\
+\midrule
+2026-08-15 & v0 基线 & 建立独立项目，完成认证、加密资产、审计日志、任务队列、Provider 抽象、RAG、SOP、前后端基础与评分引擎。 & 首批功能提交\\
+2026-08-15 晚 & 安全门禁 & 加入考评授权、fail-closed 推理、真实 Qwen Provider 探测、Playwright、Mypy、Bandit 与依赖审计。 & \texttt{7c495fa}、\texttt{28dca88}、\texttt{9d70e0a}\\
+2026-08-16 & 数据与整改 & 解析公开标注；加密派生媒体；完善 RAG 隔离、资产级外发授权、CSRF/角色/WebSocket/内存控制、SOP 语义门禁。 & \texttt{e0153a5} 至 \texttt{81aef1b}\\
+2026-08-19 & 多模态接入 & 接入 Qwen/ONNX 视觉适配器，补全演示报告、SOP 绑定、批量推理和 Qwen 限流。 & \texttt{9d0799a} 至 \texttt{3842666}\\
+2026-08-19 & 评分修复 & 将 \texttt{insufficient\_evidence} 从失败分支拆出，修复“不足证据一律 59 分”的误导性封顶。 & \texttt{e6a41e2}\\
+2026-08-22 & 视频抽样修复 & 关键帧改为全视频均匀采样，解决长视频只覆盖开头约 24 秒导致的后续步骤漏检。 & \texttt{7a2d459}\\
+2026-08-24 & 主体收敛 & 多视角融合；修复前序步骤不足证据时的顺序误判；收敛为预录视频考评主线。 & \texttt{47a578c} 与范围文档\\
+2026-08-29 & 公网验证 & 完成服务器容器部署、健康检查、登录/SOP/资产/考评接口及 Qwen 开发 pilot 流程验证。 & 部署与报告归档\\
+2026-08-30 & 演示交付 & 整理三分钟录制脚本、模块小车装配标准/正/负样本素材包。 & 项目内“演示视频录制脚本”文档\\
+\bottomrule
+\end{longtable}
+
+% --------------------------------------------------------------------------
+\section{阶段一：独立工程、安全底座与可审计资产}
+\subsection{设计决策}
+项目未在既有击剑类业务代码上改名复用，而是从独立工程基线开始，重新定义用户、资产、SOP、评分与考评领域对象。底层采用 FastAPI、SQLite/SQLAlchemy、Vue 3/Vite、Pinia、WebSocket/SSE、Docker 与 PWA；视频处理以异步任务队列隔离，避免把长时视频分析塞进请求线程。
+
+\begin{center}
+\begin{tabularx}{\textwidth}{@{}p{34mm}Y Y@{}}
+\toprule
+\textbf{安全/隐私设计} & \textbf{实现方式} & \textbf{目的}\\
+\midrule
+账号与权限 & HttpOnly 会话、Argon2 密码散列、角色校验、登录双桶限流 & 降低会话泄漏与撞库风险\\
+资产保护 & 文件哈希登记、AES-256-GCM 加密存储、派生媒体同样加密 & 避免原视频与缩略图以明文散落\\
+外发控制 & 每个资产显式 \texttt{allow\_provider\_export}；无授权则结构化拒判 & 防止“公开数据 = 可任意外发”的误解\\
+审计与清理 & 访问、确认、误报/处置类动作留审计；临时文件和过期派生文件清理 & 提供责任追溯与最小留存\\
+故障策略 & Provider、模型、关键证据不可用时 fail-closed / inconclusive & 不以猜测填补视觉证据\\
+\bottomrule
+\end{tabularx}
+\end{center}
+\evidence{2026-08-16 整改归档记录 RAG 白名单隔离、资产级外发授权、依赖升级、CSRF、WebSocket Origin 校验与实时状态内存上限。详见 \sourcepath{reports/generated/remediation-verification-v2.json}。}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=.86\textwidth]{../../reports/generated/ui-audit-2026-08-16/02-workbench.png}
+\caption{工作台界面归档（2026-08-16）。用于证明早期知识导入与 SOP 工作流的可视化实现；不包含任何真实个人账户信息。}
+\end{figure}
+
+% --------------------------------------------------------------------------
+\section{阶段二：从知识材料到可发布 SOP}
+\subsection{实现路径}
+开发组将“从视频自动生成手册”拆为可核验的链路，而非直接让大模型输出一段看似完整的文本：资料先经授权、哈希与加密入库；文本/元数据进入受限检索；SOP 草稿需要步骤动作、完成状态与可观察规范三类字段；发布前经过工序词表、证据与结构校验。这样可把模型生成的不确定性限制在可编辑草稿层。
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=.86\textwidth]{../../reports/generated/contest-demo-frames/02-sop-studio.png}
+\caption{SOP 工作室界面归档。截图来自功能迭代阶段，展示“标准资料 - SOP 步骤 - 发布”的产品形态。}
+\end{figure}
+
+\infobox{gold!80!black}{paper}{\textbf{SOP 发布门禁示例：}不允许无依据占位步骤、无受控词表的模糊动作或“看似有证据但无法关联资产”的条目直接发布；错工具等明显语义冲突会被阻断。该门禁是后续自动对齐可解释性的前提。}
+\evidence{实现提交：\texttt{9c7fda2}（本地 RAG 与 SOP API）、\texttt{80c492b}（证据驱动 SOP 编译）、\texttt{b8fbb55}（语义门禁）。}
+
+% --------------------------------------------------------------------------
+\section{阶段三：视频考评、规则对齐与证据播放器}
+\subsection{评分策略}
+评分并非由大模型直接给出“总分”。系统先将关键帧理解结果约束为受控的视觉事实，再由本地确定性规则将事实与已发布 SOP 对齐，并输出每一步的通过、失败、不可观察或证据不足。总评、时间线和改进建议均可回溯到步骤与证据。
+
+\begin{figure}[H]
+\centering
+\begin{minipage}{.48\textwidth}
+\centering\includegraphics[width=\textwidth]{../../reports/generated/contest-demo-frames/03-complete.png}\\[-1mm]
+\scriptsize 图 a：规范完成场景归档
+\end{minipage}\hfill
+\begin{minipage}{.48\textwidth}
+\centering\includegraphics[width=\textwidth]{../../reports/generated/contest-demo-frames/05-inconclusive.png}\\[-1mm]
+\scriptsize 图 b：证据不足时的可信拒判归档
+\end{minipage}
+\caption{视频考评输出界面归档。系统将“无法判断”作为独立状态展示，而不是用低分冒充自动识别失败。}
+\end{figure}
+
+\subsection{关键问题：59 分封顶}
+早期评分分支把 \texttt{insufficient\_evidence} 混入失败状态，导致大量报告出现 59 分，既不反映操作真实质量，也削弱了“可信拒判”的意义。2026-08-19 修复后，证据不足与失败分离：前者进入不确定态，提示补充视角/复核；后者才作为明确不符合步骤条件的扣分依据。
+\evidence{修复提交 \texttt{e6a41e2}: \textit{scoring engine treats insufficient\_evidence as uncertain, not failed (59 cap bug)}。}
+
+% --------------------------------------------------------------------------
+\section{阶段四：Qwen Provider 接入与故障安全}
+\subsection{为什么采用外接多模态 Provider}
+首版目标是验证“教学视频到 SOP、SOP 到新人视频考评”的完整产品流程，而不是在有限项目周期内训练一个覆盖所有工具、零件与工序的本地视觉大模型。因此采用 Qwen 作为视觉 Provider：后端从已授权视频提取压缩关键帧，调用模型获得严格 JSON 结构，解析器再执行受控词表映射和证据校验。
+
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}[node distance=7mm and 6mm,every node/.style={font=\small,align=center},b/.style={draw=teal!80!black,rounded corners=1.5mm,minimum width=28mm,minimum height=11mm,fill=mint!35!white},deny/.style={draw=rose!80!black,rounded corners=1.5mm,minimum width=28mm,minimum height=11mm,fill=rose!8!white},a/.style={-{Stealth[length=2mm]},line width=.65pt,teal!75!black}]
+\node[b] (asset) {加密视频资产};
+\node[b,right=of asset] (auth) {授权与哈希\\完整性检查};
+\node[deny,below=of auth] (stop) {无授权/异常\\结构化拒判};
+\node[b,right=of auth] (frames) {最小化压缩\\关键帧};
+\node[b,right=of frames] (qwen) {Qwen JSON\\视觉事实};
+\node[b,below=of qwen] (rules) {解析、词表、规则\\步骤报告};
+\draw[a] (asset)--(auth); \draw[a] (auth)--(frames); \draw[a] (frames)--(qwen); \draw[a] (qwen)--(rules); \draw[-{Stealth[length=2mm]},line width=.65pt,rose!80!black] (auth)--(stop);
+\end{tikzpicture}
+\caption{外部 Provider 调用的最小化与 fail-closed 路径。原始视频、账号、本机路径和总分不发送给 Provider。}
+\end{figure}
+
+\warningbox{项目只在具备明确授权的场景下调用外部 Provider。公开数据集“可下载”或“研究用途许可”不自动等于可发送给任何第三方 API。无授权时仍可完成清单、标注解析和离线工程测试，但 Provider 调用必须为零。}
+\evidence{Qwen 授权评测协议与断点续跑机制见 \sourcepath{docs/QWEN_AUTHORIZED_EVALUATION.md}；Provider 接入提交 \texttt{28dca88}。}
+
+% --------------------------------------------------------------------------
+\section{阶段五：公开数据集选择、标注与可复现准备}
+\subsection{数据选择原则}
+数据集工作不采用“搜到视频就训练/评测”的方式。每份候选数据需记录官方来源、许可、文件哈希、人物/场景范围、标签粒度、划分角色和外发边界。项目当前选择 IndustReal v2 作为开发验证数据来源之一，同时保留其与目标固定机位工位之间的域差异说明。
+
+\begin{center}
+\begin{tabularx}{\textwidth}{@{}p{31mm}p{25mm}Y Y@{}}
+\toprule
+\textbf{数据集} & \textbf{当前状态} & \textbf{可支持的工作} & \textbf{不能据此声明}\\
+\midrule
+IndustReal v2 & 官方 train/val 开发素材与标注已核验；test 未访问 & 数据适配、事件清单、开发验证、端到端流程 & 固定机位工业场景泛化或正式 test 指标\\
+IMPACT v1.1 & 官方标注与 quick-start 媒体存在 & 多视角工程联调与解析 & 正式 metric split 准确率\\
+Assembly101 & 标注存在，官方匹配媒体未就绪 & 错误/纠正时序 schema 研究 & 视频模型准确率\\
+自有演示素材 & 标准、规范完成、错误修正三类视频已整理 & 比赛演示与可重复产品流程 & 真实工业生产认证\\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}[x=1cm,y=.075cm,font=\small]
+\draw[->,slate] (0,0)--(0,62) node[above] {视频数量};
+\draw[->,slate] (0,0)--(11,0);
+\foreach \y in {0,10,...,60} {\draw[slate!25] (0,\y)--(10.5,\y); \node[left,font=\scriptsize] at (0,\y) {\y};}
+\foreach \x/\h/\label in {2/36/train,5/16/val,8/52/total} {\fill[teal!75!black] (\x-.6,0) rectangle (\x+.6,\h); \node[above,font=\small\bfseries] at (\x,\h) {\h}; \node[below] at (\x,0) {\label};}
+\end{tikzpicture}
+\caption{IndustReal v2 当前本地 development 数据构成：train 36 段、val 16 段，共 52 段。官方 held-out test 未访问。}
+\end{figure}
+
+\evidence{官方 DOI：\url{https://doi.org/10.4121/b008dd74-020d-4ea4-a8ba-7bb60769d224.v2}；development manifest SHA256：\scriptsize\texttt{685ec8dfed2a88173f80fa992e7aa7678cca0d028d0cb2b3c838f520bd07be74}。}
+
+% --------------------------------------------------------------------------
+\section{标注、数据清单与开发基准}
+\subsection{标注如何进入流程}
+项目不对 IndustReal 原始视频重新人工涂写标签，而是解析官方动作识别、工序状态、含错误工序状态、手部/注视/头部姿态等标注，转化为版本化 manifest 与事件窗口。每个样本记录数据集版本、recording、参与者、事件时间、文件 SHA256、标签、划分和外发状态。超过边界的媒体不会被悄悄送给 Provider。
+
+\begin{center}
+\begin{tabularx}{\textwidth}{@{}p{34mm}Y p{38mm}@{}}
+\toprule
+\textbf{阶段} & \textbf{自动化动作} & \textbf{可追溯输出}\\
+\midrule
+官方发现与下载 & 固定 DOI/官方归档 URL；断点下载；大小与 CRC32 核验 & 来源、许可、ZIP 成员与本地 SHA256\\
+标注适配 & 解析 AR/PSR/含错误 PSR/手部/注视/姿态标注；按真实时间轴转事件窗口 & manifest v2、事件清单、排除原因\\
+开发划分 & 仅使用 train/val；test 永不读取；按参与者记录隔离条件 & split 角色、参与者 ID、测试访问标记\\
+Provider 门控 & 预检授权、SOP、哈希、真值；失败时零次网络调用 & 授权收据、调用目的、结构化拒判\\
+评测归档 & 每案原子检查点；记录版本、延迟、token、混淆矩阵与证据时间戳 & JSON/Markdown 报告，不伪造费用或指标\\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}[x=1cm,y=.032cm,font=\small]
+\draw[->,slate] (0,0)--(0,165) node[above] {事件窗口数量};
+\draw[->,slate] (0,0)--(10,0);
+\foreach \y in {0,25,...,150} {\draw[slate!25] (0,\y)--(9.3,\y); \node[left,font=\scriptsize] at (0,\y) {\y};}
+\fill[teal!78!black] (2,0) rectangle (4,143); \node[above,font=\small\bfseries] at (3,143) {143}; \node[below] at (3,0) {正确真值事件};
+\fill[rose!72!black] (6,0) rectangle (8,5); \node[above,font=\small\bfseries] at (7,5) {5}; \node[below] at (7,0) {错误真值事件};
+\node[font=\scriptsize,text=slate] at (6.9,154) {共 148 个事件窗口};
+\end{tikzpicture}
+\caption{IndustReal val 开发基准的真值分布：148 个事件窗口、5 名参与者、16 段 recording。该图是标注分布，不是模型预测结果。}
+\end{figure}
+\warningbox{错误类仅 5 个事件窗口，类别极不平衡。任何只报总体准确率的结果都可能掩盖错误检出失败，因此后续必须同时给出类别级召回、macro-F1、拒判率和失败案例。}
+
+% --------------------------------------------------------------------------
+\section{问题排查与修复闭环}
+\begin{longtable}{@{}p{29mm}p{43mm}p{49mm}p{29mm}@{}}
+\toprule
+\textbf{发现的问题} & \textbf{根因判断} & \textbf{修复措施} & \textbf{验证/版本证据}\\
+\midrule
+证据不足大量显示 59 分 & \texttt{insufficient\_evidence} 被当作失败分支处理 & 拆分不确定态与失败态；报告展示“无法判断/需补充证据” & \texttt{e6a41e2}\\
+长视频后半段步骤漏检 & 抽帧逻辑只覆盖视频开头约 24 秒 & 改为全片均匀采样；后续补充自适应补帧设计 & \texttt{7a2d459}\\
+SOP 与流程词表不一致 & 草稿可以出现无证据、无受控动作或占位内容 & 建立语义校验与发布前复核，阻断明显错工具/假证据 & \texttt{b8fbb55}\\
+资料检索可能跨资产混合 & 空资产集合时存在全库检索风险 & 强制 \texttt{asset\_ids} 白名单；加入 A/B 手册隔离测试 & \texttt{d744a95}\\
+公开媒体外发边界不清 & 数据许可不等于第三方 API 处理同意 & 逐资产外发授权；无授权则 fail-closed & \texttt{d744a95}\\
+会话、CSRF、WebSocket 风险 & 角色、跨站请求和连接状态需要统一控制 & 双桶限流、CSRF、Origin 校验、实时内存 TTL/上限 & \texttt{53966f7}\\
+Docker 报告无法持久化 & 容器运行用户对报告目录无写入权限 & 创建 app 可写报告目录并挂载到数据卷 & 2026-08-29 部署验证\\
+全量数据未完整同步到服务器 & 文件规模与远端实际内容不一致 & 准备流程 fail-closed，改用来源可核验的官方 pilot 子集跑通链路 & 2026-08-29 pilot 记录\\
+产品演示面过散 & 实时训练、工位配置、离线人工复核分散评委注意力 & 收敛为“资料 - SOP - 视频考评 - 报告”闭环 & \sourcepath{docs/CONTEST_DEMO_SCOPE.md}\\
+\bottomrule
+\end{longtable}
+
+% --------------------------------------------------------------------------
+\section{自动化测试与工程质量验证}
+\subsection{分层验证策略}
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}[every node/.style={font=\small,align=center},layer/.style={draw=teal!75!black,rounded corners=2mm,minimum width=115mm,minimum height=9mm,fill=mint!30!white}]
+\node[layer] (l1) {浏览器主流程：登录、知识导入、SOP、视频考评、报告、响应式与 PWA};
+\node[layer,below=3.5mm of l1] (l2) {接口与业务：认证、资产、任务队列、SOP 语义门禁、评分、审计、清理};
+\node[layer,below=3.5mm of l2] (l3) {安全与质量：Ruff、Mypy strict、Bandit、pip-audit、依赖锁定};
+\node[layer,below=3.5mm of l3] (l4) {数据与模型边界：manifest、哈希、split 隔离、授权门控、Provider 检查点};
+\end{tikzpicture}
+\caption{项目采用的验证层级。工程测试通过不自动推导为真实工序识别准确率。}
+\end{figure}
+
+\begin{center}
+\begin{tabularx}{\textwidth}{@{}p{37mm}C p{54mm}@{}}
+\toprule
+\textbf{检查项} & \textbf{归档结果} & \textbf{解释}\\
+\midrule
+后端 pytest & 410 passed & 2026-08-24 归档；覆盖认证、资产、SOP、评分、Provider、数据与清理等模块\\
+后端覆盖率 & 81.52\% & 7,697 / 9,442 语句覆盖；覆盖率报告可追溯\\
+静态与安全检查 & Ruff 通过；Mypy strict 101 源文件 0 error；Bandit 通过 & 代码质量与常见安全问题检查，不替代渗透测试\\
+前端单元与构建 & Vitest 5 files / 24 tests 通过；生产构建通过 & 验证核心交互逻辑与发布产物\\
+浏览器回归 & Playwright 11 passed / 1 safety skip & 覆盖关键主流程；安全跳过项保持显式记录\\
+依赖审计 & Python 与 npm 无已知第三方漏洞 & 归档时点的已知漏洞扫描结果\\
+\bottomrule
+\end{tabularx}
+\end{center}
+\evidence{主要归档：\sourcepath{reports/generated/backend-coverage.json}、\sourcepath{docs/IMPLEMENTATION_STATUS.md}、\sourcepath{reports/generated/remediation-verification-v2.json}。}
+
+\subsection{合成 fixture 的工程链路实验}
+早期确定性对齐 fixture 实验得到步骤 macro-F1 0.9047、漏步召回 0.9047、漏步精确率 1.0、错序精确率/召回率 1.0。它用于验证对齐、评分和报告代码链路，\textbf{不含真实工业视频模型预测，不得作为工业视觉准确率宣称}。
+
+% --------------------------------------------------------------------------
+\section{Qwen 开发验证：结果、解释与限制}
+\subsection{已完成的真实调用验证}
+在明确授权的开发运行中，系统完成“加密视频登记 - 关键帧 Qwen 分析 - 步骤对齐 - 确定性评分 - 报告”的实际链路。下表为 v19 两个独立开发案例的归档指标；样本量均为 1，结论只能限定于对应样本、SOP、抽帧与提示词版本。
+
+\begin{center}
+\begin{tabularx}{\textwidth}{@{}p{28mm}C C C C C C@{}}
+\toprule
+\textbf{开发案例} & \textbf{案例数} & \textbf{结果命中} & \textbf{步骤 macro-F1} & \textbf{拒判率} & \textbf{Provider 调用} & \textbf{耗时}\\
+\midrule
+装配规范样本（assy） & 1 & 0.0 & 1.0000 & 1.0 & 21 / 0 失败 & 435.099 s\\
+维护错误样本（main） & 1 & 1.0* & 0.4286 & 0.0 & 20 / 0 失败 & 345.336 s\\
+\bottomrule
+\end{tabularx}
+\end{center}
+\small *顶层 \texttt{fail} 恰好与样本真值一致，但第 7 步错误仍被判为 \texttt{passed}，并将正常第 5 步判为 \texttt{failed}；不能据此声称错误检出成功。\normalsize
+
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}[x=1cm,y=4cm,font=\small]
+\draw[->,slate] (0,0)--(0,1.18) node[above] {指标值};
+\draw[->,slate] (0,0)--(12,0);
+\foreach \y/\lab in {0/0,.2/.2,.4/.4,.6/.6,.8/.8,1/1.0} {\draw[slate!25] (0,\y)--(11.2,\y); \node[left,font=\scriptsize] at (0,\y) {\lab};}
+\foreach \x/\h/\lab in {2/1.0/assy:步骤 F1,4/1.0/assy:拒判率,7/.4286/main:步骤 F1,9/0/main:拒判率} {\fill[teal!75!black] (\x-.55,0) rectangle (\x+.55,\h); \node[above,font=\scriptsize\bfseries] at (\x,\h) {\h}; \node[below,align=center,font=\scriptsize] at (\x,0) {\lab};}
+\end{tikzpicture}
+\caption{Qwen v19 两个开发案例的步骤指标与拒判率。图仅用于呈现实验事实，不构成总体性能结论。}
+\end{figure}
+
+\warningbox{结论：流程运行与 Provider 调用已验证，但错误/返工类识别仍不可靠，系统应优先返回 \texttt{inconclusive} 或“需复核”。公开 IndustReal 数据的历史 v4 全量 val 报告因 SOP 顺序错误已失效，未纳入任何 Claims Sheet 或模型比较。}
+\evidence{数据来源：\sourcepath{reports/generated/qwen-evaluation-industreal-v2-train-assy-selected-a47e068461-qwen-eval-v19.json} 与对应 main 报告；解释见 \sourcepath{docs/QWEN_AUTHORIZED_EVALUATION.md}。}
+
+% --------------------------------------------------------------------------
+\section{阶段六：部署与公网流程验证}
+\subsection{部署验证过程}
+2026-08-29，项目在服务器上采用容器化方式部署，验证 API、worker 和 web 三类服务均处于运行状态。完成登录、SOP、资产、模型信息、考评会话和 health 接口访问，并实际执行“视频上传 - 任务队列 - worker - 结构化拒判/报告”的闭环。PWA manifest 与 service worker 返回正常；同时检查临时明文目录，归档结果为 \texttt{plain files: 0}。
+
+\begin{center}
+\begin{tabularx}{\textwidth}{@{}p{42mm}Y p{43mm}@{}}
+\toprule
+\textbf{验证项} & \textbf{结果} & \textbf{结论}\\
+\midrule
+容器健康状态 & API、worker、web 均 Up & 具备可启动的三服务运行形态\\
+核心 HTTP 接口 & 登录、SOP、资产、模型信息、考评、health 均返回 200 & 产品主线可访问\\
+任务异步链路 & 上传后进入队列，由 worker 处理并生成结构化结果 & 长时任务未阻塞 Web 请求\\
+PWA 资源 & manifest 与 service worker 均可获取 & 具备基础离线壳能力\\
+明文清理检查 & 临时目录 \texttt{plain files: 0} & 本次检查未发现遗留明文；不等于永久安全认证\\
+\bottomrule
+\end{tabularx}
+\end{center}
+\evidence{服务器持久化报告路径为 \sourcepath{/srv/gongxu/data/reports/generated/}。日志不记录服务器密码、SSH 私钥、API Key 或会话密钥。}
+
+% --------------------------------------------------------------------------
+\section{界面迭代证据与演示流程}
+\begin{figure}[H]
+\centering
+\begin{minipage}{.48\textwidth}
+\centering\includegraphics[width=\textwidth]{../../reports/generated/contest-demo-frames/01-workbench.png}\\[-1mm]
+\scriptsize 图 a：资料与工作台入口
+\end{minipage}\hfill
+\begin{minipage}{.48\textwidth}
+\centering\includegraphics[width=\textwidth]{../../reports/generated/contest-demo-frames/04-error.png}\\[-1mm]
+\scriptsize 图 b：错误/改进建议界面归档
+\end{minipage}
+\caption{比赛演示界面证据。截图为迭代阶段归档，应用主线保留为“知识导入、SOP、预录视频考评、报告”。}
+\end{figure}
+
+\subsection{建议的 3 分钟演示顺序}
+\begin{enumerate}[leftmargin=2em]
+\item \textbf{问题切入（0:00--0:20）：}展示标准装配资料，说明经验难以结构化传承。
+\item \textbf{SOP 形成（0:20--0:55）：}进入 SOP 工作台，展示步骤动作、完成状态与可观察规范，不将生成内容直接视为真理。
+\item \textbf{新人考评（0:55--1:55）：}选择已发布 SOP，上传“模块小车装配\_新人规范完成正样本”或错误修正样本，展示任务进入队列与进度。
+\item \textbf{证据报告（1:55--2:35）：}展示步骤时间线、证据、总评和改进建议；切换证据不足样本，说明系统会拒判而不是硬猜。
+\item \textbf{安全与边界（2:35--3:00）：}指出加密、哈希、授权门控与审计，明确当前不替代专家、未宣称工业认证。
+\end{enumerate}
+\evidence{配套素材为项目内“工序智传\_演示录制素材包”；脚本为项目内“演示视频录制脚本”文档。}
+
+% --------------------------------------------------------------------------
+\section{当前成果与适用边界}
+\begin{multicols}{2}
+\subsection*{当前可确认成果}
+\begin{itemize}[leftmargin=1.7em]
+\item 独立工程、账号、角色、审计、加密资产、任务队列、RAG、SOP、预录考评和报告均已有实现与测试记录。
+\item 外接 Qwen 的授权调用、关键帧最小化、结构化解析、规则评分和失败安全路径已跑通。
+\item 公开数据的官方来源、许可、manifest、SHA256、开发划分与 held-out test 禁止访问规则已被文档化。
+\item Docker/公网可访问运行形态与核心接口已在服务器验证。
+\item 面向比赛的演示范围已收敛，标准/正样本/负样本素材已整理。
+\end{itemize}
+
+\subsection*{必须如实保留的局限}
+\begin{itemize}[leftmargin=1.7em]
+\item 当前 Qwen 错误步骤检出不稳定，不能声称已具备通用工业质检精度。
+\item IndustReal 为第一视角玩具装配数据，与目标固定机位工位存在明显域差异。
+\item 公开数据的许可证不自动授权第三方 API 处理，需按次记录授权。
+\item 单案例/fixture 实验不能替代人物、视角独立的冻结测试。
+\item 工业现场还需要补充设备、照明、遮挡、工具外观和标准作业规范的目标域验证。
+\end{itemize}
+\end{multicols}
+
+% --------------------------------------------------------------------------
+\section{开发决策纪要（证据化整理）}
+\infobox{slate!70!black}{paper}{\small 本节根据提交记录、实现状态文档、评测说明和范围说明整理开发决策，不是未经记录的逐字会议记录。每条均附可复核依据，避免伪造会议材料。}
+
+\begin{longtable}{@{}p{24mm}p{45mm}p{56mm}p{26mm}@{}}
+\toprule
+\textbf{日期/阶段} & \textbf{议题} & \textbf{决策与理由} & \textbf{佐证}\\
+\midrule
+08-15 基线 & 是否复用旧项目业务代码 & 建立独立项目基线；领域对象切换为工业 SOP、资产与考评，保留清晰原创性边界。 & \texttt{4427991}；\sourcepath{docs/lineage.md}\\
+08-16 整改 & 是否允许资料跨库检索与默认外发 & 不允许。检索绑定资产白名单，Provider 采用逐资产明确同意。 & \texttt{d744a95}\\
+08-19 评分 & 证据不足是否直接扣分 & 不允许。将其作为不确定态，避免误导性 59 分封顶。 & \texttt{e6a41e2}\\
+08-22 视觉 & 如何降低长视频漏检 & 将开头采样改为全片均匀采样，优先保证步骤时序覆盖。 & \texttt{7a2d459}\\
+08-24 产品 & 是否继续保留过多功能分支 & 不保留。聚焦“资料 - SOP - 预录视频考评 - 报告”的可演示闭环。 & \sourcepath{docs/CONTEST_DEMO_SCOPE.md}\\
+08-29 评测 & 是否把 pilot 结果包装为准确率 & 不允许。记录实际调用和失败案例，明确为开发验证。 & \sourcepath{docs/QWEN_AUTHORIZED_EVALUATION.md}\\
+\bottomrule
+\end{longtable}
+
+% --------------------------------------------------------------------------
+\clearpage
+\section{团队分工}
+\infobox{teal!65!black}{mint!30!white}{本页按项目实际分工整理，突出成员在项目制作、材料表达和答辩呈现中的协作关系。}
+\vspace{3mm}
+{\small
+\renewcommand{\arraystretch}{1.12}
+\begin{longtable}{|p{22mm}|p{29mm}|p{48mm}|p{42mm}|}
+\hline
+\centering\textbf{角色}\arraybackslash & \centering\textbf{成员}\arraybackslash & \centering\textbf{核心职责}\arraybackslash & \centering\textbf{主要工作与对应产出}\arraybackslash\\ \hline
+\rule{0pt}{14mm}\textbf{队长} & \textbf{韩旭} & 项目制作与整体统筹 & 统筹项目制作、核心功能集成与工程联调。产出：源码、版本记录、测试与部署材料。\\ \hline
+\rule{0pt}{14mm}\textbf{材料与答辩} & \textbf{程佳伟} & 材料整理、演示视频录制与答辩 & 整理项目说明与测试佐证，录制演示视频，组织答辩表达。产出：演示脚本、素材包与答辩材料。\\ \hline
+\rule{0pt}{14mm}\textbf{展示与整合} & \textbf{贡欣茹} & PPT 制作与材料整合 & 制作答辩 PPT，整合开发日志、技术报告、实验图表与界面截图。产出：PPT 与整合提交材料。\\ \hline
+\end{longtable}
+}
+
+% --------------------------------------------------------------------------
+\clearpage
+\section{证据索引与复现入口}
+\begin{longtable}{@{}p{50mm}p{112mm}@{}}
+\toprule
+\textbf{证据类型} & \textbf{路径/说明}\\
+\midrule
+Git 时间线 & \texttt{git log --all --date=iso-strict --reverse}；首次基线 \texttt{4427991}\\
+实现状态 & \sourcepath{docs/IMPLEMENTATION_STATUS.md}\\
+主体功能报告 & \sourcepath{docs/CORE_FUNCTION_IMPLEMENTATION_REPORT_2026-08-24.md}\\
+比赛范围 & \sourcepath{docs/CONTEST_DEMO_SCOPE.md}\\
+Qwen 授权与评测边界 & \sourcepath{docs/QWEN_AUTHORIZED_EVALUATION.md}\\
+数据选择与 readiness & \sourcepath{docs/DATASET_SELECTION_AND_READINESS_2026-08-24.md}；\sourcepath{reports/generated/industreal-development-readiness.json}\\
+开发基准真值清单 & \sourcepath{reports/generated/industreal-benchmark.json}\\
+后端覆盖率 & \sourcepath{reports/generated/backend-coverage.json}\\
+fixture 工程实验 & \sourcepath{reports/generated/training-metrics.json}（\texttt{experimental\_unvalidated}）\\
+安全整改核验 & \sourcepath{reports/generated/remediation-verification-v2.json}\\
+Qwen v19 开发案例 & \sourcepath{reports/generated/qwen-evaluation-industreal-v2-train-*-qwen-eval-v19.json}\\
+界面截图 & \sourcepath{reports/generated/contest-demo-frames/}；\sourcepath{reports/generated/ui-audit-2026-08-16/}\\
+演示录制与素材包 & 项目内“演示视频录制脚本”与“工序智传\_演示录制素材包”\\
+\bottomrule
+\end{longtable}
+
+\infobox{ink}{ink}{{\color{white}\textbf{归档结语}\quad 工序智传当前最有价值的成果，是把“教学视频到 SOP，再到新人操作证据化考评”的产品闭环、权限边界与可复现工程链路打通。其最重要的诚实边界同样清晰：自动错误识别仍需面向目标工位补充授权数据和冻结测试。比赛展示应突出可演示的闭环、证据机制与可信拒判，而不夸大为工业级专家替代。}}
+
+\end{document}

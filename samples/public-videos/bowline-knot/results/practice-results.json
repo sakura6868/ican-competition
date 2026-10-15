@@ -1,0 +1,191 @@
+{
+  "session_id": "5d473adaaaac41b9a232d845ab54b806",
+  "cases": [
+    {
+      "case": "incomplete_for_straight_rope",
+      "input_kind": "replayed real frames from the same tutorial, not a camera or independent learner",
+      "source_timestamps_ms": [
+        152000,
+        153000
+      ],
+      "observation_id": "9110b40dd8e5442e9a0831c6cdeb6019",
+      "status": "completed",
+      "error": null,
+      "elapsed_seconds": 5.98,
+      "before_step": 1,
+      "after_step": 1,
+      "step_state": "observing",
+      "confirm_count": 0,
+      "checks": {
+        "checks": [
+          {
+            "check_id": "completion_checks_1",
+            "status": "not_yet",
+            "evidence_frame_ids": [
+              "frame_1",
+              "frame_2"
+            ],
+            "reason": "在学员画面 frame_1 和 frame_2 中，双手虽握住绳索两端，但绳索呈现松弛下垂或弯曲状态，并未向两侧水平拉直形成紧绷直线。"
+          }
+        ],
+        "latency_ms": 5330
+      },
+      "feedback": "正在操作，完成后请让结果保持可见。"
+    },
+    {
+      "case": "straight_rope_confirmation_1",
+      "input_kind": "replayed real frames from the same tutorial, not a camera or independent learner",
+      "source_timestamps_ms": [
+        270200,
+        270800
+      ],
+      "observation_id": "393223918c3f4de4890ccb26a8a5f419",
+      "status": "completed",
+      "error": null,
+      "elapsed_seconds": 7.38,
+      "before_step": 1,
+      "after_step": 1,
+      "step_state": "confirming",
+      "confirm_count": 1,
+      "checks": {
+        "checks": [
+          {
+            "check_id": "completion_checks_1",
+            "status": "satisfied",
+            "evidence_frame_ids": [
+              "frame_3",
+              "frame_4"
+            ],
+            "reason": "在学员画面 frame_3 和 frame_4 中，可见双手分别握住绳索两端并向两侧拉开，两手之间的绳索段呈现明显的紧绷直线状态，符合展示绳索初始直线状态的要求。"
+          }
+        ],
+        "latency_ms": 7343
+      },
+      "feedback": "完成条件已满足，正在用新画面确认。"
+    },
+    {
+      "case": "straight_rope_confirmation_2",
+      "input_kind": "replayed real frames from the same tutorial, not a camera or independent learner",
+      "source_timestamps_ms": [
+        271200,
+        271800
+      ],
+      "observation_id": "2e55cb03958e4d678e772801c027d53a",
+      "status": "completed",
+      "error": null,
+      "elapsed_seconds": 4.78,
+      "before_step": 1,
+      "after_step": 1,
+      "step_state": "observing",
+      "confirm_count": 0,
+      "checks": {
+        "checks": [
+          {
+            "check_id": "completion_checks_1",
+            "status": "not_yet",
+            "evidence_frame_ids": [
+              "frame_5",
+              "frame_6"
+            ],
+            "reason": "在学员画面 frame_5 和 frame_6 中，双手虽握住绳索两端，但绳索在两手之间呈现松弛、弯曲或下垂状态，并未被向两侧水平拉直形成紧绷的直线，尚未达到展示初始直线状态的要求。"
+          }
+        ],
+        "latency_ms": 4752
+      },
+      "feedback": "正在操作，完成后请让结果保持可见。"
+    },
+    {
+      "case": "straight_rope_held_confirmation_1",
+      "input_kind": "replayed real frames from the same tutorial, not a camera or independent learner",
+      "source_timestamps_ms": [
+        270050,
+        270250
+      ],
+      "observation_id": "d6e4b1a9d4394beeb84ebfd9cbc337a4",
+      "status": "completed",
+      "error": null,
+      "elapsed_seconds": 4.75,
+      "before_step": 1,
+      "after_step": 1,
+      "step_state": "confirming",
+      "confirm_count": 1,
+      "checks": {
+        "checks": [
+          {
+            "check_id": "completion_checks_1",
+            "status": "satisfied",
+            "evidence_frame_ids": [
+              "frame_7",
+              "frame_8"
+            ],
+            "reason": "在学员画面 frame_7 和 frame_8 中，可见操作者双手分别握住绳索两端并向两侧拉开，两手之间的绳索段呈现明显的紧绷直线状态，符合展示绳索初始直线状态的要求。"
+          }
+        ],
+        "latency_ms": 4714
+      },
+      "feedback": "完成条件已满足，正在用新画面确认。"
+    },
+    {
+      "case": "straight_rope_held_confirmation_2",
+      "input_kind": "replayed real frames from the same tutorial, not a camera or independent learner",
+      "source_timestamps_ms": [
+        270450,
+        270650
+      ],
+      "observation_id": "e2a8606e2d234d7888c9f7ddffa854fb",
+      "status": "completed",
+      "error": null,
+      "elapsed_seconds": 4.02,
+      "before_step": 1,
+      "after_step": 2,
+      "step_state": "observing",
+      "confirm_count": 0,
+      "checks": {
+        "checks": [
+          {
+            "check_id": "completion_checks_1",
+            "status": "satisfied",
+            "evidence_frame_ids": [
+              "frame_9",
+              "frame_10"
+            ],
+            "reason": "在学员画面 frame_9 和 frame_10 中，可见操作者双手分别握住绳索两端并向两侧拉开，两手之间的绳索段呈现明显的紧绷直线状态，符合展示绳索初始直线状态的要求。"
+          }
+        ],
+        "latency_ms": 3986
+      },
+      "feedback": "上一步已完成，请观看下一步示范。"
+    },
+    {
+      "case": "loop_visible_but_manual_topology_unconfirmed",
+      "input_kind": "replayed real frames from the same tutorial, not a camera or independent learner",
+      "source_timestamps_ms": [
+        152000,
+        153000
+      ],
+      "observation_id": "528fb5479d92411980ab6dd3ee793134",
+      "status": "completed",
+      "error": null,
+      "elapsed_seconds": 4.87,
+      "before_step": 2,
+      "after_step": 2,
+      "step_state": "observing",
+      "confirm_count": 0,
+      "checks": {
+        "checks": [
+          {
+            "check_id": "visible_result",
+            "status": "satisfied",
+            "evidence_frame_ids": [
+              "frame_11",
+              "frame_12"
+            ],
+            "reason": "在学员画面 frame_11 和 frame_12 中，可以清晰看到绳索被弯曲形成了一个明显的环状结构，且绳头部分与主绳存在交叉或重叠，符合构建结的基础结构的视觉特征。"
+          }
+        ],
+        "latency_ms": 4212
+      },
+      "feedback": "还有必要条件待教师确认。"
+    }
+  ]
+}

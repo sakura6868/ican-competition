@@ -1,0 +1,263 @@
+{
+  "sop_id": "cc0fdfc26c534c77afefed9763fcc0e7",
+  "version": 2,
+  "status": "published",
+  "supersedes_sop_id": "4c0f0df333b64100ad358c4888c45d83",
+  "reason": "The reference tutorial does not demonstrate equal lace-end lengths; removed that unsupported condition.",
+  "steps": [
+    {
+      "id": "step_01",
+      "index": 1,
+      "name": "从底部鞋眼穿入鞋带",
+      "predecessors": [],
+      "optional": false,
+      "critical": false,
+      "tools": [],
+      "objects": [
+        "黑色帆布鞋",
+        "荧光黄鞋带"
+      ],
+      "actions": [
+        "穿鞋带",
+        "调整鞋带"
+      ],
+      "expected_duration_s": 9,
+      "completion_checks": [
+        "最下方一对鞋眼均有鞋带穿过，鞋面底部形成一条连续、近似水平的横带，左右两端均伸出鞋面。"
+      ],
+      "observable_checks": [],
+      "unobservable_checks": [],
+      "weight": 25.0,
+      "evidence_refs": [
+        {
+          "kind": "video",
+          "ref": "video@11500ms",
+          "description": "教师校对的从底部鞋眼穿入鞋带完成状态",
+          "asset_id": "5d690ca7053b45f195b295f1426af3fe",
+          "timestamp_ms": 11500,
+          "page": null,
+          "section": null,
+          "chunk_id": null,
+          "chunk_index": null,
+          "content_hash": null
+        }
+      ],
+      "teaching": {
+        "source_asset_id": "5d690ca7053b45f195b295f1426af3fe",
+        "start_ms": 4000,
+        "end_ms": 13000,
+        "instruction": "让鞋带从最下方一对鞋眼穿过，鞋面形成一条平直横带，两端从左右两侧伸出。",
+        "reference_timestamps_ms": [
+          10500,
+          11500
+        ]
+      },
+      "verification": {
+        "checks": [
+          {
+            "id": "visible_completion",
+            "criterion": "最下方一对鞋眼均有鞋带穿过，鞋面底部形成一条连续、近似水平的横带，左右两端均伸出鞋面。",
+            "category": "completion",
+            "required": true,
+            "mode": "visual",
+            "correction": "把鞋带重新穿过最下方左右鞋眼，拉到两端都露出，并把底部横带理平。"
+          }
+        ],
+        "confirm_windows": 1,
+        "teacher_confirmed": true
+      }
+    },
+    {
+      "id": "step_02",
+      "index": 2,
+      "name": "交叉穿过第二对鞋眼",
+      "predecessors": [
+        1
+      ],
+      "optional": false,
+      "critical": false,
+      "tools": [],
+      "objects": [
+        "黑色帆布鞋",
+        "荧光黄鞋带"
+      ],
+      "actions": [
+        "穿鞋带",
+        "调整鞋带"
+      ],
+      "expected_duration_s": 16,
+      "completion_checks": [
+        "底部横带上方出现一组完整的 X 形交叉，交叉后的两端分别穿过第二对左右鞋眼。"
+      ],
+      "observable_checks": [],
+      "unobservable_checks": [],
+      "weight": 25.0,
+      "evidence_refs": [
+        {
+          "kind": "video",
+          "ref": "video@26000ms",
+          "description": "教师校对的交叉穿过第二对鞋眼完成状态",
+          "asset_id": "5d690ca7053b45f195b295f1426af3fe",
+          "timestamp_ms": 26000,
+          "page": null,
+          "section": null,
+          "chunk_id": null,
+          "chunk_index": null,
+          "content_hash": null
+        }
+      ],
+      "teaching": {
+        "source_asset_id": "5d690ca7053b45f195b295f1426af3fe",
+        "start_ms": 12000,
+        "end_ms": 28000,
+        "instruction": "将左右鞋带在鞋面中央交叉，再分别穿入上一层相对侧的鞋眼。",
+        "reference_timestamps_ms": [
+          24500,
+          26000
+        ]
+      },
+      "verification": {
+        "checks": [
+          {
+            "id": "visible_completion",
+            "criterion": "底部横带上方出现一组完整的 X 形交叉，交叉后的两端分别穿过第二对左右鞋眼。",
+            "category": "completion",
+            "required": true,
+            "mode": "visual",
+            "correction": "让左右鞋带先在鞋面中央交叉，再把每一端穿入对侧第二个鞋眼，形成完整 X 形。"
+          }
+        ],
+        "confirm_windows": 1,
+        "teacher_confirmed": true
+      }
+    },
+    {
+      "id": "step_03",
+      "index": 3,
+      "name": "继续交叉穿到顶部",
+      "predecessors": [
+        2
+      ],
+      "optional": false,
+      "critical": false,
+      "tools": [],
+      "objects": [
+        "黑色帆布鞋",
+        "荧光黄鞋带"
+      ],
+      "actions": [
+        "穿鞋带",
+        "调整鞋带"
+      ],
+      "expected_duration_s": 26,
+      "completion_checks": [
+        "从第二层到顶部可见连续的多个 X 形交叉，每层左右鞋眼都有鞋带穿过，没有跳过中间鞋眼。"
+      ],
+      "observable_checks": [],
+      "unobservable_checks": [],
+      "weight": 25.0,
+      "evidence_refs": [
+        {
+          "kind": "video",
+          "ref": "video@51000ms",
+          "description": "教师校对的继续交叉穿到顶部完成状态",
+          "asset_id": "5d690ca7053b45f195b295f1426af3fe",
+          "timestamp_ms": 51000,
+          "page": null,
+          "section": null,
+          "chunk_id": null,
+          "chunk_index": null,
+          "content_hash": null
+        }
+      ],
+      "teaching": {
+        "source_asset_id": "5d690ca7053b45f195b295f1426af3fe",
+        "start_ms": 27000,
+        "end_ms": 53000,
+        "instruction": "按同样的左右交叉方式逐层向上穿引，直到可用的上层鞋眼。",
+        "reference_timestamps_ms": [
+          48500,
+          51000
+        ]
+      },
+      "verification": {
+        "checks": [
+          {
+            "id": "visible_completion",
+            "criterion": "从第二层到顶部可见连续的多个 X 形交叉，每层左右鞋眼都有鞋带穿过，没有跳过中间鞋眼。",
+            "category": "completion",
+            "required": true,
+            "mode": "visual",
+            "correction": "从当前层重新左右交叉并逐层向上穿，补齐漏穿的中间鞋眼。"
+          }
+        ],
+        "confirm_windows": 1,
+        "teacher_confirmed": true
+      }
+    },
+    {
+      "id": "step_04",
+      "index": 4,
+      "name": "整理两端并展示成品",
+      "predecessors": [
+        3
+      ],
+      "optional": false,
+      "critical": false,
+      "tools": [],
+      "objects": [
+        "黑色帆布鞋",
+        "荧光黄鞋带"
+      ],
+      "actions": [
+        "穿鞋带",
+        "调整鞋带"
+      ],
+      "expected_duration_s": 13,
+      "completion_checks": [
+        "鞋带左右两端都从最上方鞋眼伸出；鞋面从底部到顶部保持连续交叉，没有漏穿鞋眼或意外打结。"
+      ],
+      "observable_checks": [],
+      "unobservable_checks": [],
+      "weight": 25.0,
+      "evidence_refs": [
+        {
+          "kind": "video",
+          "ref": "video@62500ms",
+          "description": "教师校对的整理两端并展示成品完成状态",
+          "asset_id": "5d690ca7053b45f195b295f1426af3fe",
+          "timestamp_ms": 62500,
+          "page": null,
+          "section": null,
+          "chunk_id": null,
+          "chunk_index": null,
+          "content_hash": null
+        }
+      ],
+      "teaching": {
+        "source_asset_id": "5d690ca7053b45f195b295f1426af3fe",
+        "start_ms": 52000,
+        "end_ms": 64750,
+        "instruction": "完成顶部最后一组交叉，让左右两端都从最上方鞋眼伸出，并正对摄像头展示完整穿法。",
+        "reference_timestamps_ms": [
+          63000,
+          64000
+        ]
+      },
+      "verification": {
+        "checks": [
+          {
+            "id": "visible_completion",
+            "criterion": "鞋带左右两端都从最上方鞋眼伸出；鞋面从底部到顶部保持连续交叉，没有漏穿鞋眼或意外打结。",
+            "category": "completion",
+            "required": true,
+            "mode": "visual",
+            "correction": "补穿漏掉的鞋眼并解开意外绳结，让两端都从最上方鞋眼伸出。"
+          }
+        ],
+        "confirm_windows": 1,
+        "teacher_confirmed": true
+      }
+    }
+  ]
+}
